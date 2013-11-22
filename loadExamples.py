@@ -7,7 +7,7 @@ import random
 def getExamples(numTrain, numTest, files, isArtist):
     '''
     Parses the files to get the number of required training and testing examples. Returns 2 lists, each of
-    (lyrics, artist, genre) tuples and 2 sets: artsts and genre. The sets only have one of each artist or genre.
+    (lyrics, label) tuples and a set of unique labels (artists or genres). The sets only have one of each artist or genre.
     
     @param number of files to use for training
     @param number of files to use for testing
@@ -64,7 +64,7 @@ def getExamples(numTrain, numTest, files, isArtist):
     
     #Print the counter so we know how many of each label we have        
     labelCounter = Counter(labelCounter)
-    for label in labelCounter:
-        print label, labelCounter[label]
+    for label in labelCounter.most_common(40):
+        print label
         
     return trainSongs, testSongs, list(labels)
