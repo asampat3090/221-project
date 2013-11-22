@@ -64,6 +64,3 @@ def getExamples(numTrain, numTest, files, isArtist):
         print label, labelCounter[label]
         
     return trainSongs, testSongs, list(labels)
-
-
->>>>>>> fa6bf45ede3165e16d9761f9cb3d0dd973cc1b57

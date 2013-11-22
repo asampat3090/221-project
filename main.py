@@ -12,13 +12,7 @@ def main():
     #Arguments are: numTrain, numTest, trainingIter, alpha
     if len(sys.argv) == 7:
         numTrainSongs = int(sys.argv[1])
-        if (numTrainSongs > 1400):
-            print 'Too many songs requested!'
-            return
         numTestSongs = int(sys.argv[2])
-        if (numTestSongs + numTrainSongs > 1400):
-            print 'Too many songs requested!'
-            return
         trainingIters = int(sys.argv[3])
         alpha = 1.0*int(sys.argv[4])/100
         B = int(sys.argv[5])
