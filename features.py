@@ -67,7 +67,7 @@ def extractTrigramFeatures(x):
                 if word not in punctuationSet: 
                     if wordList[i+1] not in punctuationSet and wordList[i+2] not in punctuationSet:
                         newWord = word + " " + wordList[i+1] + " " + wordList[i+2]
-                    trigrams.update([newWord]) #add all non-punctuation trigrams            
+                        trigrams.update([newWord]) #add all non-punctuation trigrams            
     return trigrams
 
 def extractFourgramFeatures(x):
@@ -98,7 +98,7 @@ def extractFourgramFeatures(x):
                 if word not in punctuationSet: 
                     if wordList[i+1] not in punctuationSet and wordList[i+2] not in punctuationSet and wordList[i+3] not in punctuationSet:
                         newWord = word + " " + wordList[i+1] + " " + wordList[i+2] + " " + wordList[i+3]
-                    fourgrams.update([newWord]) #add all non-punctuation trigrams
+                        fourgrams.update([newWord]) #add all non-punctuation trigrams
     return fourgrams
 
             
