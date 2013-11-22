@@ -3,6 +3,7 @@ import sys, time
 from Classifier import *
 from features import *
 from loadExamples import *
+from features import *
 
 def main():
     lastTime = time.clock()
@@ -40,10 +41,10 @@ def main():
     #Load lyrics, genres, and artists
     if isArtist:
         os.chdir("lyrics/artist/")
-        trainSongs, testSongs, artistLabels, genreLabels = getExamples(numTrainSongs, numTestSongs, glob.glob("*.txt"))
+        trainSongs, testSongs, artistLabels = getExamples(numTrainSongs, numTestSongs, glob.glob("*.txt"), isArtist)
     else:
         os.chdir("lyrics/genre/")
-        trainSongs, testSongs, artistLabels, genreLabels = getExamples(numTrainSongs, numTestSongs, glob.glob("*.txt"))
+        trainSongs, testSongs, genreLabels = getExamples(numTrainSongs, numTestSongs, glob.glob("*.txt"), isArtist)
 
     thisTime = time.clock()
     print "Load examples: ", thisTime - lastTime, ' s'
@@ -52,8 +53,10 @@ def main():
     #ARTIST!
     if isArtist:
         #Extract features
+
         artistTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist, genre) in trainSongs]
         artistTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist, genre) in testSongs]
+
         thisTime = time.clock()
         print "Extract artist features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
@@ -77,8 +80,8 @@ def main():
     #GENRE!
     else:
         #Features
-        genreTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, artist, genre) in trainSongs]
-        genreTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, artist, genre) in testSongs]
+        genreTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
+        genreTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]
         thisTime = time.clock()
         print "Extract genre features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
