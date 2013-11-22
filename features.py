@@ -56,7 +56,6 @@ def extractTrigramFeatures(x):
     lines = x.split('\n')
     for line in lines:
         wordList = line.split()
-        print len(wordList)
         if len(wordList)>0: 
             trigrams.update(extractBigramFeatures(x)) # add bigram features     
             trigrams.update(["-BEGIN- "+"-BEGIN- "+wordList[0]]) # add first word 
