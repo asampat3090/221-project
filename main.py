@@ -48,8 +48,8 @@ def main():
     if isArtist:
         #Extract features
 
-        artistTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist, genre) in trainSongs]
-        artistTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist, genre) in testSongs]
+        artistTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
+        artistTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]
 
         thisTime = time.clock()
         print "Extract artist features: ", thisTime - lastTime, ' s'

@@ -27,7 +27,7 @@ def getExamples(numTrain, numTest, files, isArtist):
     usedIndices = []
     labelCounter = []
     
-    for i in range(totalNum):
+    while (len(trainSongs) + len(testSongs) < totalNum):
         #keep drawing random numbers until we hit one that we haven't already used
         while True:
             nextIndex = random.randint(0,len(files)-1)
@@ -40,7 +40,9 @@ def getExamples(numTrain, numTest, files, isArtist):
         genre = file.readline().split('\n')[0]
         lyrics = file.read()
         
-        if len(genre) < 2: print file.name
+        if len(lyrics) < 10:
+            print file.name
+            continue
         
         #Add the label to the label counter and put the (lyric, label) tuple into
         #test or train data. Update the labels set.
