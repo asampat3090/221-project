@@ -1,6 +1,7 @@
 import glob, os, random
 import sys, time
 from Classifier import *
+from features import *
 from loadExamples import *
 
 def main():
@@ -51,8 +52,8 @@ def main():
     #ARTIST!
     if isArtist:
         #Extract features
-        artistTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist, genre) in trainSongs]
-        artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist, genre) in testSongs]
+        artistTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist, genre) in trainSongs]
+        artistTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist, genre) in testSongs]
         thisTime = time.clock()
         print "Extract artist features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
