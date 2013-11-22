@@ -1,18 +1,20 @@
 import math
 from collections import Counter
+import random
 
-def trainMultiClassClassifier(trainingData, labels, hypothesisFunc, trainingIters, alpha):
+def trainMultiClassClassifier(trainingData, labels, hypothesisFunc, trainingIters, alpha, B):
     '''
     @param list of (featureVector (as a counter), label): the (image features, label) data used to train the classifier
     @param list of strings: a list of the labels, one classifier will be made for each
     @param function(weights, featureVector): the hypothesis function, returns 1 or 0.
     @param int: trainingIters is the number of times to cycle through all the data.
     @param float: the learning rate, (0,1]
+    @param int: the normalization constant. If 0, does nothing.
     
     @return a multiclass classier object that has been trained on the training data and is ready
     to classify new feature vectors.
     '''
-    
+    print "B = ", B
     #Make a list of weight vectors, one for each label
     #weights = [zeros((len(trainingData[0][0]))) for i in range(len(labels))]
     weights = [Counter() for i in range(len(labels))]
@@ -24,6 +26,15 @@ def trainMultiClassClassifier(trainingData, labels, hypothesisFunc, trainingIter
             for (featureVector, label) in trainingData:
                 y = 1 if posLabel == label else 0
                 incrementSparseVector(weights[i], alpha*(y - hypothesisFunc(weights[i], featureVector, y)), featureVector)
+            #After each iteration, regulate and shuffle
+            if B > 0:
+                norm = math.sqrt(sparseVectorDotProduct(weights[i], weights[i]))
+                if norm > B:
+                    weights[i] = incrementSparseVector(Counter(), B/norm, weights[i])
+                   
+            random.shuffle(trainingData)
+    
+    print "Average norm = ", sum([math.sqrt(sparseVectorDotProduct(w,w)) for w in weights])/len(weights)
     return MultiClassClassifier(labels, weights)
     
 class MultiClassClassifier(object):
