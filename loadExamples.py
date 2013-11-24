@@ -32,6 +32,11 @@ def getExamples(numLabels, numTrain, numTest, files, isArtist):
             print file.name
             continue
         
+        if len(artist) > 5:
+            artist = artist[0:5]
+        if len(genre) > 5:
+            genre = genre[0:5]
+        
         if isArtist:
             songs.append((lyrics, artist))
             labels.add(artist)
