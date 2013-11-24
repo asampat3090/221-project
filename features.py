@@ -67,7 +67,6 @@ def extractTrigramFeatures(x):
             trigrams.update(["-BEGIN- "+"-BEGIN- "+wordList[0]]) # add first word 
         if len(wordList)>1:
             trigrams.update(["-BEGIN- "+wordList[0]+" "+wordList[1]])# add second word
-        time1 = time.clock()
         if len(wordList)>2:
             # Add the rest of the trigrams
             for i, word in enumerate(wordList[:-2]):
@@ -82,8 +81,6 @@ def extractTrigramFeatures(x):
                         trigrams.update([newWord]) #add all non-punctuation trigrams
             # add final bigram 
             trigrams.update([wordList[-2]+" "+wordList[-1]])
-        time2 = time.clock()
-        print time2-time1
     return trigrams
 
 def extractFourgramFeatures(x):
@@ -127,11 +124,11 @@ def extractFourgramFeatures(x):
                     if wordList[i+1] not in punctuationSet and wordList[i+2] not in punctuationSet and wordList[i+3] not in punctuationSet:
                         newWord = word + " " + wordList[i+1] + " " + wordList[i+2] + " " + wordList[i+3]
                         fourgrams.update([newWord]) #add all non-punctuation trigrams
-        # Add the final Trigram
-        fourgrams.update([wordList[-3] + " " + wordList[-2]+" "+wordList[-1]])
-        # Add the two final Bigrams
-        fourgrams.update([wordList[-3] + " " + wordList[-2]])
-        fourgrams.update([wordList[-2]+" "+wordList[-1]])
+            # Add the final Trigram
+            fourgrams.update([wordList[-3] + " " + wordList[-2]+" "+wordList[-1]])
+            # Add the two final Bigrams
+            fourgrams.update([wordList[-3] + " " + wordList[-2]])
+            fourgrams.update([wordList[-2]+" "+wordList[-1]])
     return fourgrams
 
             
