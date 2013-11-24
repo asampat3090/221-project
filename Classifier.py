@@ -57,22 +57,33 @@ class MultiClassClassifier(object):
         '''
         return max([(self.labels[i], sparseVectorDotProduct(self.weights[i],featureVector)) for i in range(len(self.labels))], key = lambda x: x[1])[0]
     
-    def getErrorRate(self, data):
+    def getErrorRate(self, labels, data):
         """
         Classify each feature vector given and compare result to label. Return the error rate (out of 1)
         @param a list of (feature vector, label) tuples
+        @param a list of unique labels
 
         @return float: error rate [0-1]
         """
-        errors = 0
+        errors = [[0 for i in range(len(labels))] for i in range(len(labels))]
+        numErrors = 0
         for (featureVector, label) in data:
             prediction = self.classify(featureVector)
+            errors[labels.index(label)][labels.index(prediction)] += 1
             if prediction != label:
-                #print "Got " + repr(prediction) + ", Wanted: " + repr(label)
-                errors+=1
-            #else:
-                #print "Got " + repr(prediction) + " Correct!"
-        return 1.0*errors/len(data)    
+                numErrors += 1
+                
+        #print confusion matrix
+        for label in labels: print label,
+        print ""
+        for i, label in enumerate(labels):
+            print label,
+            for j,x in enumerate(labels):
+                print errors[i][j],
+            print ""
+            
+                
+        return 1.0*numErrors/len(data)    
     
 def perceptronH(weightVector, featureVector, y):
     '''

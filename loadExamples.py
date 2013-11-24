@@ -4,7 +4,7 @@ This class deals with parsing the lyric files and extracting the features.
 from collections import Counter
 import random
 
-def getExamples(numTrain, numTest, files, isArtist):
+def getExamples(numLabels, numTrain, numTest, files, isArtist):
     '''
     Parses the files to get the number of required training and testing examples. Returns 2 lists, each of
     (lyrics, label) tuples and a set of unique labels (artists or genres). The sets only have one of each artist or genre.
@@ -17,25 +17,13 @@ def getExamples(numTrain, numTest, files, isArtist):
     @return (trainSongs, testSongs, labels) where *Songs are lists of (lyrics, labels)
             and labels are lists of unique labels
     '''
-    
-    totalNum = numTrain + numTest
-    percentTrain = 1.0*numTrain/totalNum
-    
-    testSongs = []
-    trainSongs = []
+    #Read in all the files with lyric length > 10
+    songs = []
     labels = set()
-    usedIndices = []
-    labelCounter = []
+    labelCounter = Counter()
     
-    while (len(trainSongs) + len(testSongs) < totalNum):
-        #keep drawing random numbers until we hit one that we haven't already used
-        while True:
-            nextIndex = random.randint(0,len(files)-1)
-            if not any(nextIndex == index for index in usedIndices): break
-        usedIndices.append(nextIndex)
-        
-        #read in the song
-        file = open(files[nextIndex], 'r')
+    for i in range(len(files)-1):
+        file = open(files[i], 'r')
         artist = file.readline().split('\n')[0]
         genre = file.readline().split('\n')[0]
         lyrics = file.read()
@@ -44,27 +32,48 @@ def getExamples(numTrain, numTest, files, isArtist):
             print file.name
             continue
         
-        #Add the label to the label counter and put the (lyric, label) tuple into
-        #test or train data. Update the labels set.
-        if isArtist: 
-            labelCounter.append(artist)
-            if len(trainSongs) < numTrain:
-                trainSongs.append((lyrics, artist))
-            else:
-                testSongs.append((lyrics, artist))   
+        if isArtist:
+            songs.append((lyrics, artist))
             labels.add(artist)
-
-        else: 
-            labelCounter.append(genre)
-            if len(trainSongs) < numTrain:
-                trainSongs.append((lyrics, genre))
-            else:
-                testSongs.append((lyrics, genre))   
-            labels.add(genre)            
+            labelCounter.update([artist])
+            
+        else:
+            songs.append((lyrics, genre))
+            labels.add(genre)
+            labelCounter.update([genre])
     
-    #Print the counter so we know how many of each label we have        
-    labelCounter = Counter(labelCounter)
-    for label in labelCounter.most_common(40):
-        print label
+    print "number of songs = ", len(songs)
+    for label in labelCounter.most_common(40): print label
+    
+    #if numLabels is a reasonable number, make a list of the top numLabels most popular labels
+    if 0 < numLabels <= len(labels):
+        useLabels = [label for (label, count) in labelCounter.most_common(numLabels)]
+    
+    #otherwise just use all labels with at least 20 songs
+    else:
+        useLabels = [label for label in labelCounter if labelCounter[label] > 19]
+    
+    totSongs = numTest + numTrain
+    percentTrain = numTrain*1.0/totSongs
+    usedIndices = []
+    trainSongs = []
+    testSongs = []
+
+    #randomly select songs, make sure they are ok, and put them in test and train songs.
+    while (len(trainSongs) + len(testSongs) < totSongs):  
+        #randomly get a new index
+        while True:
+            nextIndex = random.randint(0,len(songs)-1)
+            if not any(nextIndex == index for index in usedIndices): break
+        usedIndices.append(nextIndex)
         
-    return trainSongs, testSongs, list(labels)
+        #ignore song and start over if label is one of the labels to ignore
+        if songs[nextIndex][1] not in useLabels: continue
+        
+        #otherwise add it to test or train
+        if len(trainSongs) < numTrain:
+            trainSongs.append((songs[nextIndex][0], songs[nextIndex][1]))
+        else:
+            testSongs.append((songs[nextIndex][0], songs[nextIndex][1]))
+    
+    return (trainSongs, testSongs, useLabels)
