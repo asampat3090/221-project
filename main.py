@@ -61,7 +61,6 @@ def main():
     #ARTIST!
     if isArtist:
         #Extract features
-
         artistTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
         artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]
 

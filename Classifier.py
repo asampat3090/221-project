@@ -35,6 +35,7 @@ def trainMultiClassClassifier(trainingData, labels, hypothesisFunc, trainingIter
             random.shuffle(trainingData)
     
     print "Average norm = ", sum([math.sqrt(sparseVectorDotProduct(w,w)) for w in weights])/len(weights)
+    print "Number of features =", len(weights[0])
     return MultiClassClassifier(labels, weights)
     
 class MultiClassClassifier(object):
@@ -77,13 +78,13 @@ class MultiClassClassifier(object):
         print "\t",
         for label in labels: 
             print label, "\t",
-        print "Got"
+        print "Wanted"
         for i, label in enumerate(labels):
             print label, "\t",
             for j,x in enumerate(labels):
                 print errors[i][j], "\t",
             print sum(errors[i])
-        print "Wanted\t",
+        print "Got\t",
         for j, label in enumerate(labels):
             print sum([errors[i][j] for i in range(len(labels))]), "\t",
         print sum([sum(errors[i]) for i in range(len(labels))])
