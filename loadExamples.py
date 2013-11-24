@@ -47,8 +47,7 @@ def getExamples(numLabels, numTrain, numTest, files, isArtist):
             labels.add(genre)
             labelCounter.update([genre])
     
-    print "number of songs = ", len(songs)
-    for label in labelCounter.most_common(40): print label
+    print "Total number of songs = ", len(songs)
     
     #if numLabels is a reasonable number, make a list of the top numLabels most popular labels
     if 0 < numLabels <= len(labels):
@@ -57,9 +56,20 @@ def getExamples(numLabels, numTrain, numTest, files, isArtist):
     #otherwise just use all labels with at least 20 songs
     else:
         useLabels = [label for label in labelCounter if labelCounter[label] > 19]
-    
+        
+    #Print labels and their counts, add up total number of usable songs
+    numUsableSongs = 0
+    for label in useLabels:
+        print label, labelCounter[label]
+        numUsableSongs += labelCounter[label]
+        
+    #Make sure we have enough songs...
     totSongs = numTest + numTrain
     percentTrain = numTrain*1.0/totSongs
+    if totSongs > numUsableSongs:
+        print "Requested", totSongs, "but only have", numUsableSongs
+        return
+    
     usedIndices = []
     trainSongs = []
     testSongs = []

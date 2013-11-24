@@ -76,16 +76,18 @@ class MultiClassClassifier(object):
         #print confusion matrix
         print "\t",
         for label in labels: 
-            if label == "electronic": print "elec\t",
-            else: print label, "\t",
-        print ""
+            print label, "\t",
+        print "Got"
         for i, label in enumerate(labels):
-            if label == "electronic": print "elec\t",
-            else: print label, "\t",
+            print label, "\t",
             for j,x in enumerate(labels):
                 print errors[i][j], "\t",
-            print ""
-            
+            print sum(errors[i])
+        print "Wanted\t",
+        for j, label in enumerate(labels):
+            print sum([errors[i][j] for i in range(len(labels))]), "\t",
+        print sum([sum(errors[i]) for i in range(len(labels))])
+        print ""
                 
         return 1.0*numErrors/len(data)    
     
