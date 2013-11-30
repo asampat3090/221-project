@@ -14,7 +14,7 @@ trainingIters:            number of iterations through all the training songs du
 alpha:                      an int from 0 - 100 that will be devided by 100 to obtain the learning rate.
 B:                            the regularization parameter, if set to something higher than 0, norm(w) will never exeed B
 'artist' or 'genre'      which one to classify
-'bigram' or 'trigram' or 'fourgram' which feature extractor to use.
+'unigram','bigram','trigram' or 'fourgram' which feature extractor to use.
 
 """
 

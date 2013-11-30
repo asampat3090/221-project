@@ -1,0 +1,1380 @@
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.408425  s
+Extract genre features:  5.523046  s
+B =  0
+Average norm =  953.583048609
+Number of features = 263296
+Train genre Classifier:  55.93054  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	77 	0 	0 	0 	0 	0 	0 	0 	0 	0 	77
+elect 	0 	71 	0 	0 	0 	1 	0 	0 	0 	0 	72
+indie 	0 	0 	63 	0 	0 	2 	0 	1 	0 	0 	66
+hipho 	0 	0 	0 	145 	0 	0 	0 	0 	0 	0 	145
+punk 	0 	0 	0 	0 	26 	0 	0 	0 	0 	0 	26
+metal 	0 	0 	0 	0 	0 	75 	0 	0 	0 	0 	75
+pop 	0 	0 	0 	3 	0 	0 	258 	1 	0 	0 	262
+rock 	0 	0 	0 	0 	0 	0 	2 	118 	0 	0 	120
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	80 	80
+Got	77 	71 	63 	148 	26 	78 	260 	120 	77 	80 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	0 	0 	0 	3 	0 	1 	6 	6 	1 	0 	17
+elect 	0 	0 	0 	3 	1 	1 	6 	1 	2 	1 	15
+indie 	3 	0 	2 	5 	0 	2 	0 	2 	1 	0 	15
+hipho 	0 	2 	0 	19 	0 	1 	5 	0 	0 	0 	27
+punk 	1 	0 	1 	0 	1 	0 	2 	1 	1 	0 	7
+metal 	0 	0 	0 	3 	0 	2 	1 	3 	0 	2 	11
+pop 	4 	1 	1 	8 	0 	1 	30 	4 	2 	0 	51
+rock 	0 	0 	0 	5 	2 	3 	5 	9 	4 	3 	31
+blues 	0 	0 	0 	5 	0 	0 	3 	0 	4 	0 	12
+alter 	0 	0 	0 	6 	0 	0 	4 	2 	1 	1 	14
+Got	8 	3 	4 	57 	4 	11 	62 	28 	16 	7 	200
+
+Error checking:  5.403439  s
+Genre Train Error:  0.01
+Genre Test Error:  0.66  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.34564  s
+Extract genre features:  5.469972  s
+B =  0
+Average norm =  961.313948525
+Number of features = 264403
+Train genre Classifier:  63.042225  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	69 	0 	0 	0 	0 	0 	0 	0 	0 	0 	69
+elect 	0 	77 	0 	0 	0 	0 	0 	0 	0 	0 	77
+indie 	0 	0 	68 	0 	0 	0 	0 	0 	0 	0 	68
+hipho 	0 	0 	0 	155 	0 	0 	0 	0 	0 	0 	155
+punk 	0 	0 	0 	0 	27 	0 	0 	0 	0 	0 	27
+metal 	0 	0 	0 	0 	0 	72 	0 	0 	0 	0 	72
+pop 	0 	0 	0 	2 	0 	1 	254 	3 	1 	0 	261
+rock 	0 	0 	0 	0 	0 	0 	0 	111 	0 	0 	111
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	83 	83
+Got	69 	77 	68 	157 	27 	73 	254 	114 	78 	83 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	4 	0 	1 	3 	1 	1 	1 	8 	1 	1 	21
+elect 	0 	2 	2 	2 	0 	2 	3 	3 	3 	0 	17
+indie 	1 	0 	2 	1 	0 	1 	2 	4 	1 	0 	12
+hipho 	1 	0 	3 	14 	0 	0 	3 	1 	0 	0 	22
+punk 	0 	0 	1 	1 	0 	1 	0 	3 	2 	0 	8
+metal 	2 	0 	0 	2 	0 	4 	4 	3 	1 	1 	17
+pop 	3 	1 	4 	4 	3 	8 	10 	8 	1 	3 	45
+rock 	4 	0 	4 	1 	2 	4 	4 	11 	3 	0 	33
+blues 	0 	0 	1 	1 	0 	0 	2 	1 	7 	1 	13
+alter 	2 	0 	2 	3 	1 	0 	2 	1 	0 	1 	12
+Got	17 	3 	20 	32 	7 	21 	31 	43 	19 	7 	200
+
+Error checking:  5.314928  s
+Genre Train Error:  0.007
+Genre Test Error:  0.725  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.226165  s
+Extract genre features:  5.460478  s
+B =  0
+Average norm =  1090.47269527
+Number of features = 261264
+Train genre Classifier:  69.449224  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	72 	0 	0 	0 	0 	0 	0 	0 	0 	0 	72
+elect 	0 	73 	1 	0 	0 	0 	0 	0 	0 	0 	74
+indie 	0 	0 	74 	0 	0 	0 	0 	0 	0 	0 	74
+hipho 	0 	0 	0 	143 	0 	0 	1 	0 	0 	0 	144
+punk 	0 	0 	0 	0 	31 	0 	0 	0 	0 	0 	31
+metal 	0 	0 	0 	0 	0 	77 	0 	0 	0 	0 	77
+pop 	0 	0 	0 	0 	0 	0 	259 	0 	0 	0 	259
+rock 	0 	0 	0 	0 	0 	0 	1 	121 	0 	0 	122
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	71 	0 	71
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	76 	76
+Got	72 	73 	75 	143 	31 	77 	261 	121 	71 	76 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	1 	6 	0 	0 	8 	1 	2 	1 	21
+elect 	0 	3 	0 	4 	0 	1 	3 	1 	1 	0 	13
+indie 	2 	0 	1 	5 	0 	1 	3 	3 	0 	2 	17
+hipho 	0 	0 	0 	21 	0 	0 	5 	1 	1 	1 	29
+punk 	1 	0 	1 	1 	0 	0 	1 	1 	0 	1 	6
+metal 	1 	1 	0 	1 	1 	1 	1 	3 	0 	1 	10
+pop 	2 	3 	0 	4 	2 	1 	23 	7 	2 	3 	47
+rock 	2 	2 	2 	6 	1 	2 	5 	4 	0 	2 	26
+blues 	1 	1 	1 	0 	0 	0 	9 	2 	2 	0 	16
+alter 	0 	1 	1 	5 	1 	1 	1 	3 	1 	1 	15
+Got	11 	11 	7 	53 	5 	7 	59 	26 	9 	12 	200
+
+Error checking:  5.304489  s
+Genre Train Error:  0.003
+Genre Test Error:  0.71  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.227179  s
+Extract genre features:  5.458468  s
+B =  0
+Average norm =  1012.82492069
+Number of features = 264960
+Train genre Classifier:  79.441931  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	66 	0 	0 	1 	0 	0 	0 	0 	0 	0 	67
+elect 	0 	76 	0 	0 	0 	0 	0 	0 	0 	0 	76
+indie 	0 	0 	74 	0 	0 	0 	0 	0 	0 	0 	74
+hipho 	0 	0 	0 	144 	0 	0 	0 	0 	0 	0 	144
+punk 	0 	0 	0 	0 	30 	0 	0 	0 	0 	0 	30
+metal 	0 	0 	0 	0 	0 	76 	0 	0 	0 	0 	76
+pop 	0 	0 	0 	2 	0 	0 	256 	1 	0 	0 	259
+rock 	0 	0 	0 	0 	0 	0 	0 	125 	0 	0 	125
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	76 	0 	76
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	73 	73
+Got	66 	76 	74 	147 	30 	76 	256 	126 	76 	73 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	1 	0 	0 	7 	0 	1 	4 	3 	1 	1 	18
+elect 	2 	2 	0 	5 	0 	0 	7 	1 	1 	0 	18
+indie 	1 	0 	1 	4 	0 	3 	6 	1 	1 	1 	18
+hipho 	0 	0 	0 	26 	0 	0 	3 	0 	0 	0 	29
+punk 	1 	1 	0 	1 	0 	0 	0 	1 	0 	0 	4
+metal 	2 	0 	1 	3 	0 	2 	3 	2 	0 	1 	14
+pop 	3 	0 	1 	15 	1 	0 	27 	0 	0 	1 	48
+rock 	1 	3 	0 	7 	0 	3 	6 	3 	0 	1 	24
+blues 	2 	2 	2 	2 	0 	0 	1 	0 	1 	0 	10
+alter 	2 	1 	2 	7 	0 	0 	1 	2 	0 	2 	17
+Got	15 	9 	7 	77 	1 	9 	58 	13 	4 	7 	200
+
+Error checking:  5.287621  s
+Genre Train Error:  0.004
+Genre Test Error:  0.675  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.238716  s
+Extract genre features:  5.489995  s
+B =  0
+Average norm =  1005.91466142
+Number of features = 263281
+Train genre Classifier:  88.598503  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	82 	0 	0 	0 	0 	0 	0 	0 	0 	0 	82
+elect 	0 	78 	0 	0 	0 	0 	0 	0 	0 	0 	78
+indie 	0 	0 	74 	0 	0 	0 	0 	0 	0 	0 	74
+hipho 	0 	0 	0 	140 	0 	0 	2 	0 	0 	0 	142
+punk 	0 	0 	0 	0 	28 	0 	0 	0 	0 	0 	28
+metal 	0 	0 	0 	0 	0 	75 	0 	0 	0 	0 	75
+pop 	0 	0 	0 	0 	0 	0 	248 	0 	0 	0 	248
+rock 	0 	0 	0 	0 	0 	0 	2 	121 	0 	0 	123
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	76 	0 	76
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74 	74
+Got	82 	78 	74 	140 	28 	75 	252 	121 	76 	74 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	0 	0 	0 	1 	0 	0 	4 	1 	1 	1 	8
+elect 	1 	4 	1 	0 	0 	1 	5 	0 	1 	0 	13
+indie 	3 	2 	1 	0 	1 	0 	3 	0 	2 	0 	12
+hipho 	0 	1 	0 	13 	1 	1 	12 	1 	3 	1 	33
+punk 	0 	1 	0 	1 	0 	0 	3 	0 	1 	1 	7
+metal 	0 	0 	2 	0 	0 	1 	6 	1 	0 	1 	11
+pop 	3 	3 	0 	2 	1 	1 	36 	2 	5 	1 	54
+rock 	2 	0 	3 	0 	0 	1 	14 	5 	1 	2 	28
+blues 	0 	1 	1 	1 	0 	0 	7 	1 	4 	0 	15
+alter 	3 	2 	1 	1 	2 	0 	6 	3 	1 	0 	19
+Got	12 	14 	9 	19 	5 	5 	96 	14 	19 	7 	200
+
+Error checking:  5.34869  s
+Genre Train Error:  0.004
+Genre Test Error:  0.68  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.227096  s
+Extract genre features:  5.458839  s
+B =  0
+Average norm =  1038.72675404
+Number of features = 261828
+Train genre Classifier:  95.091777  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	70 	0 	0 	0 	0 	0 	0 	0 	0 	0 	70
+elect 	0 	90 	0 	0 	0 	0 	0 	0 	0 	0 	90
+indie 	0 	0 	72 	0 	0 	0 	0 	0 	0 	0 	72
+hipho 	0 	0 	0 	138 	0 	0 	1 	0 	0 	0 	139
+punk 	0 	0 	0 	0 	30 	0 	0 	0 	0 	0 	30
+metal 	0 	0 	0 	0 	0 	70 	0 	0 	0 	0 	70
+pop 	0 	0 	0 	0 	0 	0 	253 	2 	0 	0 	255
+rock 	0 	0 	0 	0 	0 	0 	0 	126 	0 	0 	126
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	71 	0 	71
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	77 	77
+Got	70 	90 	72 	138 	30 	70 	254 	128 	71 	77 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	4 	0 	1 	1 	0 	2 	6 	1 	1 	0 	16
+elect 	1 	1 	0 	0 	0 	1 	6 	1 	0 	0 	10
+indie 	2 	3 	1 	1 	1 	1 	4 	2 	1 	1 	17
+hipho 	0 	1 	0 	24 	0 	0 	5 	1 	0 	1 	32
+punk 	1 	0 	0 	0 	0 	0 	2 	1 	0 	0 	4
+metal 	1 	0 	0 	2 	0 	6 	4 	3 	0 	2 	18
+pop 	2 	0 	1 	5 	0 	0 	35 	5 	2 	0 	50
+rock 	3 	2 	1 	1 	1 	1 	8 	4 	1 	0 	22
+blues 	2 	0 	0 	1 	1 	0 	8 	1 	4 	1 	18
+alter 	1 	0 	1 	0 	0 	1 	6 	3 	1 	0 	13
+Got	17 	7 	5 	35 	3 	12 	84 	22 	10 	5 	200
+
+Error checking:  5.357626  s
+Genre Train Error:  0.003
+Genre Test Error:  0.605  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.224622  s
+Extract genre features:  5.43211  s
+B =  0
+Average norm =  1069.39841042
+Number of features = 263817
+Train genre Classifier:  53.522349  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74
+elect 	0 	76 	0 	1 	0 	0 	0 	0 	0 	0 	77
+indie 	0 	1 	61 	0 	0 	0 	0 	0 	0 	1 	63
+hipho 	0 	0 	0 	145 	0 	0 	1 	0 	0 	0 	146
+punk 	0 	0 	0 	0 	32 	0 	0 	0 	0 	0 	32
+metal 	0 	0 	0 	0 	0 	75 	0 	0 	0 	0 	75
+pop 	0 	0 	0 	0 	0 	0 	248 	1 	0 	0 	249
+rock 	0 	0 	0 	0 	0 	0 	2 	123 	0 	0 	125
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	80 	0 	80
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79 	79
+Got	74 	77 	61 	146 	32 	75 	251 	124 	80 	80 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	0 	1 	0 	3 	7 	1 	1 	1 	16
+elect 	0 	1 	0 	0 	1 	0 	7 	1 	2 	0 	12
+indie 	2 	2 	1 	1 	1 	0 	5 	4 	4 	2 	22
+hipho 	2 	0 	0 	15 	0 	1 	8 	1 	0 	2 	29
+punk 	0 	0 	0 	0 	0 	0 	0 	2 	1 	0 	3
+metal 	0 	0 	0 	2 	1 	3 	7 	1 	0 	1 	15
+pop 	4 	1 	0 	7 	0 	1 	29 	1 	9 	4 	56
+rock 	2 	0 	0 	1 	0 	3 	8 	4 	1 	5 	24
+blues 	0 	0 	0 	4 	1 	0 	2 	0 	2 	2 	11
+alter 	0 	1 	0 	2 	1 	1 	1 	3 	1 	2 	12
+Got	12 	5 	1 	33 	5 	12 	74 	18 	21 	19 	200
+
+Error checking:  5.262529  s
+Genre Train Error:  0.007
+Genre Test Error:  0.705  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.216608  s
+Extract genre features:  5.481354  s
+B =  0
+Average norm =  1047.27746146
+Number of features = 262171
+Train genre Classifier:  61.759699  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74
+elect 	0 	73 	0 	0 	0 	0 	0 	0 	0 	0 	73
+indie 	0 	0 	78 	0 	0 	0 	0 	0 	0 	0 	78
+hipho 	0 	0 	1 	140 	0 	0 	1 	0 	0 	0 	142
+punk 	0 	0 	0 	0 	28 	0 	0 	0 	0 	0 	28
+metal 	0 	0 	0 	0 	0 	71 	0 	0 	0 	0 	71
+pop 	0 	0 	0 	1 	0 	0 	267 	0 	0 	0 	268
+rock 	0 	0 	0 	0 	0 	0 	0 	123 	0 	0 	123
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	74 	0 	74
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	69 	69
+Got	74 	73 	79 	141 	28 	71 	268 	123 	74 	69 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	4 	0 	6 	1 	1 	0 	3 	1 	2 	0 	18
+elect 	2 	3 	4 	4 	0 	1 	5 	3 	2 	0 	24
+indie 	0 	0 	2 	1 	0 	2 	3 	1 	1 	0 	10
+hipho 	2 	0 	2 	21 	0 	1 	4 	0 	0 	0 	30
+punk 	0 	0 	1 	0 	0 	0 	0 	2 	0 	1 	4
+metal 	1 	0 	4 	0 	0 	3 	3 	0 	1 	4 	16
+pop 	0 	0 	2 	5 	3 	0 	25 	8 	1 	0 	44
+rock 	2 	1 	3 	2 	0 	1 	4 	7 	0 	4 	24
+blues 	2 	1 	1 	1 	0 	1 	3 	2 	1 	0 	12
+alter 	0 	2 	3 	2 	0 	1 	3 	4 	1 	2 	18
+Got	13 	7 	28 	37 	4 	10 	53 	28 	9 	11 	200
+
+Error checking:  5.388448  s
+Genre Train Error:  0.003
+Genre Test Error:  0.66  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.232021  s
+Extract genre features:  5.472234  s
+B =  0
+Average norm =  1076.32858835
+Number of features = 263777
+Train genre Classifier:  69.985648  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	79 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79
+elect 	0 	78 	0 	0 	0 	0 	0 	0 	0 	0 	78
+indie 	0 	0 	75 	0 	0 	0 	0 	0 	0 	0 	75
+hipho 	0 	0 	0 	152 	0 	0 	0 	0 	0 	0 	152
+punk 	0 	0 	0 	0 	25 	0 	0 	0 	0 	0 	25
+metal 	0 	0 	0 	0 	0 	77 	0 	0 	0 	0 	77
+pop 	0 	1 	0 	1 	0 	0 	243 	1 	0 	0 	246
+rock 	0 	0 	0 	0 	0 	0 	0 	120 	0 	0 	120
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	74 	0 	74
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74 	74
+Got	79 	79 	75 	153 	25 	77 	243 	121 	74 	74 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	0 	4 	0 	1 	3 	2 	0 	3 	15
+elect 	0 	2 	0 	0 	1 	3 	5 	0 	1 	2 	14
+indie 	0 	0 	3 	1 	1 	0 	2 	4 	0 	0 	11
+hipho 	1 	0 	0 	18 	1 	0 	3 	1 	1 	1 	26
+punk 	1 	1 	1 	1 	0 	0 	0 	1 	0 	1 	6
+metal 	1 	0 	1 	0 	0 	6 	5 	1 	0 	0 	14
+pop 	1 	0 	2 	9 	0 	2 	32 	6 	1 	5 	58
+rock 	1 	0 	1 	3 	0 	2 	4 	6 	2 	5 	24
+blues 	1 	0 	0 	1 	0 	0 	10 	1 	5 	2 	20
+alter 	1 	1 	2 	2 	0 	0 	0 	4 	0 	2 	12
+Got	9 	4 	10 	39 	3 	14 	64 	26 	10 	21 	200
+
+Error checking:  5.346355  s
+Genre Train Error:  0.003
+Genre Test Error:  0.62  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.215437  s
+Extract genre features:  5.454302  s
+B =  0
+Average norm =  1087.50903408
+Number of features = 264081
+Train genre Classifier:  79.202923  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	72 	0 	0 	0 	0 	0 	1 	0 	0 	0 	73
+elect 	0 	74 	0 	0 	0 	0 	0 	0 	0 	0 	74
+indie 	0 	0 	68 	0 	0 	0 	2 	0 	0 	0 	70
+hipho 	0 	0 	0 	146 	0 	0 	1 	0 	0 	0 	147
+punk 	0 	0 	0 	0 	27 	0 	0 	0 	0 	0 	27
+metal 	0 	0 	0 	0 	0 	75 	0 	0 	0 	0 	75
+pop 	0 	0 	0 	1 	0 	0 	257 	0 	0 	0 	258
+rock 	0 	0 	0 	0 	0 	0 	2 	132 	0 	0 	134
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	70 	0 	70
+alter 	0 	0 	0 	0 	0 	0 	1 	0 	0 	71 	72
+Got	72 	74 	68 	147 	27 	75 	264 	132 	70 	71 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	0 	0 	1 	2 	0 	1 	9 	3 	0 	0 	16
+elect 	0 	1 	0 	2 	0 	0 	12 	3 	0 	0 	18
+indie 	1 	0 	1 	6 	0 	0 	9 	0 	2 	0 	19
+hipho 	0 	2 	0 	15 	0 	0 	10 	2 	1 	0 	30
+punk 	0 	0 	0 	2 	1 	1 	3 	0 	0 	0 	7
+metal 	0 	1 	0 	2 	0 	3 	7 	3 	0 	0 	16
+pop 	2 	1 	0 	7 	0 	0 	31 	4 	1 	0 	46
+rock 	1 	0 	0 	2 	0 	0 	6 	3 	0 	4 	16
+blues 	1 	0 	0 	4 	0 	0 	10 	1 	1 	2 	19
+alter 	0 	0 	0 	3 	0 	0 	4 	4 	0 	2 	13
+Got	5 	5 	2 	45 	1 	5 	101 	23 	5 	8 	200
+
+Error checking:  5.286056  s
+Genre Train Error:  0.008
+Genre Test Error:  0.71  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.218563  s
+Extract genre features:  5.499036  s
+B =  0
+Average norm =  1024.58783553
+Number of features = 260756
+Train genre Classifier:  85.747318  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	67 	0 	0 	0 	0 	0 	0 	0 	0 	0 	67
+elect 	0 	73 	0 	0 	0 	0 	0 	0 	0 	0 	73
+indie 	0 	0 	79 	0 	0 	0 	0 	0 	0 	0 	79
+hipho 	0 	0 	0 	143 	0 	0 	0 	0 	0 	0 	143
+punk 	0 	0 	0 	0 	30 	0 	0 	0 	0 	0 	30
+metal 	0 	0 	0 	0 	0 	71 	0 	0 	0 	0 	71
+pop 	0 	0 	0 	0 	0 	0 	259 	2 	0 	0 	261
+rock 	0 	0 	0 	0 	0 	0 	0 	124 	0 	0 	124
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	75 	75
+Got	67 	73 	79 	143 	30 	71 	259 	126 	77 	75 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	1 	4 	1 	2 	4 	1 	2 	1 	18
+elect 	0 	3 	1 	2 	0 	1 	3 	2 	0 	4 	16
+indie 	0 	2 	2 	0 	0 	0 	5 	2 	0 	3 	14
+hipho 	0 	1 	0 	18 	0 	2 	4 	0 	1 	0 	26
+punk 	0 	2 	0 	0 	0 	0 	3 	2 	0 	0 	7
+metal 	0 	0 	0 	1 	0 	7 	5 	3 	0 	1 	17
+pop 	1 	6 	1 	9 	0 	1 	27 	4 	2 	0 	51
+rock 	2 	4 	0 	4 	1 	2 	7 	5 	0 	2 	27
+blues 	0 	3 	1 	2 	1 	0 	1 	1 	1 	0 	10
+alter 	0 	0 	1 	1 	0 	3 	5 	0 	1 	3 	14
+Got	5 	21 	7 	41 	3 	18 	64 	20 	7 	14 	200
+
+Error checking:  5.346231  s
+Genre Train Error:  0.002
+Genre Test Error:  0.66  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.218036  s
+Extract genre features:  5.490176  s
+B =  0
+Average norm =  989.219693911
+Number of features = 267991
+Train genre Classifier:  97.713633  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	76 	0 	0 	0 	0 	0 	0 	0 	0 	0 	76
+elect 	0 	69 	1 	0 	0 	0 	0 	0 	0 	0 	70
+indie 	0 	0 	79 	0 	0 	0 	0 	0 	0 	0 	79
+hipho 	0 	0 	0 	149 	0 	0 	0 	0 	0 	0 	149
+punk 	0 	0 	0 	0 	26 	0 	0 	0 	0 	0 	26
+metal 	0 	0 	0 	0 	0 	69 	0 	0 	0 	0 	69
+pop 	0 	0 	0 	1 	0 	0 	253 	1 	0 	0 	255
+rock 	0 	0 	0 	0 	1 	0 	0 	124 	0 	0 	125
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74 	74
+Got	76 	69 	80 	150 	27 	69 	253 	125 	77 	74 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	0 	2 	0 	2 	3 	1 	1 	1 	12
+elect 	0 	2 	1 	0 	1 	2 	5 	2 	0 	1 	14
+indie 	3 	1 	2 	0 	1 	1 	2 	0 	1 	1 	12
+hipho 	1 	0 	1 	19 	1 	0 	3 	1 	1 	0 	27
+punk 	1 	0 	1 	0 	0 	2 	1 	1 	0 	2 	8
+metal 	0 	1 	1 	0 	0 	9 	2 	3 	0 	1 	17
+pop 	5 	6 	2 	10 	1 	0 	24 	3 	1 	3 	55
+rock 	2 	0 	4 	1 	2 	5 	8 	3 	2 	2 	29
+blues 	2 	0 	0 	3 	0 	1 	4 	2 	1 	0 	13
+alter 	2 	0 	2 	2 	0 	1 	2 	3 	0 	1 	13
+Got	18 	10 	14 	37 	6 	23 	54 	19 	7 	12 	200
+
+Error checking:  5.336566  s
+Genre Train Error:  0.004
+Genre Test Error:  0.685  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.227595  s
+Extract genre features:  5.395564  s
+B =  0
+Average norm =  949.564146994
+Number of features = 261641
+Train genre Classifier:  53.86397  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	71 	0 	0 	0 	0 	0 	0 	0 	0 	0 	71
+elect 	0 	71 	0 	0 	0 	0 	0 	0 	1 	0 	72
+indie 	0 	0 	82 	0 	0 	0 	0 	0 	0 	0 	82
+hipho 	0 	0 	0 	145 	0 	0 	1 	0 	0 	0 	146
+punk 	0 	0 	0 	0 	22 	0 	0 	0 	0 	0 	22
+metal 	0 	0 	0 	0 	0 	71 	0 	0 	0 	0 	71
+pop 	0 	0 	0 	1 	0 	0 	251 	2 	0 	0 	254
+rock 	0 	0 	0 	0 	0 	0 	0 	125 	0 	0 	125
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	78 	0 	78
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79 	79
+Got	71 	71 	82 	146 	22 	71 	252 	127 	79 	79 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	5 	0 	1 	2 	0 	1 	5 	3 	1 	1 	19
+elect 	1 	1 	2 	2 	2 	0 	3 	1 	0 	3 	15
+indie 	4 	0 	1 	1 	0 	1 	4 	0 	0 	1 	12
+hipho 	0 	0 	0 	12 	0 	0 	3 	1 	1 	0 	17
+punk 	0 	0 	1 	0 	1 	1 	2 	1 	1 	2 	9
+metal 	0 	1 	0 	4 	0 	5 	4 	2 	1 	2 	19
+pop 	4 	0 	1 	11 	0 	2 	27 	2 	5 	3 	55
+rock 	2 	3 	2 	0 	1 	1 	7 	4 	3 	3 	26
+blues 	3 	1 	2 	1 	0 	0 	4 	0 	2 	0 	13
+alter 	1 	2 	2 	0 	1 	4 	2 	0 	0 	3 	15
+Got	20 	8 	12 	33 	5 	15 	61 	14 	14 	18 	200
+
+Error checking:  5.24322  s
+Genre Train Error:  0.005
+Genre Test Error:  0.695  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.221964  s
+Extract genre features:  5.469108  s
+B =  0
+Average norm =  1080.93592906
+Number of features = 263825
+Train genre Classifier:  62.55523  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74
+elect 	0 	85 	0 	0 	0 	0 	0 	0 	0 	0 	85
+indie 	0 	0 	76 	0 	0 	0 	1 	0 	0 	0 	77
+hipho 	0 	0 	0 	147 	0 	0 	0 	0 	0 	0 	147
+punk 	0 	0 	0 	0 	29 	0 	0 	0 	0 	0 	29
+metal 	0 	0 	0 	0 	0 	75 	0 	0 	0 	0 	75
+pop 	0 	0 	0 	2 	0 	0 	249 	1 	0 	0 	252
+rock 	0 	0 	0 	0 	0 	0 	0 	117 	0 	0 	117
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	74 	0 	74
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	70 	70
+Got	74 	85 	76 	149 	29 	75 	250 	118 	74 	70 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	1 	0 	0 	2 	0 	1 	8 	1 	1 	0 	14
+elect 	0 	1 	0 	0 	0 	0 	4 	2 	0 	2 	9
+indie 	1 	0 	0 	2 	0 	1 	2 	1 	2 	2 	11
+hipho 	0 	1 	0 	14 	1 	0 	10 	1 	0 	1 	28
+punk 	0 	0 	0 	0 	1 	0 	2 	0 	0 	1 	4
+metal 	0 	1 	0 	3 	0 	5 	2 	3 	0 	1 	15
+pop 	1 	0 	0 	6 	0 	1 	43 	2 	1 	3 	57
+rock 	2 	3 	1 	2 	1 	2 	9 	7 	2 	4 	33
+blues 	1 	1 	0 	2 	0 	0 	6 	0 	4 	2 	16
+alter 	0 	2 	0 	1 	0 	2 	6 	1 	1 	0 	13
+Got	6 	9 	1 	32 	3 	12 	92 	18 	11 	16 	200
+
+Error checking:  5.293987  s
+Genre Train Error:  0.004
+Genre Test Error:  0.62  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.217439  s
+Extract genre features:  5.446294  s
+B =  0
+Average norm =  1076.3632142
+Number of features = 264361
+Train genre Classifier:  71.551837  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	68 	0 	0 	1 	0 	0 	0 	0 	0 	0 	69
+elect 	0 	78 	0 	0 	0 	0 	0 	0 	0 	0 	78
+indie 	0 	1 	71 	0 	0 	0 	0 	0 	0 	0 	72
+hipho 	0 	0 	0 	150 	0 	0 	1 	0 	0 	0 	151
+punk 	0 	0 	0 	0 	28 	0 	0 	0 	0 	0 	28
+metal 	0 	0 	0 	0 	0 	72 	0 	0 	0 	0 	72
+pop 	0 	0 	0 	0 	0 	0 	255 	0 	0 	0 	255
+rock 	0 	0 	0 	0 	0 	0 	1 	122 	0 	0 	123
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	75 	75
+Got	68 	79 	71 	151 	28 	72 	257 	122 	77 	75 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	0 	0 	2 	7 	0 	0 	2 	5 	0 	0 	16
+elect 	0 	0 	2 	7 	0 	0 	4 	4 	0 	0 	17
+indie 	0 	2 	2 	9 	0 	1 	4 	1 	0 	0 	19
+hipho 	0 	0 	1 	21 	0 	0 	2 	0 	0 	0 	24
+punk 	1 	0 	0 	0 	0 	0 	0 	1 	1 	0 	3
+metal 	0 	0 	0 	5 	1 	5 	2 	3 	0 	1 	17
+pop 	0 	2 	0 	13 	0 	1 	28 	4 	0 	1 	49
+rock 	3 	0 	5 	6 	0 	0 	3 	8 	0 	1 	26
+blues 	0 	1 	2 	1 	0 	0 	4 	4 	1 	1 	14
+alter 	0 	0 	0 	7 	0 	0 	2 	2 	0 	4 	15
+Got	4 	5 	14 	76 	1 	7 	51 	32 	2 	8 	200
+
+Error checking:  5.321351  s
+Genre Train Error:  0.004
+Genre Test Error:  0.655  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.218735  s
+Extract genre features:  5.443707  s
+B =  0
+Average norm =  1073.61865082
+Number of features = 260824
+Train genre Classifier:  76.998902  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	77 	0 	0 	0 	0 	0 	0 	0 	0 	0 	77
+elect 	0 	83 	0 	0 	0 	0 	0 	0 	0 	0 	83
+indie 	0 	0 	74 	0 	0 	0 	0 	0 	0 	0 	74
+hipho 	0 	0 	0 	136 	0 	0 	0 	0 	0 	0 	136
+punk 	0 	0 	0 	0 	31 	0 	0 	0 	0 	0 	31
+metal 	0 	0 	0 	0 	0 	78 	0 	0 	0 	0 	78
+pop 	0 	0 	0 	1 	0 	0 	254 	0 	0 	0 	255
+rock 	0 	0 	0 	0 	0 	0 	0 	121 	0 	0 	121
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	80 	0 	80
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	65 	65
+Got	77 	83 	74 	137 	31 	78 	254 	121 	80 	65 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	7 	0 	0 	0 	0 	1 	3 	2 	0 	0 	13
+elect 	1 	1 	2 	2 	0 	0 	4 	1 	2 	0 	13
+indie 	2 	2 	0 	0 	0 	0 	1 	5 	2 	0 	12
+hipho 	0 	1 	0 	20 	4 	0 	7 	1 	1 	0 	34
+punk 	1 	1 	0 	0 	0 	0 	0 	1 	0 	0 	3
+metal 	1 	2 	1 	2 	1 	2 	4 	4 	0 	0 	17
+pop 	2 	5 	5 	6 	1 	0 	24 	5 	4 	0 	52
+rock 	2 	4 	3 	2 	1 	0 	6 	8 	0 	2 	28
+blues 	1 	0 	0 	3 	0 	0 	2 	1 	3 	1 	11
+alter 	2 	0 	1 	3 	0 	0 	3 	5 	2 	1 	17
+Got	19 	16 	12 	38 	7 	3 	54 	33 	14 	4 	200
+
+Error checking:  5.284432  s
+Genre Train Error:  0.001
+Genre Test Error:  0.67  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.213374  s
+Extract genre features:  5.458512  s
+B =  0
+Average norm =  1063.49613576
+Number of features = 265014
+Train genre Classifier:  88.92222  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	80 	0 	0 	0 	0 	0 	0 	0 	0 	0 	80
+elect 	0 	82 	0 	0 	0 	0 	0 	0 	0 	0 	82
+indie 	0 	0 	77 	0 	0 	0 	0 	0 	0 	0 	77
+hipho 	0 	0 	0 	153 	0 	0 	0 	0 	0 	0 	153
+punk 	0 	0 	0 	0 	28 	0 	0 	0 	0 	0 	28
+metal 	0 	0 	0 	0 	0 	77 	0 	0 	0 	0 	77
+pop 	0 	0 	0 	1 	1 	0 	239 	0 	0 	0 	241
+rock 	0 	0 	0 	0 	0 	0 	0 	117 	0 	0 	117
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	74 	0 	74
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	71 	71
+Got	80 	82 	77 	154 	29 	77 	239 	117 	74 	71 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	1 	0 	1 	1 	1 	1 	1 	0 	1 	1 	8
+elect 	1 	1 	1 	3 	1 	0 	5 	1 	1 	1 	15
+indie 	0 	2 	1 	1 	1 	0 	1 	0 	2 	1 	9
+hipho 	0 	1 	0 	17 	1 	1 	0 	1 	1 	1 	23
+punk 	1 	0 	0 	2 	1 	0 	3 	0 	0 	0 	7
+metal 	1 	0 	0 	2 	0 	2 	2 	2 	0 	2 	11
+pop 	2 	1 	3 	17 	8 	1 	20 	8 	3 	3 	66
+rock 	3 	1 	3 	8 	2 	2 	4 	2 	4 	2 	31
+blues 	0 	1 	0 	2 	0 	0 	5 	0 	5 	1 	14
+alter 	0 	0 	2 	6 	2 	0 	2 	0 	2 	2 	16
+Got	9 	7 	11 	59 	17 	7 	43 	14 	19 	14 	200
+
+Error checking:  5.32324  s
+Genre Train Error:  0.002
+Genre Test Error:  0.74  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.371571  s
+Extract genre features:  5.435128  s
+B =  0
+Average norm =  1026.09611843
+Number of features = 261867
+Train genre Classifier:  96.33337  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	80 	0 	0 	0 	0 	0 	0 	0 	0 	0 	80
+elect 	0 	73 	0 	0 	0 	0 	0 	0 	0 	0 	73
+indie 	0 	0 	71 	0 	0 	0 	0 	0 	0 	0 	71
+hipho 	0 	1 	0 	148 	0 	0 	0 	0 	0 	0 	149
+punk 	0 	0 	0 	0 	32 	0 	0 	0 	0 	0 	32
+metal 	0 	0 	0 	0 	0 	78 	0 	0 	0 	0 	78
+pop 	0 	1 	0 	0 	0 	0 	264 	0 	0 	0 	265
+rock 	0 	0 	0 	0 	0 	0 	0 	123 	0 	0 	123
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	69 	0 	69
+alter 	0 	0 	0 	1 	0 	0 	0 	0 	0 	59 	60
+Got	80 	75 	71 	149 	32 	78 	264 	123 	69 	59 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	3 	1 	1 	1 	1 	1 	2 	1 	0 	0 	11
+elect 	1 	1 	0 	4 	1 	3 	4 	1 	0 	0 	15
+indie 	2 	3 	0 	4 	0 	2 	3 	3 	0 	0 	17
+hipho 	2 	1 	0 	18 	1 	1 	3 	2 	0 	0 	28
+punk 	0 	0 	0 	2 	0 	0 	1 	0 	0 	0 	3
+metal 	0 	1 	1 	0 	0 	2 	3 	0 	0 	1 	8
+pop 	1 	3 	0 	10 	2 	0 	22 	2 	1 	3 	44
+rock 	4 	2 	1 	5 	3 	0 	7 	4 	1 	2 	29
+blues 	1 	1 	1 	6 	0 	0 	6 	3 	3 	1 	22
+alter 	3 	2 	1 	5 	1 	2 	3 	2 	0 	4 	23
+Got	17 	15 	5 	55 	9 	11 	54 	18 	5 	11 	200
+
+Error checking:  5.415077  s
+Genre Train Error:  0.003
+Genre Test Error:  0.715  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.222098  s
+Extract genre features:  5.515685  s
+B =  0
+Average norm =  1071.08995141
+Number of features = 263639
+Train genre Classifier:  53.502109  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	68 	0 	0 	0 	0 	0 	0 	0 	0 	0 	68
+elect 	0 	79 	1 	0 	0 	0 	0 	0 	0 	0 	80
+indie 	0 	1 	76 	0 	0 	0 	0 	0 	0 	0 	77
+hipho 	0 	0 	0 	148 	0 	0 	0 	0 	0 	0 	148
+punk 	0 	0 	0 	0 	32 	0 	0 	0 	0 	0 	32
+metal 	0 	0 	0 	0 	0 	72 	0 	0 	0 	0 	72
+pop 	0 	1 	0 	4 	0 	0 	245 	1 	0 	0 	251
+rock 	0 	0 	0 	0 	0 	0 	2 	116 	0 	0 	118
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	71 	1 	72
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	82 	82
+Got	68 	81 	77 	152 	32 	72 	247 	117 	71 	83 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	6 	2 	2 	4 	0 	1 	2 	0 	0 	2 	19
+elect 	1 	3 	0 	3 	0 	0 	2 	0 	0 	2 	11
+indie 	2 	1 	1 	5 	0 	0 	2 	0 	1 	3 	15
+hipho 	1 	2 	0 	23 	0 	1 	1 	0 	0 	0 	28
+punk 	2 	1 	0 	0 	1 	1 	0 	0 	0 	0 	5
+metal 	1 	2 	1 	4 	0 	7 	1 	2 	0 	1 	19
+pop 	2 	9 	0 	17 	0 	1 	20 	1 	0 	4 	54
+rock 	4 	3 	3 	4 	0 	1 	3 	5 	0 	4 	27
+blues 	1 	1 	0 	3 	0 	0 	2 	0 	1 	2 	10
+alter 	0 	2 	2 	5 	0 	0 	0 	0 	1 	2 	12
+Got	20 	26 	9 	68 	1 	12 	33 	8 	3 	20 	200
+
+Error checking:  5.330082  s
+Genre Train Error:  0.011
+Genre Test Error:  0.655  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.216931  s
+Extract genre features:  5.505694  s
+B =  0
+Average norm =  1007.37462564
+Number of features = 262958
+Train genre Classifier:  63.1829  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	79 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79
+elect 	0 	77 	0 	0 	0 	0 	0 	0 	0 	0 	77
+indie 	0 	0 	72 	0 	0 	0 	0 	0 	0 	0 	72
+hipho 	0 	0 	1 	147 	0 	0 	1 	0 	0 	0 	149
+punk 	0 	0 	0 	0 	28 	0 	0 	0 	0 	0 	28
+metal 	0 	0 	0 	0 	0 	75 	0 	0 	0 	0 	75
+pop 	0 	0 	1 	1 	0 	0 	257 	0 	0 	0 	259
+rock 	0 	0 	0 	0 	0 	0 	3 	117 	0 	0 	120
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	68 	0 	68
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	73 	73
+Got	79 	77 	74 	148 	28 	75 	261 	117 	68 	73 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	1 	0 	1 	4 	0 	0 	5 	3 	0 	0 	14
+elect 	2 	0 	2 	3 	0 	0 	7 	0 	0 	0 	14
+indie 	0 	0 	4 	1 	0 	0 	5 	2 	0 	1 	13
+hipho 	0 	0 	0 	23 	0 	0 	3 	3 	1 	1 	31
+punk 	0 	0 	1 	0 	0 	0 	3 	1 	1 	0 	6
+metal 	1 	1 	2 	4 	0 	3 	3 	1 	0 	0 	15
+pop 	1 	1 	1 	9 	0 	0 	30 	2 	0 	0 	44
+rock 	1 	0 	1 	4 	2 	2 	4 	8 	0 	2 	24
+blues 	3 	3 	0 	8 	0 	1 	3 	2 	3 	1 	24
+alter 	2 	0 	0 	3 	0 	0 	3 	5 	0 	2 	15
+Got	11 	5 	12 	59 	2 	6 	66 	27 	5 	7 	200
+
+Error checking:  5.405431  s
+Genre Train Error:  0.007
+Genre Test Error:  0.63  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.228288  s
+Extract genre features:  5.547198  s
+B =  0
+Average norm =  1024.18869273
+Number of features = 260839
+Train genre Classifier:  72.932523  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	72 	0 	0 	0 	0 	0 	0 	0 	0 	0 	72
+elect 	0 	67 	1 	0 	0 	0 	0 	0 	0 	0 	68
+indie 	0 	0 	80 	0 	0 	0 	0 	0 	0 	0 	80
+hipho 	1 	0 	0 	134 	0 	0 	3 	1 	2 	0 	141
+punk 	0 	0 	0 	0 	27 	0 	0 	0 	0 	0 	27
+metal 	0 	0 	0 	0 	0 	73 	0 	0 	0 	0 	73
+pop 	0 	0 	0 	0 	0 	0 	261 	2 	0 	0 	263
+rock 	0 	0 	0 	0 	0 	0 	0 	127 	0 	0 	127
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	72 	72
+Got	73 	67 	81 	134 	27 	73 	264 	130 	79 	72 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	3 	0 	1 	0 	1 	3 	3 	1 	4 	0 	16
+elect 	0 	1 	2 	1 	1 	2 	8 	1 	1 	0 	17
+indie 	2 	0 	3 	0 	0 	0 	3 	2 	1 	0 	11
+hipho 	2 	0 	1 	11 	2 	0 	11 	4 	1 	0 	32
+punk 	0 	1 	0 	0 	0 	0 	2 	2 	2 	1 	8
+metal 	1 	0 	2 	0 	0 	3 	5 	3 	0 	0 	14
+pop 	4 	4 	4 	2 	0 	3 	27 	4 	2 	1 	51
+rock 	1 	1 	2 	0 	0 	2 	7 	4 	1 	2 	20
+blues 	3 	0 	2 	0 	0 	0 	3 	1 	9 	0 	18
+alter 	1 	0 	4 	0 	1 	0 	2 	3 	1 	1 	13
+Got	17 	7 	21 	14 	5 	13 	71 	25 	22 	5 	200
+
+Error checking:  5.617578  s
+Genre Train Error:  0.01
+Genre Test Error:  0.69  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.373793  s
+Extract genre features:  5.497249  s
+B =  0
+Average norm =  975.909946451
+Number of features = 265892
+Train genre Classifier:  81.702047  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	71 	0 	0 	0 	0 	0 	0 	0 	0 	0 	71
+elect 	0 	84 	0 	1 	0 	0 	0 	0 	0 	1 	86
+indie 	0 	0 	76 	0 	0 	0 	0 	0 	0 	1 	77
+hipho 	0 	0 	0 	141 	0 	0 	1 	0 	0 	0 	142
+punk 	0 	0 	0 	0 	29 	0 	0 	0 	0 	0 	29
+metal 	0 	0 	0 	0 	0 	88 	0 	0 	0 	0 	88
+pop 	0 	0 	0 	0 	0 	0 	241 	0 	0 	0 	241
+rock 	0 	0 	0 	0 	0 	0 	1 	118 	0 	0 	119
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	74 	0 	74
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	73 	73
+Got	71 	84 	76 	142 	29 	88 	243 	118 	74 	75 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	1 	6 	2 	0 	0 	3 	3 	0 	0 	17
+elect 	0 	1 	2 	1 	0 	1 	7 	1 	0 	0 	13
+indie 	0 	1 	4 	2 	0 	2 	2 	2 	0 	2 	15
+hipho 	0 	0 	4 	17 	0 	0 	11 	0 	0 	0 	32
+punk 	0 	0 	0 	1 	1 	0 	0 	0 	0 	0 	2
+metal 	0 	0 	3 	0 	0 	1 	0 	0 	0 	1 	5
+pop 	1 	0 	2 	6 	0 	1 	30 	5 	2 	6 	53
+rock 	2 	1 	8 	3 	0 	4 	6 	5 	1 	1 	31
+blues 	0 	0 	4 	2 	0 	0 	3 	1 	3 	1 	14
+alter 	0 	0 	2 	5 	0 	2 	2 	3 	1 	3 	18
+Got	5 	4 	35 	39 	1 	11 	64 	20 	7 	14 	200
+
+Error checking:  5.427143  s
+Genre Train Error:  0.005
+Genre Test Error:  0.665  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.222883  s
+Extract genre features:  5.407806  s
+B =  0
+Average norm =  1061.14650162
+Number of features = 261358
+Train genre Classifier:  89.229649  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74
+elect 	0 	82 	0 	0 	0 	0 	0 	0 	0 	0 	82
+indie 	0 	0 	78 	0 	0 	0 	0 	0 	0 	0 	78
+hipho 	0 	0 	0 	139 	0 	0 	0 	0 	0 	0 	139
+punk 	0 	0 	0 	0 	27 	0 	0 	0 	0 	0 	27
+metal 	0 	0 	0 	0 	0 	71 	0 	0 	0 	0 	71
+pop 	1 	0 	0 	1 	0 	0 	248 	1 	1 	0 	252
+rock 	0 	0 	0 	0 	0 	0 	0 	125 	0 	0 	125
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	77 	0 	77
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	75 	75
+Got	75 	82 	78 	140 	27 	71 	248 	126 	78 	75 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	4 	0 	1 	2 	2 	2 	0 	2 	3 	1 	17
+elect 	1 	2 	1 	0 	2 	2 	3 	3 	0 	1 	15
+indie 	2 	1 	1 	1 	1 	1 	3 	2 	0 	1 	13
+hipho 	2 	1 	0 	16 	2 	0 	3 	1 	2 	0 	27
+punk 	2 	0 	0 	1 	0 	1 	0 	1 	2 	1 	8
+metal 	1 	1 	1 	3 	1 	5 	1 	2 	1 	1 	17
+pop 	5 	1 	2 	9 	2 	3 	17 	3 	4 	8 	54
+rock 	1 	1 	0 	2 	0 	0 	4 	6 	0 	13 	27
+blues 	1 	0 	1 	2 	0 	0 	0 	1 	3 	0 	8
+alter 	2 	2 	0 	4 	0 	0 	0 	5 	0 	1 	14
+Got	21 	9 	7 	40 	10 	14 	31 	26 	15 	27 	200
+
+Error checking:  5.599313  s
+Genre Train Error:  0.004
+Genre Test Error:  0.725  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.236881  s
+Extract genre features:  5.539289  s
+B =  0
+Average norm =  1080.75349566
+Number of features = 262939
+Train genre Classifier:  97.535942  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	76 	0 	0 	0 	0 	0 	0 	0 	0 	0 	76
+elect 	0 	75 	0 	0 	0 	0 	0 	0 	0 	0 	75
+indie 	0 	0 	78 	0 	0 	0 	0 	0 	0 	0 	78
+hipho 	0 	0 	0 	155 	0 	0 	0 	0 	0 	0 	155
+punk 	0 	0 	0 	0 	27 	0 	0 	0 	0 	0 	27
+metal 	0 	0 	0 	0 	0 	72 	0 	0 	0 	0 	72
+pop 	0 	0 	0 	1 	0 	0 	244 	1 	0 	0 	246
+rock 	0 	0 	0 	0 	0 	0 	1 	123 	0 	0 	124
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	72 	0 	72
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	75 	75
+Got	76 	75 	78 	156 	27 	72 	245 	124 	72 	75 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	0 	4 	0 	0 	2 	2 	1 	1 	12
+elect 	1 	0 	1 	0 	0 	2 	3 	3 	3 	1 	14
+indie 	2 	0 	2 	1 	0 	1 	2 	3 	1 	2 	14
+hipho 	0 	1 	0 	16 	0 	0 	2 	1 	0 	2 	22
+punk 	0 	0 	0 	1 	0 	0 	0 	2 	1 	1 	5
+metal 	0 	1 	0 	5 	0 	1 	0 	4 	1 	1 	13
+pop 	2 	3 	3 	14 	1 	2 	30 	3 	0 	3 	61
+rock 	1 	2 	0 	5 	1 	1 	7 	3 	0 	4 	24
+blues 	1 	2 	0 	4 	0 	0 	4 	0 	4 	1 	16
+alter 	0 	2 	1 	5 	0 	1 	4 	3 	1 	2 	19
+Got	9 	11 	7 	55 	2 	8 	54 	24 	12 	18 	200
+
+Error checking:  5.610023  s
+Genre Train Error:  0.003
+Genre Test Error:  0.7  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.362698  s
+Extract genre features:  5.545997  s
+B =  0
+Average norm =  965.127359321
+Number of features = 259824
+Train genre Classifier:  53.926699  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	79 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79
+elect 	0 	78 	0 	0 	0 	0 	0 	0 	0 	0 	78
+indie 	0 	1 	75 	0 	0 	0 	0 	0 	1 	0 	77
+hipho 	0 	0 	0 	139 	0 	0 	1 	0 	0 	0 	140
+punk 	0 	0 	0 	0 	27 	0 	0 	0 	0 	0 	27
+metal 	0 	0 	0 	0 	0 	71 	0 	0 	0 	0 	71
+pop 	0 	0 	0 	0 	0 	0 	246 	0 	0 	0 	246
+rock 	0 	0 	0 	0 	0 	0 	1 	130 	0 	0 	131
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	83 	0 	83
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	68 	68
+Got	79 	79 	75 	139 	27 	71 	248 	130 	84 	68 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	1 	1 	0 	0 	5 	0 	0 	0 	9
+elect 	0 	3 	0 	2 	1 	0 	1 	2 	2 	1 	12
+indie 	1 	1 	1 	0 	0 	1 	3 	2 	0 	1 	10
+hipho 	1 	3 	1 	25 	0 	0 	8 	2 	0 	0 	40
+punk 	0 	1 	0 	2 	0 	0 	1 	0 	1 	1 	6
+metal 	0 	1 	1 	1 	1 	4 	5 	2 	0 	1 	16
+pop 	1 	6 	1 	8 	0 	2 	32 	8 	2 	1 	61
+rock 	1 	1 	1 	1 	0 	1 	6 	6 	0 	2 	19
+blues 	1 	0 	0 	2 	0 	1 	4 	2 	0 	0 	10
+alter 	3 	2 	0 	3 	0 	0 	2 	6 	0 	1 	17
+Got	10 	18 	6 	45 	2 	9 	67 	30 	5 	8 	200
+
+Error checking:  5.686677  s
+Genre Train Error:  0.004
+Genre Test Error:  0.63  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.214326  s
+Extract genre features:  5.61783  s
+B =  0
+Average norm =  927.109751693
+Number of features = 262011
+Train genre Classifier:  64.002626  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74
+elect 	0 	68 	0 	0 	0 	0 	0 	0 	0 	0 	68
+indie 	0 	0 	80 	0 	0 	0 	0 	0 	0 	0 	80
+hipho 	0 	0 	0 	150 	0 	0 	0 	0 	0 	0 	150
+punk 	0 	0 	0 	0 	25 	0 	0 	0 	0 	0 	25
+metal 	0 	0 	0 	0 	0 	70 	0 	0 	0 	0 	70
+pop 	0 	0 	0 	1 	0 	0 	257 	0 	0 	0 	258
+rock 	0 	0 	0 	0 	0 	0 	0 	125 	0 	0 	125
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	81 	0 	81
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	69 	69
+Got	74 	68 	80 	151 	25 	70 	257 	125 	81 	69 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	0 	2 	0 	0 	2 	2 	2 	0 	10
+elect 	2 	4 	3 	2 	0 	1 	6 	1 	1 	2 	22
+indie 	2 	0 	0 	1 	0 	0 	3 	2 	1 	0 	9
+hipho 	1 	1 	1 	16 	0 	0 	5 	0 	2 	2 	28
+punk 	1 	0 	0 	0 	1 	0 	2 	2 	0 	1 	7
+metal 	2 	0 	0 	2 	1 	4 	4 	2 	0 	3 	18
+pop 	4 	0 	2 	4 	0 	0 	34 	3 	3 	0 	50
+rock 	2 	1 	5 	2 	1 	1 	6 	3 	3 	2 	26
+blues 	1 	0 	0 	0 	0 	0 	5 	1 	2 	2 	11
+alter 	5 	0 	0 	2 	1 	0 	4 	4 	1 	2 	19
+Got	22 	6 	11 	31 	4 	6 	71 	20 	15 	14 	200
+
+Error checking:  5.487761  s
+Genre Train Error:  0.001
+Genre Test Error:  0.66  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.217128  s
+Extract genre features:  5.587503  s
+B =  0
+Average norm =  958.533831852
+Number of features = 263029
+Train genre Classifier:  70.641215  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	79 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79
+elect 	0 	81 	0 	0 	0 	0 	0 	0 	0 	0 	81
+indie 	0 	0 	73 	0 	0 	0 	0 	0 	0 	0 	73
+hipho 	0 	0 	0 	150 	0 	0 	1 	0 	0 	0 	151
+punk 	0 	0 	0 	0 	25 	0 	0 	0 	0 	0 	25
+metal 	0 	0 	0 	0 	0 	74 	0 	0 	0 	0 	74
+pop 	0 	0 	0 	2 	0 	0 	248 	2 	0 	0 	252
+rock 	0 	0 	0 	0 	0 	0 	0 	120 	0 	0 	120
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	74 	0 	74
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	71 	71
+Got	79 	81 	73 	152 	25 	74 	249 	122 	74 	71 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	1 	2 	0 	0 	2 	3 	0 	0 	10
+elect 	0 	3 	0 	0 	0 	1 	5 	0 	2 	1 	12
+indie 	0 	1 	0 	1 	0 	1 	1 	6 	1 	4 	15
+hipho 	0 	0 	1 	19 	0 	0 	3 	0 	1 	0 	24
+punk 	0 	1 	0 	1 	0 	0 	2 	0 	0 	0 	4
+metal 	0 	2 	1 	1 	0 	4 	1 	4 	1 	1 	15
+pop 	3 	0 	3 	7 	0 	1 	27 	5 	5 	5 	56
+rock 	3 	2 	0 	4 	0 	0 	4 	9 	3 	2 	27
+blues 	5 	0 	0 	3 	0 	0 	7 	1 	3 	0 	19
+alter 	0 	0 	0 	4 	1 	3 	4 	2 	1 	3 	18
+Got	13 	9 	6 	42 	1 	10 	56 	30 	17 	16 	200
+
+Error checking:  5.344776  s
+Genre Train Error:  0.005
+Genre Test Error:  0.65  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.224325  s
+Extract genre features:  5.494033  s
+B =  0
+Average norm =  1047.22698474
+Number of features = 263525
+Train genre Classifier:  80.691439  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	74
+elect 	0 	73 	1 	0 	0 	0 	0 	0 	0 	0 	74
+indie 	0 	0 	67 	0 	0 	0 	0 	0 	0 	0 	67
+hipho 	0 	0 	0 	144 	0 	0 	2 	0 	0 	0 	146
+punk 	0 	0 	0 	0 	24 	0 	0 	0 	0 	0 	24
+metal 	0 	0 	0 	0 	0 	80 	0 	0 	0 	0 	80
+pop 	0 	0 	1 	0 	0 	0 	259 	1 	0 	0 	261
+rock 	0 	0 	0 	0 	0 	0 	0 	132 	0 	0 	132
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	73 	0 	73
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	69 	69
+Got	74 	73 	69 	144 	24 	80 	261 	133 	73 	69 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	1 	0 	4 	2 	0 	1 	4 	3 	0 	1 	16
+elect 	0 	4 	1 	0 	0 	3 	6 	3 	0 	0 	17
+indie 	0 	0 	0 	1 	0 	2 	8 	3 	0 	0 	14
+hipho 	1 	3 	1 	18 	0 	1 	4 	1 	0 	3 	32
+punk 	0 	0 	0 	1 	0 	0 	3 	2 	0 	1 	7
+metal 	0 	1 	2 	1 	0 	1 	3 	3 	0 	1 	12
+pop 	2 	1 	3 	8 	0 	1 	27 	4 	0 	4 	50
+rock 	0 	1 	2 	0 	0 	3 	6 	6 	0 	1 	19
+blues 	1 	0 	1 	5 	0 	0 	4 	1 	2 	0 	14
+alter 	1 	1 	3 	2 	2 	0 	3 	3 	0 	4 	19
+Got	6 	11 	17 	38 	2 	12 	68 	29 	2 	15 	200
+
+Error checking:  5.569759  s
+Genre Train Error:  0.005
+Genre Test Error:  0.685  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.341853  s
+Extract genre features:  5.531885  s
+B =  0
+Average norm =  1018.84131087
+Number of features = 255763
+Train genre Classifier:  86.897126  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	78 	0 	0 	0 	0 	0 	0 	0 	0 	0 	78
+elect 	0 	71 	1 	0 	0 	0 	0 	0 	0 	0 	72
+indie 	0 	0 	72 	0 	0 	0 	0 	0 	0 	0 	72
+hipho 	0 	0 	0 	138 	0 	0 	0 	0 	0 	0 	138
+punk 	0 	0 	0 	0 	24 	0 	0 	0 	0 	0 	24
+metal 	0 	0 	0 	0 	0 	78 	0 	0 	0 	0 	78
+pop 	0 	0 	0 	1 	0 	0 	258 	1 	0 	0 	260
+rock 	0 	0 	0 	0 	0 	0 	0 	130 	0 	0 	130
+blues 	0 	1 	0 	0 	0 	0 	0 	0 	78 	0 	79
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	69 	69
+Got	78 	72 	73 	139 	24 	78 	258 	131 	78 	69 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	0 	1 	1 	4 	0 	1 	5 	4 	0 	0 	16
+elect 	1 	2 	3 	2 	0 	2 	2 	1 	1 	0 	14
+indie 	3 	1 	3 	0 	1 	1 	3 	6 	1 	0 	19
+hipho 	0 	0 	0 	19 	2 	0 	5 	0 	0 	0 	26
+punk 	0 	1 	0 	1 	0 	1 	0 	3 	1 	0 	7
+metal 	1 	2 	0 	2 	0 	4 	3 	1 	0 	0 	13
+pop 	1 	3 	1 	7 	4 	2 	22 	6 	2 	2 	50
+rock 	2 	0 	3 	1 	0 	2 	9 	6 	0 	0 	23
+blues 	0 	0 	0 	2 	1 	0 	6 	0 	5 	1 	15
+alter 	0 	0 	0 	3 	0 	1 	2 	6 	1 	4 	17
+Got	8 	10 	11 	41 	8 	14 	57 	33 	11 	7 	200
+
+Error checking:  5.379237  s
+Genre Train Error:  0.004
+Genre Test Error:  0.675  with 10 genre labels
+Total number of songs =  1361
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.211689  s
+Extract genre features:  5.470325  s
+B =  0
+Average norm =  1030.9854956
+Number of features = 256771
+Train genre Classifier:  93.51557  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	78 	0 	0 	0 	0 	0 	0 	0 	0 	0 	78
+elect 	0 	79 	0 	0 	0 	0 	0 	0 	0 	0 	79
+indie 	0 	0 	84 	0 	0 	0 	0 	0 	0 	0 	84
+hipho 	0 	0 	0 	142 	0 	0 	0 	0 	0 	0 	142
+punk 	0 	0 	0 	0 	29 	0 	0 	0 	0 	0 	29
+metal 	0 	0 	0 	0 	0 	70 	0 	0 	0 	0 	70
+pop 	1 	0 	0 	1 	0 	0 	245 	0 	0 	0 	247
+rock 	1 	0 	0 	0 	0 	0 	1 	124 	0 	0 	126
+blues 	0 	0 	0 	0 	0 	0 	0 	0 	67 	0 	67
+alter 	0 	0 	0 	0 	0 	0 	0 	0 	0 	78 	78
+Got	80 	79 	84 	143 	29 	70 	246 	124 	67 	78 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	3 	0 	0 	0 	0 	1 	3 	2 	1 	0 	10
+elect 	2 	2 	0 	7 	1 	0 	5 	0 	0 	2 	19
+indie 	3 	0 	0 	0 	0 	0 	2 	2 	0 	0 	7
+hipho 	2 	2 	0 	27 	0 	0 	5 	0 	0 	1 	37
+punk 	1 	0 	0 	1 	0 	0 	0 	0 	2 	0 	4
+metal 	0 	2 	2 	1 	1 	7 	1 	4 	0 	3 	21
+pop 	4 	4 	0 	11 	0 	2 	25 	5 	1 	3 	55
+rock 	3 	0 	0 	1 	0 	1 	5 	1 	5 	2 	18
+blues 	3 	0 	1 	4 	1 	1 	2 	0 	5 	1 	18
+alter 	0 	0 	0 	2 	0 	1 	1 	2 	2 	3 	11
+Got	21 	10 	3 	54 	3 	13 	49 	16 	16 	15 	200
+
+Error checking:  5.319165  s
+Genre Train Error:  0.004
+Genre Test Error:  0.635  with 10 genre labels
