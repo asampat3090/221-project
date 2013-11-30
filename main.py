@@ -3,7 +3,6 @@ import sys, time
 from Classifier import *
 from features import *
 from loadExamples import *
-from features import *
 
 """
 ARGUMENTS:
@@ -14,6 +13,7 @@ trainingIters:            number of iterations through all the training songs du
 alpha:                      an int from 0 - 100 that will be devided by 100 to obtain the learning rate.
 B:                            the regularization parameter, if set to something higher than 0, norm(w) will never exeed B
 'artist' or 'genre'      which one to classify
+'bigram' or 'trigram' or 'fourgram' which feature extractor to use.
 
 """
 
@@ -22,7 +22,7 @@ def main():
     
     #If arguments were given, read them in:
     #Arguments are: numTrain, numTest, trainingIter, alpha
-    if len(sys.argv) == 8:
+    if len(sys.argv) == 9:
         numLabels = int(sys.argv[1])
         numTrainSongs = int(sys.argv[2])
         numTestSongs = int(sys.argv[3])
@@ -34,10 +34,11 @@ def main():
         elif sys.argv[7] == 'genre':
             isArtist = 0
         else:
-            print "Error, last argument must be either 'genre' or 'artist'!"
+            print "Error, second to the last argument must be either 'genre' or 'artist'!"
+        featureExtractor = sys.argv[8]
     else:
         print "Main function takes 7 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre"
-        print "Using defaults instead: 0 20 20 10 90 0 'genre' (alpha = 90/100 = .9)"
+        print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' (alpha = 90/100 = .9)"
         numLabels = 0 #no preference
         numTrainSongs = 20
         numTestSongs = 20
@@ -45,6 +46,7 @@ def main():
         alpha = 0.9
         B = 0
         isArtist = 0
+        featureExtractor = 'bigram'
     
     #Load lyrics, genres, and artists
     if isArtist:
@@ -57,13 +59,22 @@ def main():
     thisTime = time.clock()
     print "Load examples: ", thisTime - lastTime, ' s'
     lastTime = thisTime
-
+        
     #ARTIST!
     if isArtist:
-        #Extract features
-        artistTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
-        artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]
-
+        #Extracted features based on system arg 
+        if featureExtractor == 'unigram':
+            artistTrainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]   
+        elif featureExtractor == 'bigram':
+            artistTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                
+        elif featureExtractor == 'trigram':
+            artistTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                  
+        else: 
+            artistTrainFeaturesAndLabels = [(extractFourgramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                                      
         thisTime = time.clock()
         print "Extract artist features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
@@ -87,8 +98,19 @@ def main():
     #GENRE!
     else:
         #Features
-        genreTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-        genreTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]
+        #Extracted features based on system arg 
+        if featureExtractor == 'unigram':
+            genreTrainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]     
+        elif featureExtractor == 'bigram':
+            genreTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                
+        elif featureExtractor == 'trigram':
+            genreTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                      
+        else: 
+            genreTrainFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                        
         thisTime = time.clock()
         print "Extract genre features: ", thisTime - lastTime, ' s'
         lastTime = thisTime

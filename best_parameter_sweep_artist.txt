@@ -1,0 +1,2340 @@
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.628764  s
+Extract artist features:  4.406475  s
+B =  0
+Average norm =  109.953142705
+Number of features = 175616
+Train Artist Classifier:  41.089707  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	125 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	125
+Justi 	1 	86 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	88
+The%2 	1 	0 	73 	1 	0 	0 	0 	0 	3 	1 	0 	1 	80
+Rihan 	0 	0 	0 	64 	0 	0 	0 	0 	0 	0 	0 	0 	64
+Pink 	0 	0 	0 	1 	56 	0 	0 	0 	0 	0 	0 	0 	57
+Beatl 	0 	0 	1 	0 	0 	56 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	57
+Maria 	0 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	57
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	0 	0 	51
+Maroo 	0 	0 	1 	1 	0 	0 	1 	0 	0 	51 	0 	0 	54
+Demi% 	0 	0 	0 	1 	0 	0 	0 	1 	0 	0 	53 	0 	55
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	55
+Got	127 	86 	76 	68 	56 	56 	58 	58 	54 	52 	53 	56 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	0 	2 	6 	0 	0 	0 	0 	1 	0 	0 	0 	17
+Justi 	2 	5 	1 	6 	0 	0 	1 	1 	0 	0 	0 	3 	19
+The%2 	3 	1 	2 	2 	1 	0 	3 	1 	0 	0 	0 	1 	14
+Rihan 	1 	0 	0 	3 	0 	0 	0 	1 	3 	0 	0 	1 	9
+Pink 	1 	0 	2 	7 	1 	0 	0 	1 	0 	0 	0 	1 	13
+Beatl 	1 	0 	2 	0 	0 	4 	3 	1 	1 	1 	0 	0 	13
+Taylo 	1 	0 	1 	2 	0 	0 	3 	2 	0 	0 	0 	2 	11
+Maria 	4 	0 	0 	1 	0 	0 	2 	4 	0 	0 	0 	0 	11
+Beyon 	0 	1 	0 	4 	0 	0 	1 	2 	6 	0 	1 	1 	16
+Maroo 	1 	0 	0 	2 	1 	0 	0 	2 	0 	0 	0 	4 	10
+Demi% 	3 	0 	0 	2 	0 	0 	0 	0 	2 	0 	0 	2 	9
+Param 	0 	0 	0 	1 	0 	0 	2 	0 	0 	0 	0 	5 	8
+Got	25 	7 	10 	36 	3 	4 	15 	15 	13 	1 	1 	20 	150
+
+Error checking:  4.741023  s
+Artist Train Error:  0.02
+Artist Test Error:  0.726666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.437367  s
+Extract artist features:  4.377849  s
+B =  0
+Average norm =  195.278938782
+Number of features = 178513
+Train Artist Classifier:  41.721672  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	119 	0 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	121
+Justi 	0 	95 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	95
+The%2 	0 	0 	80 	0 	0 	0 	0 	1 	1 	0 	0 	0 	82
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	1 	0 	0 	60 	0 	0 	0 	0 	0 	0 	61
+Taylo 	0 	0 	0 	0 	0 	0 	51 	0 	0 	0 	0 	0 	51
+Maria 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	0 	0 	52
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	60 	0 	0 	0 	61
+Maroo 	0 	1 	2 	0 	0 	0 	0 	1 	0 	51 	1 	0 	56
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	50
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	54
+Got	119 	96 	86 	61 	56 	60 	51 	54 	61 	51 	51 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	3 	7 	2 	1 	0 	0 	0 	2 	1 	0 	2 	1 	19
+Justi 	4 	9 	2 	1 	0 	0 	0 	0 	0 	0 	0 	0 	16
+The%2 	0 	2 	6 	0 	0 	0 	1 	0 	0 	0 	2 	2 	13
+Rihan 	1 	4 	2 	0 	0 	0 	0 	0 	2 	0 	2 	0 	11
+Pink 	1 	2 	1 	0 	2 	0 	0 	1 	1 	0 	2 	1 	11
+Beatl 	3 	0 	3 	0 	0 	1 	1 	1 	0 	0 	0 	0 	9
+Taylo 	3 	4 	4 	0 	0 	0 	6 	0 	0 	0 	1 	1 	19
+Maria 	3 	2 	2 	0 	0 	0 	1 	5 	1 	0 	1 	0 	15
+Beyon 	0 	3 	0 	0 	0 	0 	0 	0 	1 	0 	1 	0 	5
+Maroo 	0 	2 	0 	1 	0 	1 	1 	1 	0 	2 	0 	0 	8
+Demi% 	0 	2 	2 	2 	1 	1 	0 	0 	0 	0 	5 	1 	14
+Param 	1 	2 	2 	0 	0 	0 	0 	0 	0 	1 	1 	3 	10
+Got	19 	39 	26 	5 	3 	3 	10 	10 	6 	3 	17 	9 	150
+
+Error checking:  4.735932  s
+Artist Train Error:  0.01375
+Artist Test Error:  0.713333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.442598  s
+Extract artist features:  4.42907  s
+B =  0
+Average norm =  280.029520236
+Number of features = 178870
+Train Artist Classifier:  40.951937  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	126 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	126
+Justi 	1 	92 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	94
+The%2 	3 	0 	72 	0 	0 	0 	0 	0 	1 	0 	0 	0 	76
+Rihan 	6 	0 	0 	52 	0 	0 	0 	0 	0 	0 	0 	0 	58
+Pink 	1 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	62
+Beatl 	1 	0 	0 	0 	0 	54 	0 	0 	0 	0 	0 	0 	55
+Taylo 	15 	0 	3 	0 	1 	0 	38 	0 	0 	1 	0 	0 	58
+Maria 	2 	0 	0 	0 	0 	0 	0 	52 	0 	0 	0 	0 	54
+Beyon 	1 	0 	1 	0 	0 	0 	0 	0 	55 	0 	0 	0 	57
+Maroo 	2 	1 	2 	0 	0 	0 	0 	0 	0 	52 	0 	0 	57
+Demi% 	3 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	53
+Param 	1 	0 	0 	0 	1 	0 	0 	0 	0 	0 	0 	48 	50
+Got	162 	93 	79 	52 	63 	54 	38 	52 	56 	53 	50 	48 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	1 	1 	0 	1 	0 	0 	0 	0 	0 	0 	0 	16
+Justi 	10 	4 	1 	0 	0 	0 	0 	1 	1 	0 	0 	0 	17
+The%2 	6 	0 	6 	0 	0 	0 	0 	1 	1 	0 	1 	0 	15
+Rihan 	13 	1 	0 	0 	0 	0 	0 	0 	1 	0 	1 	0 	16
+Pink 	3 	2 	0 	0 	2 	0 	0 	0 	0 	0 	0 	0 	7
+Beatl 	6 	1 	2 	0 	1 	4 	0 	0 	0 	1 	0 	0 	15
+Taylo 	7 	1 	0 	0 	0 	0 	1 	0 	0 	0 	0 	1 	10
+Maria 	8 	0 	0 	0 	0 	0 	0 	5 	1 	0 	0 	0 	14
+Beyon 	8 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9
+Maroo 	6 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	7
+Demi% 	6 	0 	2 	0 	1 	0 	0 	0 	0 	0 	2 	0 	11
+Param 	5 	0 	2 	0 	0 	0 	1 	1 	0 	1 	0 	3 	13
+Got	91 	11 	14 	0 	5 	4 	2 	8 	4 	3 	4 	4 	150
+
+Error checking:  4.720159  s
+Artist Train Error:  0.06
+Artist Test Error:  0.726666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.198256  s
+Extract artist features:  4.38006  s
+B =  0
+Average norm =  348.330151052
+Number of features = 176330
+Train Artist Classifier:  41.252494  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	121 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	123
+Justi 	0 	88 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	89
+The%2 	1 	0 	71 	0 	0 	0 	0 	0 	1 	3 	1 	1 	78
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	1 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	57
+Beatl 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	3 	0 	0 	0 	53 	0 	0 	0 	1 	0 	57
+Maria 	0 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	58
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	49 	0 	0 	0 	49
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	56
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	57 	0 	57
+Param 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	0 	57 	58
+Got	122 	91 	74 	61 	56 	58 	53 	58 	50 	59 	60 	58 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	1 	2 	0 	2 	0 	0 	4 	2 	0 	1 	1 	21
+Justi 	2 	7 	1 	0 	1 	1 	1 	0 	1 	0 	4 	0 	18
+The%2 	0 	3 	4 	0 	0 	1 	0 	1 	1 	0 	4 	1 	15
+Rihan 	1 	2 	0 	2 	1 	0 	0 	3 	0 	0 	4 	0 	13
+Pink 	1 	0 	1 	0 	6 	0 	0 	1 	1 	0 	3 	0 	13
+Beatl 	1 	1 	2 	0 	0 	6 	0 	0 	0 	0 	0 	0 	10
+Taylo 	0 	4 	1 	0 	1 	2 	1 	0 	0 	1 	2 	0 	12
+Maria 	1 	1 	0 	0 	1 	0 	0 	4 	2 	0 	0 	0 	9
+Beyon 	1 	2 	2 	1 	0 	2 	0 	2 	4 	0 	1 	0 	15
+Maroo 	2 	0 	0 	0 	0 	1 	0 	2 	0 	2 	3 	0 	10
+Demi% 	0 	2 	0 	0 	0 	1 	0 	0 	0 	0 	4 	0 	7
+Param 	0 	0 	0 	1 	0 	2 	0 	0 	1 	0 	0 	3 	7
+Got	17 	23 	13 	4 	12 	16 	2 	17 	12 	3 	26 	5 	150
+
+Error checking:  4.734975  s
+Artist Train Error:  0.02
+Artist Test Error:  0.66  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.240474  s
+Extract artist features:  4.355673  s
+B =  0
+Average norm =  439.262174773
+Number of features = 177560
+Train Artist Classifier:  41.287599  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	117 	1 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	119
+Justi 	1 	91 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	92
+The%2 	0 	0 	73 	0 	0 	0 	1 	0 	2 	0 	0 	1 	77
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	0 	0 	0 	0 	63 	0 	0 	0 	0 	0 	63
+Maria 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	56
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	59
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	1 	48 	0 	0 	50
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	0 	56
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	55
+Got	118 	92 	74 	60 	56 	57 	64 	56 	63 	48 	56 	56 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	5 	1 	0 	0 	1 	1 	3 	3 	1 	1 	0 	23
+Justi 	4 	2 	0 	2 	0 	1 	1 	2 	3 	1 	1 	0 	17
+The%2 	1 	1 	4 	1 	0 	3 	2 	1 	2 	1 	1 	0 	17
+Rihan 	2 	0 	0 	2 	0 	2 	1 	1 	3 	0 	2 	0 	13
+Pink 	0 	0 	1 	0 	4 	2 	2 	0 	1 	0 	1 	0 	11
+Beatl 	0 	0 	0 	1 	2 	1 	2 	1 	4 	0 	0 	0 	11
+Taylo 	1 	0 	0 	0 	0 	0 	4 	0 	0 	0 	0 	0 	5
+Maria 	0 	0 	0 	1 	0 	2 	1 	5 	3 	0 	0 	0 	12
+Beyon 	0 	1 	1 	1 	0 	1 	0 	0 	4 	0 	0 	0 	8
+Maroo 	0 	0 	1 	0 	2 	0 	1 	3 	3 	4 	1 	1 	16
+Demi% 	0 	0 	0 	0 	0 	0 	1 	0 	2 	1 	5 	0 	9
+Param 	0 	0 	0 	0 	0 	1 	3 	1 	1 	1 	0 	1 	8
+Got	15 	9 	8 	8 	8 	14 	19 	17 	29 	9 	12 	2 	150
+
+Error checking:  4.851415  s
+Artist Train Error:  0.01125
+Artist Test Error:  0.713333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.263223  s
+Extract artist features:  4.393262  s
+B =  0
+Average norm =  523.546745399
+Number of features = 176335
+Train Artist Classifier:  40.657297  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	122 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	123
+Justi 	0 	88 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	88
+The%2 	1 	0 	74 	0 	0 	1 	0 	0 	0 	1 	0 	0 	77
+Rihan 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	0 	58
+Pink 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	0 	57
+Beatl 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	0 	0 	53
+Taylo 	0 	0 	0 	0 	0 	0 	62 	0 	0 	0 	0 	0 	62
+Maria 	0 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	58
+Beyon 	0 	0 	2 	0 	0 	0 	0 	0 	55 	0 	0 	0 	57
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	55 	0 	0 	56
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	0 	55
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	56
+Got	123 	89 	77 	58 	57 	54 	62 	58 	55 	56 	55 	56 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	7 	0 	0 	0 	0 	1 	0 	0 	0 	1 	1 	18
+Justi 	4 	11 	2 	0 	0 	3 	0 	1 	0 	1 	0 	0 	22
+The%2 	0 	3 	1 	1 	0 	2 	1 	2 	0 	0 	1 	2 	13
+Rihan 	1 	3 	0 	2 	4 	2 	0 	1 	0 	1 	2 	0 	16
+Pink 	0 	0 	2 	1 	4 	2 	1 	0 	0 	1 	1 	1 	13
+Beatl 	0 	4 	0 	1 	0 	6 	2 	0 	0 	1 	1 	0 	15
+Taylo 	0 	1 	0 	0 	1 	0 	2 	0 	1 	1 	0 	1 	7
+Maria 	2 	2 	0 	0 	0 	1 	0 	6 	0 	0 	0 	0 	11
+Beyon 	2 	2 	0 	0 	2 	0 	1 	0 	1 	1 	1 	0 	10
+Maroo 	0 	2 	0 	0 	0 	1 	1 	1 	0 	2 	1 	0 	8
+Demi% 	1 	3 	0 	1 	1 	0 	0 	0 	0 	1 	0 	3 	10
+Param 	0 	0 	0 	0 	0 	0 	4 	0 	1 	0 	0 	2 	7
+Got	18 	38 	5 	6 	12 	17 	13 	11 	3 	9 	8 	10 	150
+
+Error checking:  4.710874  s
+Artist Train Error:  0.00875
+Artist Test Error:  0.7  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.315331  s
+Extract artist features:  4.377322  s
+B =  0
+Average norm =  618.059998268
+Number of features = 176847
+Train Artist Classifier:  41.106652  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	116 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	116
+Justi 	0 	89 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	89
+The%2 	1 	0 	77 	0 	0 	1 	0 	0 	0 	3 	0 	0 	82
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	0 	55
+Taylo 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	61
+Maria 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	59
+Beyon 	0 	0 	2 	0 	0 	0 	0 	0 	57 	0 	0 	0 	59
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	0 	54
+Demi% 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	51 	0 	52
+Param 	0 	0 	1 	0 	1 	0 	1 	0 	0 	0 	0 	46 	49
+Got	117 	89 	80 	63 	62 	57 	62 	59 	57 	57 	51 	46 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	7 	0 	0 	4 	3 	3 	1 	0 	0 	1 	1 	25
+Justi 	3 	6 	2 	0 	7 	0 	1 	2 	0 	0 	0 	0 	21
+The%2 	0 	2 	3 	0 	3 	2 	1 	0 	0 	1 	0 	0 	12
+Rihan 	0 	0 	1 	2 	1 	2 	1 	3 	0 	1 	0 	0 	11
+Pink 	0 	1 	2 	0 	5 	0 	0 	0 	0 	0 	0 	0 	8
+Beatl 	0 	2 	0 	0 	4 	3 	0 	2 	1 	0 	0 	0 	12
+Taylo 	0 	0 	0 	0 	1 	2 	6 	0 	0 	0 	0 	0 	9
+Maria 	1 	0 	0 	0 	0 	3 	1 	5 	0 	0 	0 	0 	10
+Beyon 	0 	1 	0 	0 	2 	2 	1 	0 	0 	1 	0 	0 	7
+Maroo 	0 	3 	0 	0 	1 	1 	1 	1 	1 	4 	0 	0 	12
+Demi% 	0 	0 	0 	1 	6 	0 	1 	0 	0 	0 	0 	0 	8
+Param 	0 	1 	2 	0 	1 	1 	3 	0 	1 	3 	2 	1 	15
+Got	9 	23 	10 	3 	35 	19 	19 	14 	3 	10 	3 	2 	150
+
+Error checking:  5.184083  s
+Artist Train Error:  0.01375
+Artist Test Error:  0.733333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.223895  s
+Extract artist features:  4.416584  s
+B =  0
+Average norm =  682.98237343
+Number of features = 177214
+Train Artist Classifier:  41.563042  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	117 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	117
+Justi 	2 	95 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	98
+The%2 	1 	0 	74 	0 	2 	1 	0 	0 	1 	1 	0 	0 	80
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	0 	0 	0 	50 	0 	0 	0 	0 	0 	0 	50
+Taylo 	0 	0 	1 	0 	0 	0 	57 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	60
+Beyon 	0 	0 	0 	0 	1 	0 	0 	0 	55 	0 	0 	0 	56
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	54 	0 	0 	55
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	54
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	50
+Got	120 	95 	77 	61 	64 	51 	57 	60 	56 	55 	54 	50 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	12 	3 	3 	2 	0 	0 	1 	1 	1 	0 	0 	1 	24
+Justi 	3 	3 	2 	0 	0 	0 	0 	2 	0 	0 	0 	0 	10
+The%2 	2 	1 	2 	4 	0 	1 	0 	1 	0 	0 	2 	0 	13
+Rihan 	8 	0 	1 	2 	0 	0 	0 	0 	1 	1 	0 	0 	13
+Pink 	1 	0 	3 	0 	1 	0 	1 	1 	0 	0 	1 	0 	8
+Beatl 	3 	1 	4 	2 	0 	2 	1 	1 	0 	2 	3 	0 	19
+Taylo 	3 	0 	0 	0 	1 	0 	2 	2 	0 	0 	0 	1 	9
+Maria 	0 	0 	1 	3 	0 	0 	0 	5 	0 	0 	0 	0 	9
+Beyon 	2 	0 	1 	0 	1 	1 	1 	1 	3 	0 	0 	0 	10
+Maroo 	0 	0 	0 	1 	0 	2 	0 	3 	1 	4 	0 	0 	11
+Demi% 	3 	0 	0 	2 	0 	0 	1 	1 	1 	0 	2 	0 	10
+Param 	0 	1 	3 	1 	0 	1 	0 	4 	0 	2 	0 	2 	14
+Got	37 	9 	20 	17 	3 	7 	7 	22 	7 	9 	8 	4 	150
+
+Error checking:  4.787994  s
+Artist Train Error:  0.015
+Artist Test Error:  0.733333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.244584  s
+Extract artist features:  4.382174  s
+B =  0
+Average norm =  782.16610467
+Number of features = 175945
+Train Artist Classifier:  40.338428  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	116 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	118
+Justi 	0 	89 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	89
+The%2 	1 	0 	73 	0 	1 	0 	0 	0 	0 	2 	0 	0 	77
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	0 	59
+Beatl 	0 	0 	1 	0 	0 	63 	0 	0 	0 	0 	0 	0 	64
+Taylo 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	59
+Beyon 	0 	3 	2 	0 	0 	0 	0 	0 	49 	0 	0 	2 	56
+Maroo 	0 	0 	0 	1 	0 	0 	0 	0 	0 	52 	0 	0 	53
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	53
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	51
+Got	117 	94 	76 	64 	60 	63 	58 	59 	49 	54 	53 	53 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	11 	1 	1 	1 	0 	0 	0 	0 	0 	1 	1 	25
+Justi 	4 	10 	2 	0 	0 	0 	0 	0 	0 	1 	0 	2 	19
+The%2 	1 	4 	2 	1 	0 	0 	2 	0 	0 	1 	0 	5 	16
+Rihan 	1 	3 	0 	2 	0 	0 	0 	1 	0 	1 	0 	0 	8
+Pink 	1 	2 	1 	0 	3 	1 	0 	0 	0 	0 	1 	1 	10
+Beatl 	0 	1 	0 	0 	0 	1 	3 	0 	0 	0 	1 	0 	6
+Taylo 	0 	4 	0 	0 	0 	0 	5 	0 	0 	0 	0 	3 	12
+Maria 	1 	2 	0 	1 	0 	0 	1 	4 	0 	0 	0 	1 	10
+Beyon 	2 	1 	0 	2 	0 	2 	0 	0 	3 	0 	0 	0 	10
+Maroo 	0 	3 	1 	0 	0 	1 	0 	0 	0 	4 	0 	1 	10
+Demi% 	1 	2 	1 	0 	1 	0 	1 	0 	0 	0 	0 	4 	10
+Param 	0 	1 	0 	1 	0 	0 	2 	0 	0 	1 	1 	8 	14
+Got	20 	44 	8 	8 	5 	5 	14 	5 	3 	8 	4 	26 	150
+
+Error checking:  4.814602  s
+Artist Train Error:  0.01875
+Artist Test Error:  0.66  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.312561  s
+Extract artist features:  4.448108  s
+B =  0
+Average norm =  108.428139338
+Number of features = 177937
+Train Artist Classifier:  41.417575  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	121
+Justi 	1 	88 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	89
+The%2 	5 	1 	64 	3 	1 	2 	2 	1 	2 	1 	0 	0 	82
+Rihan 	0 	0 	0 	67 	0 	0 	0 	0 	0 	0 	0 	0 	67
+Pink 	1 	0 	0 	0 	57 	1 	0 	0 	0 	0 	0 	0 	59
+Beatl 	0 	0 	0 	0 	0 	58 	0 	0 	1 	0 	0 	0 	59
+Taylo 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	60
+Maria 	0 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	57
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	0 	52
+Maroo 	0 	0 	0 	0 	0 	0 	0 	1 	0 	48 	0 	0 	49
+Demi% 	0 	0 	0 	1 	0 	0 	0 	0 	0 	0 	49 	0 	50
+Param 	0 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	54 	55
+Got	127 	90 	64 	72 	58 	61 	62 	59 	55 	49 	49 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	16 	2 	0 	1 	0 	0 	1 	1 	1 	0 	0 	1 	23
+Justi 	10 	3 	1 	2 	0 	0 	0 	1 	2 	0 	0 	0 	19
+The%2 	6 	0 	1 	1 	1 	0 	0 	0 	1 	0 	0 	1 	11
+Rihan 	5 	1 	0 	1 	0 	0 	0 	1 	0 	0 	0 	0 	8
+Pink 	4 	0 	1 	0 	1 	0 	1 	0 	2 	1 	0 	0 	10
+Beatl 	2 	0 	0 	1 	0 	5 	0 	1 	0 	0 	0 	1 	10
+Taylo 	4 	0 	0 	0 	1 	0 	2 	0 	0 	0 	0 	1 	8
+Maria 	3 	1 	0 	0 	1 	0 	1 	3 	1 	0 	0 	1 	11
+Beyon 	5 	0 	0 	1 	0 	3 	0 	1 	4 	0 	0 	0 	14
+Maroo 	6 	2 	1 	0 	0 	0 	1 	1 	0 	4 	1 	1 	17
+Demi% 	3 	1 	0 	0 	0 	0 	2 	1 	1 	0 	3 	0 	11
+Param 	5 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	3 	8
+Got	69 	10 	4 	7 	4 	8 	8 	10 	12 	5 	4 	9 	150
+
+Error checking:  4.680805  s
+Artist Train Error:  0.0325
+Artist Test Error:  0.693333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.247203  s
+Extract artist features:  4.440349  s
+B =  0
+Average norm =  194.741005892
+Number of features = 178493
+Train Artist Classifier:  41.410924  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	118 	2 	0 	0 	0 	0 	0 	0 	0 	1 	0 	1 	122
+Justi 	1 	89 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	90
+The%2 	0 	1 	75 	0 	0 	0 	1 	0 	1 	1 	0 	1 	80
+Rihan 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	0 	58
+Pink 	0 	0 	0 	0 	52 	0 	0 	0 	0 	1 	0 	0 	53
+Beatl 	0 	0 	0 	0 	0 	63 	1 	0 	0 	0 	0 	0 	64
+Taylo 	0 	0 	0 	0 	0 	0 	59 	0 	0 	1 	0 	0 	60
+Maria 	0 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	61
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	0 	0 	53
+Maroo 	0 	0 	2 	0 	0 	0 	0 	0 	0 	54 	0 	0 	56
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	51
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	52
+Got	119 	92 	77 	58 	52 	63 	61 	61 	54 	58 	51 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	5 	4 	1 	0 	0 	0 	0 	0 	1 	1 	1 	19
+Justi 	2 	8 	0 	0 	1 	0 	1 	0 	2 	4 	0 	0 	18
+The%2 	0 	0 	5 	0 	1 	1 	0 	0 	0 	7 	0 	0 	14
+Rihan 	0 	2 	2 	2 	0 	0 	0 	1 	0 	4 	1 	2 	14
+Pink 	1 	2 	0 	1 	5 	1 	2 	0 	2 	3 	0 	0 	17
+Beatl 	0 	0 	0 	0 	0 	2 	0 	0 	1 	2 	1 	0 	6
+Taylo 	0 	0 	1 	0 	1 	0 	2 	0 	0 	2 	0 	2 	8
+Maria 	2 	1 	0 	1 	0 	0 	0 	1 	0 	2 	0 	0 	7
+Beyon 	1 	2 	3 	1 	0 	0 	0 	0 	0 	4 	0 	1 	12
+Maroo 	0 	2 	0 	0 	0 	0 	0 	0 	0 	4 	1 	2 	9
+Demi% 	2 	3 	1 	1 	0 	1 	0 	0 	1 	2 	3 	0 	14
+Param 	0 	1 	1 	0 	0 	0 	0 	1 	0 	4 	2 	3 	12
+Got	14 	26 	17 	7 	8 	5 	5 	3 	6 	39 	9 	11 	150
+
+Error checking:  4.76928  s
+Artist Train Error:  0.01875
+Artist Test Error:  0.726666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.311867  s
+Extract artist features:  4.433128  s
+B =  0
+Average norm =  278.740423503
+Number of features = 175736
+Train Artist Classifier:  41.359955  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	118 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	119
+Justi 	0 	92 	0 	1 	0 	0 	0 	0 	1 	0 	0 	0 	94
+The%2 	1 	0 	73 	0 	0 	0 	0 	0 	2 	1 	0 	0 	77
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	62 	0 	0 	0 	0 	0 	0 	0 	62
+Beatl 	0 	0 	1 	0 	0 	50 	0 	0 	0 	0 	0 	0 	51
+Taylo 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	0 	0 	54
+Maria 	0 	0 	0 	0 	0 	0 	2 	57 	0 	0 	0 	0 	59
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	59
+Maroo 	0 	0 	2 	0 	0 	0 	0 	0 	0 	53 	0 	0 	55
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	53
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	54
+Got	119 	93 	76 	64 	62 	50 	56 	57 	62 	54 	53 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	10 	3 	3 	1 	2 	0 	1 	0 	1 	0 	0 	0 	21
+Justi 	5 	4 	1 	2 	0 	1 	0 	1 	3 	0 	0 	0 	17
+The%2 	0 	1 	6 	1 	1 	1 	3 	0 	1 	0 	1 	1 	16
+Rihan 	1 	0 	0 	3 	1 	1 	1 	1 	3 	0 	0 	0 	11
+Pink 	1 	1 	2 	1 	0 	0 	1 	0 	1 	0 	1 	0 	8
+Beatl 	1 	3 	5 	2 	0 	3 	1 	0 	2 	1 	0 	0 	18
+Taylo 	1 	0 	1 	0 	0 	0 	8 	0 	0 	1 	1 	0 	12
+Maria 	1 	0 	1 	1 	0 	0 	1 	2 	2 	0 	0 	0 	8
+Beyon 	1 	1 	1 	3 	0 	0 	0 	0 	1 	0 	1 	0 	8
+Maroo 	1 	0 	1 	0 	0 	0 	2 	0 	1 	1 	3 	1 	10
+Demi% 	1 	0 	2 	3 	0 	0 	2 	0 	1 	0 	2 	1 	12
+Param 	0 	1 	4 	0 	0 	0 	2 	0 	0 	1 	0 	1 	9
+Got	23 	14 	27 	17 	4 	6 	22 	4 	16 	4 	9 	4 	150
+
+Error checking:  4.731521  s
+Artist Train Error:  0.015
+Artist Test Error:  0.726666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.212102  s
+Extract artist features:  4.449515  s
+B =  0
+Average norm =  365.645788093
+Number of features = 177902
+Train Artist Classifier:  41.859672  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	110 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	110
+Justi 	0 	97 	0 	0 	0 	0 	0 	0 	0 	0 	2 	0 	99
+The%2 	1 	0 	76 	0 	0 	0 	1 	0 	0 	0 	1 	0 	79
+Rihan 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	2 	0 	60
+Pink 	0 	0 	0 	0 	54 	0 	0 	0 	0 	0 	0 	0 	54
+Beatl 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	61
+Maria 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	60
+Beyon 	0 	1 	1 	0 	0 	0 	0 	0 	54 	0 	0 	0 	56
+Maroo 	0 	0 	0 	0 	0 	0 	1 	0 	0 	54 	0 	0 	55
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	54
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	54 	55
+Got	111 	98 	78 	58 	54 	57 	63 	60 	54 	54 	59 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	5 	2 	0 	2 	0 	4 	4 	0 	1 	9 	0 	33
+Justi 	2 	5 	1 	0 	1 	0 	0 	1 	0 	0 	1 	0 	11
+The%2 	0 	2 	2 	0 	0 	0 	3 	1 	0 	2 	3 	1 	14
+Rihan 	0 	4 	0 	0 	3 	0 	0 	0 	1 	0 	1 	1 	10
+Pink 	0 	2 	1 	0 	2 	0 	1 	1 	2 	0 	4 	0 	13
+Beatl 	0 	1 	3 	1 	0 	2 	2 	3 	0 	0 	1 	0 	13
+Taylo 	0 	0 	3 	0 	0 	0 	3 	0 	0 	0 	2 	0 	8
+Maria 	3 	2 	1 	0 	0 	0 	0 	2 	0 	0 	0 	1 	9
+Beyon 	0 	3 	2 	0 	0 	0 	0 	2 	1 	1 	1 	0 	10
+Maroo 	0 	3 	3 	0 	1 	1 	0 	1 	0 	0 	2 	0 	11
+Demi% 	2 	2 	0 	0 	1 	0 	0 	0 	0 	0 	3 	1 	9
+Param 	0 	3 	0 	0 	0 	0 	2 	1 	0 	1 	2 	0 	9
+Got	13 	32 	18 	1 	10 	3 	15 	16 	4 	5 	29 	4 	150
+
+Error checking:  4.680999  s
+Artist Train Error:  0.01375
+Artist Test Error:  0.826666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.362158  s
+Extract artist features:  4.346811  s
+B =  0
+Average norm =  442.311597817
+Number of features = 175698
+Train Artist Classifier:  42.016955  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	120
+Justi 	0 	82 	1 	0 	1 	0 	0 	1 	3 	0 	0 	0 	88
+The%2 	1 	0 	72 	0 	0 	1 	0 	0 	1 	1 	0 	1 	77
+Rihan 	0 	0 	0 	59 	2 	0 	0 	0 	0 	2 	0 	0 	63
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	0 	0 	0 	66 	0 	0 	0 	0 	0 	0 	66
+Taylo 	0 	0 	1 	0 	0 	0 	58 	0 	0 	0 	0 	0 	59
+Maria 	0 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	57
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	51 	0 	0 	0 	52
+Maroo 	0 	0 	2 	0 	0 	0 	0 	0 	0 	51 	0 	0 	53
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	58 	0 	58
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	51
+Got	121 	82 	77 	59 	59 	67 	58 	58 	55 	54 	58 	52 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	2 	2 	0 	5 	1 	0 	3 	1 	0 	1 	0 	22
+Justi 	1 	5 	2 	0 	7 	1 	1 	0 	5 	0 	1 	0 	23
+The%2 	0 	0 	1 	1 	8 	2 	0 	0 	0 	1 	0 	1 	14
+Rihan 	2 	0 	0 	1 	5 	0 	0 	0 	3 	0 	0 	0 	11
+Pink 	2 	0 	0 	0 	6 	0 	0 	1 	3 	1 	0 	0 	13
+Beatl 	0 	0 	0 	0 	0 	1 	0 	1 	0 	0 	1 	0 	3
+Taylo 	0 	0 	0 	0 	4 	1 	2 	0 	2 	0 	0 	0 	9
+Maria 	0 	0 	0 	0 	1 	1 	1 	6 	0 	1 	0 	1 	11
+Beyon 	1 	0 	1 	0 	7 	1 	0 	1 	3 	0 	0 	0 	14
+Maroo 	1 	0 	0 	0 	5 	2 	0 	0 	0 	2 	0 	1 	11
+Demi% 	1 	0 	0 	0 	2 	0 	0 	0 	2 	0 	1 	0 	6
+Param 	0 	0 	1 	0 	5 	1 	0 	1 	2 	0 	0 	3 	13
+Got	15 	7 	7 	2 	55 	11 	4 	13 	21 	5 	4 	6 	150
+
+Error checking:  4.779876  s
+Artist Train Error:  0.02375
+Artist Test Error:  0.746666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.238633  s
+Extract artist features:  4.383082  s
+B =  0
+Average norm =  528.804211899
+Number of features = 174591
+Train Artist Classifier:  40.442535  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	117 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	118
+Justi 	0 	88 	1 	0 	0 	0 	0 	0 	0 	0 	1 	0 	90
+The%2 	1 	0 	75 	0 	0 	0 	1 	0 	1 	2 	0 	1 	81
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	1 	61
+Pink 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	60
+Beatl 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	0 	55
+Taylo 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	0 	0 	54
+Maria 	0 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	55
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	59 	0 	0 	0 	60
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	55 	0 	1 	57
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	58 	0 	58
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	51
+Got	118 	89 	78 	60 	60 	55 	55 	55 	60 	57 	59 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	4 	1 	0 	2 	2 	0 	2 	2 	1 	3 	2 	24
+Justi 	0 	9 	2 	0 	1 	1 	2 	0 	3 	1 	0 	1 	20
+The%2 	0 	2 	4 	0 	1 	2 	0 	0 	0 	0 	0 	2 	11
+Rihan 	1 	2 	0 	0 	1 	0 	0 	0 	2 	1 	3 	2 	12
+Pink 	0 	1 	0 	1 	2 	0 	0 	0 	1 	2 	2 	0 	9
+Beatl 	1 	0 	4 	0 	0 	3 	1 	1 	0 	0 	1 	1 	12
+Taylo 	0 	0 	1 	0 	2 	1 	2 	0 	1 	1 	1 	4 	13
+Maria 	0 	2 	1 	0 	1 	3 	1 	0 	1 	0 	4 	1 	14
+Beyon 	0 	1 	0 	0 	1 	1 	1 	0 	1 	0 	1 	1 	7
+Maroo 	0 	0 	0 	0 	1 	0 	0 	1 	0 	4 	3 	0 	9
+Demi% 	0 	2 	0 	0 	2 	0 	0 	0 	0 	0 	2 	0 	6
+Param 	1 	1 	0 	1 	0 	1 	2 	1 	0 	4 	1 	1 	13
+Got	8 	24 	13 	2 	14 	14 	9 	5 	11 	14 	21 	15 	150
+
+Error checking:  4.806994  s
+Artist Train Error:  0.01625
+Artist Test Error:  0.78  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.263963  s
+Extract artist features:  4.49116  s
+B =  0
+Average norm =  622.896131563
+Number of features = 179173
+Train Artist Classifier:  40.90921  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	115 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	115
+Justi 	0 	91 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	91
+The%2 	1 	0 	71 	0 	0 	0 	0 	0 	0 	0 	0 	1 	73
+Rihan 	0 	0 	0 	66 	0 	0 	0 	0 	0 	0 	0 	0 	66
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	1 	0 	0 	55 	0 	0 	0 	0 	0 	0 	56
+Taylo 	0 	0 	0 	0 	0 	0 	63 	0 	0 	0 	0 	0 	63
+Maria 	1 	0 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	54
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	55 	0 	0 	0 	56
+Maroo 	0 	0 	2 	1 	0 	0 	0 	0 	0 	53 	1 	1 	58
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	53
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	54
+Got	117 	91 	75 	67 	61 	55 	63 	53 	55 	53 	54 	56 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	12 	11 	1 	0 	1 	0 	1 	0 	2 	0 	0 	0 	28
+Justi 	2 	8 	3 	2 	2 	0 	0 	1 	1 	0 	0 	0 	19
+The%2 	2 	6 	3 	1 	1 	2 	2 	0 	1 	0 	0 	2 	20
+Rihan 	1 	1 	0 	1 	0 	0 	0 	0 	1 	0 	0 	1 	5
+Pink 	0 	2 	1 	0 	2 	1 	1 	0 	0 	0 	1 	1 	9
+Beatl 	1 	3 	3 	0 	2 	3 	0 	0 	1 	0 	0 	0 	13
+Taylo 	1 	1 	1 	0 	0 	0 	3 	0 	0 	0 	0 	0 	6
+Maria 	0 	2 	1 	3 	0 	0 	1 	6 	0 	0 	2 	0 	15
+Beyon 	0 	2 	1 	1 	2 	0 	0 	0 	2 	0 	0 	0 	8
+Maroo 	1 	1 	1 	1 	2 	0 	0 	0 	0 	0 	0 	0 	6
+Demi% 	1 	2 	0 	0 	4 	0 	0 	0 	1 	0 	3 	0 	11
+Param 	1 	2 	1 	1 	1 	0 	1 	1 	0 	0 	0 	2 	10
+Got	22 	41 	16 	10 	17 	6 	9 	8 	9 	0 	6 	6 	150
+
+Error checking:  4.718691  s
+Artist Train Error:  0.0125
+Artist Test Error:  0.7  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.161624  s
+Extract artist features:  4.450968  s
+B =  0
+Average norm =  714.582723871
+Number of features = 178721
+Train Artist Classifier:  41.49242  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	112 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	114
+Justi 	0 	95 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	96
+The%2 	1 	1 	76 	0 	0 	0 	0 	0 	0 	1 	0 	0 	79
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	66 	0 	0 	0 	0 	0 	0 	0 	66
+Beatl 	1 	0 	1 	0 	0 	52 	0 	0 	0 	0 	0 	0 	54
+Taylo 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	61
+Beyon 	1 	0 	0 	0 	0 	0 	0 	0 	53 	0 	0 	0 	54
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	50 	0 	0 	51
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	53
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	53
+Got	115 	98 	78 	61 	66 	52 	58 	61 	53 	51 	54 	53 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	20 	4 	1 	1 	0 	1 	0 	2 	0 	0 	0 	0 	29
+Justi 	1 	3 	1 	1 	0 	1 	0 	0 	0 	2 	3 	0 	12
+The%2 	5 	2 	5 	0 	0 	0 	1 	0 	1 	0 	0 	0 	14
+Rihan 	3 	1 	0 	3 	1 	0 	1 	1 	0 	0 	2 	0 	12
+Pink 	0 	1 	2 	0 	0 	0 	0 	0 	0 	0 	1 	0 	4
+Beatl 	5 	0 	3 	1 	1 	0 	1 	1 	0 	0 	1 	0 	13
+Taylo 	3 	0 	1 	0 	0 	0 	6 	0 	0 	1 	0 	0 	11
+Maria 	4 	1 	0 	0 	0 	0 	0 	1 	0 	0 	1 	0 	7
+Beyon 	5 	3 	1 	1 	0 	0 	0 	0 	0 	0 	3 	0 	13
+Maroo 	3 	3 	1 	0 	0 	1 	0 	0 	0 	3 	3 	0 	14
+Demi% 	2 	1 	2 	1 	0 	0 	1 	0 	0 	1 	3 	0 	11
+Param 	1 	0 	3 	0 	1 	0 	1 	1 	0 	0 	2 	1 	10
+Got	52 	19 	20 	8 	3 	3 	11 	6 	1 	7 	19 	1 	150
+
+Error checking:  4.720104  s
+Artist Train Error:  0.0125
+Artist Test Error:  0.7  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.230732  s
+Extract artist features:  4.422584  s
+B =  0
+Average norm =  745.59881534
+Number of features = 173930
+Train Artist Classifier:  40.894724  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	116 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	117
+Justi 	0 	90 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	90
+The%2 	1 	0 	82 	0 	0 	0 	0 	0 	0 	0 	0 	0 	83
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	1 	0 	0 	57 	0 	0 	0 	0 	0 	0 	58
+Taylo 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	60
+Maria 	0 	1 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	54
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	0 	0 	51
+Maroo 	0 	0 	2 	0 	0 	0 	0 	0 	0 	55 	0 	0 	57
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	58 	0 	58
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	53
+Got	117 	92 	85 	61 	58 	57 	60 	53 	51 	55 	58 	53 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	8 	1 	3 	3 	0 	0 	1 	1 	0 	1 	0 	26
+Justi 	5 	5 	1 	3 	2 	2 	0 	0 	1 	0 	0 	0 	19
+The%2 	1 	0 	3 	1 	3 	0 	2 	0 	1 	1 	0 	0 	12
+Rihan 	2 	2 	0 	2 	4 	1 	1 	0 	1 	0 	0 	0 	13
+Pink 	1 	1 	0 	2 	5 	1 	0 	0 	0 	0 	1 	0 	11
+Beatl 	2 	0 	0 	0 	1 	3 	2 	0 	2 	1 	0 	0 	11
+Taylo 	1 	2 	1 	0 	1 	1 	0 	0 	0 	1 	0 	1 	8
+Maria 	2 	1 	1 	0 	2 	1 	2 	4 	0 	0 	0 	0 	13
+Beyon 	2 	1 	0 	0 	3 	0 	0 	0 	5 	0 	1 	0 	12
+Maroo 	0 	1 	0 	1 	2 	1 	0 	0 	0 	1 	0 	1 	7
+Demi% 	0 	0 	0 	0 	0 	0 	1 	0 	1 	1 	3 	0 	6
+Param 	1 	0 	2 	3 	2 	0 	1 	0 	1 	0 	2 	0 	12
+Got	25 	21 	9 	15 	28 	10 	9 	5 	13 	5 	8 	2 	150
+
+Error checking:  4.788299  s
+Artist Train Error:  0.0075
+Artist Test Error:  0.74  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.222861  s
+Extract artist features:  4.389556  s
+B =  0
+Average norm =  110.402926175
+Number of features = 176231
+Train Artist Classifier:  41.413224  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	113 	1 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	115
+Justi 	0 	92 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	93
+The%2 	1 	1 	75 	0 	0 	0 	1 	0 	1 	1 	0 	0 	80
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	0 	57
+Beatl 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	61
+Taylo 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	1 	0 	0 	0 	57 	0 	0 	0 	0 	58
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	57 	0 	0 	0 	58
+Maroo 	1 	0 	2 	0 	0 	0 	0 	0 	0 	54 	0 	0 	57
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	54
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	47 	48
+Got	115 	94 	79 	62 	57 	61 	59 	57 	58 	55 	56 	47 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	16 	3 	1 	0 	1 	0 	0 	1 	0 	0 	3 	0 	25
+Justi 	6 	7 	0 	0 	1 	0 	1 	0 	2 	0 	0 	0 	17
+The%2 	4 	2 	2 	0 	0 	3 	1 	0 	1 	0 	0 	0 	13
+Rihan 	3 	1 	0 	4 	2 	1 	0 	0 	0 	0 	2 	0 	13
+Pink 	1 	0 	2 	1 	3 	1 	0 	1 	0 	1 	2 	0 	12
+Beatl 	2 	0 	0 	0 	0 	3 	0 	0 	0 	1 	0 	1 	7
+Taylo 	4 	0 	0 	0 	0 	0 	4 	1 	0 	1 	1 	0 	11
+Maria 	2 	0 	0 	2 	0 	0 	0 	3 	3 	1 	0 	0 	11
+Beyon 	1 	1 	0 	1 	0 	1 	0 	0 	5 	0 	0 	0 	9
+Maroo 	2 	1 	0 	0 	0 	1 	1 	0 	0 	2 	1 	0 	8
+Demi% 	3 	2 	0 	0 	1 	0 	1 	0 	1 	0 	1 	0 	9
+Param 	3 	1 	1 	0 	3 	0 	0 	1 	1 	1 	4 	0 	15
+Got	47 	18 	6 	8 	11 	10 	8 	7 	13 	7 	14 	1 	150
+
+Error checking:  4.702008  s
+Artist Train Error:  0.0175
+Artist Test Error:  0.666666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.266425  s
+Extract artist features:  4.43539  s
+B =  0
+Average norm =  193.136916028
+Number of features = 177921
+Train Artist Classifier:  41.065943  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	118 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	119
+Justi 	0 	87 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	88
+The%2 	1 	1 	78 	0 	0 	1 	0 	0 	0 	0 	0 	0 	81
+Rihan 	0 	0 	0 	67 	0 	0 	0 	0 	0 	0 	0 	0 	67
+Pink 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	2 	0 	0 	0 	65 	0 	0 	0 	0 	0 	67
+Maria 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	60
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	55
+Maroo 	1 	0 	1 	0 	0 	0 	0 	0 	0 	50 	0 	0 	52
+Demi% 	1 	0 	0 	0 	1 	0 	0 	0 	0 	0 	43 	0 	45
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	50 	51
+Got	121 	88 	83 	67 	59 	58 	65 	61 	55 	50 	43 	50 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	12 	2 	2 	2 	2 	1 	1 	0 	0 	0 	0 	0 	22
+Justi 	3 	11 	1 	1 	1 	2 	1 	0 	2 	0 	0 	0 	22
+The%2 	1 	0 	6 	0 	0 	0 	0 	0 	2 	1 	0 	2 	12
+Rihan 	1 	0 	1 	2 	0 	0 	0 	1 	1 	0 	0 	0 	6
+Pink 	2 	0 	2 	2 	2 	1 	0 	0 	1 	0 	0 	0 	10
+Beatl 	0 	1 	3 	2 	3 	2 	0 	1 	0 	0 	0 	0 	12
+Taylo 	0 	0 	0 	0 	0 	0 	2 	0 	1 	0 	0 	0 	3
+Maria 	1 	0 	0 	1 	1 	0 	1 	4 	1 	0 	0 	0 	9
+Beyon 	3 	2 	0 	2 	0 	0 	0 	0 	4 	0 	1 	0 	12
+Maroo 	0 	1 	1 	1 	2 	1 	0 	1 	2 	2 	0 	1 	12
+Demi% 	3 	0 	4 	3 	1 	3 	2 	0 	2 	0 	0 	0 	18
+Param 	1 	0 	2 	2 	1 	2 	2 	0 	0 	0 	0 	2 	12
+Got	27 	17 	22 	18 	13 	12 	9 	7 	16 	3 	1 	5 	150
+
+Error checking:  4.727664  s
+Artist Train Error:  0.015
+Artist Test Error:  0.673333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.276069  s
+Extract artist features:  4.462418  s
+B =  0
+Average norm =  277.157871932
+Number of features = 179386
+Train Artist Classifier:  40.775835  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	121 	0 	1 	0 	0 	0 	1 	0 	0 	0 	0 	0 	123
+Justi 	0 	86 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	86
+The%2 	0 	0 	75 	0 	0 	0 	0 	1 	0 	1 	0 	0 	77
+Rihan 	0 	0 	0 	66 	0 	0 	0 	0 	0 	0 	0 	0 	66
+Pink 	0 	0 	1 	0 	58 	0 	0 	0 	0 	0 	0 	0 	59
+Beatl 	0 	0 	1 	0 	0 	60 	0 	0 	0 	0 	0 	0 	61
+Taylo 	0 	0 	1 	0 	0 	0 	56 	0 	0 	0 	0 	0 	57
+Maria 	1 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	0 	55
+Beyon 	0 	0 	1 	0 	0 	0 	0 	2 	53 	0 	0 	0 	56
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	51 	0 	0 	52
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	53
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	55
+Got	122 	86 	81 	66 	58 	60 	57 	57 	53 	52 	53 	55 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	2 	1 	0 	1 	0 	2 	1 	0 	0 	1 	0 	15
+Justi 	2 	9 	2 	1 	5 	0 	3 	0 	0 	0 	2 	0 	24
+The%2 	1 	1 	4 	1 	5 	0 	1 	1 	0 	1 	1 	1 	17
+Rihan 	1 	0 	0 	3 	1 	0 	0 	1 	0 	1 	2 	0 	9
+Pink 	2 	1 	1 	0 	2 	0 	4 	0 	0 	1 	0 	0 	11
+Beatl 	2 	1 	0 	1 	2 	0 	0 	1 	0 	0 	0 	0 	7
+Taylo 	0 	1 	2 	1 	0 	0 	6 	1 	0 	0 	1 	0 	12
+Maria 	2 	0 	0 	1 	1 	0 	3 	4 	0 	0 	1 	0 	12
+Beyon 	0 	1 	0 	1 	0 	0 	0 	4 	2 	1 	0 	0 	9
+Maroo 	0 	0 	0 	0 	1 	0 	5 	1 	0 	6 	1 	0 	14
+Demi% 	1 	0 	0 	0 	2 	0 	1 	3 	0 	2 	1 	0 	10
+Param 	0 	1 	1 	0 	1 	0 	3 	0 	0 	0 	2 	2 	10
+Got	18 	17 	11 	9 	21 	0 	28 	17 	2 	12 	12 	3 	150
+
+Error checking:  4.680041  s
+Artist Train Error:  0.015
+Artist Test Error:  0.693333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.212793  s
+Extract artist features:  4.452961  s
+B =  0
+Average norm =  351.270333322
+Number of features = 179083
+Train Artist Classifier:  41.385275  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	116 	1 	0 	0 	0 	0 	1 	0 	0 	0 	0 	0 	118
+Justi 	0 	92 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	93
+The%2 	0 	0 	72 	0 	2 	2 	2 	0 	0 	1 	0 	1 	80
+Rihan 	0 	0 	0 	67 	0 	0 	0 	0 	0 	0 	0 	0 	67
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	57
+Beyon 	0 	0 	1 	0 	1 	0 	0 	0 	52 	2 	0 	0 	56
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	57 	0 	0 	57
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	44 	0 	44
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	52
+Got	116 	93 	73 	67 	64 	59 	61 	57 	52 	61 	44 	53 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	5 	3 	2 	2 	3 	1 	1 	0 	1 	1 	2 	26
+Justi 	1 	9 	0 	1 	0 	1 	1 	1 	0 	1 	0 	1 	16
+The%2 	1 	1 	2 	2 	0 	0 	2 	1 	0 	2 	0 	1 	12
+Rihan 	1 	1 	0 	1 	1 	1 	1 	1 	0 	1 	0 	0 	8
+Pink 	0 	1 	0 	1 	1 	1 	1 	0 	0 	2 	1 	1 	9
+Beatl 	1 	0 	0 	2 	1 	4 	1 	0 	0 	2 	0 	0 	11
+Taylo 	0 	0 	0 	0 	1 	0 	6 	0 	0 	3 	0 	1 	11
+Maria 	1 	0 	0 	0 	1 	2 	2 	3 	0 	0 	0 	3 	12
+Beyon 	1 	2 	0 	2 	1 	0 	0 	1 	0 	0 	1 	1 	9
+Maroo 	1 	0 	0 	2 	0 	3 	1 	0 	0 	1 	0 	0 	8
+Demi% 	1 	1 	0 	2 	3 	3 	0 	0 	1 	3 	1 	1 	16
+Param 	0 	0 	0 	2 	1 	0 	1 	0 	0 	4 	1 	3 	12
+Got	13 	20 	5 	17 	12 	18 	17 	8 	1 	20 	5 	14 	150
+
+Error checking:  4.707729  s
+Artist Train Error:  0.01875
+Artist Test Error:  0.76  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.262924  s
+Extract artist features:  4.425992  s
+B =  0
+Average norm =  443.936260137
+Number of features = 179927
+Train Artist Classifier:  41.190909  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	121 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	121
+Justi 	1 	88 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	90
+The%2 	1 	0 	78 	0 	0 	0 	0 	0 	0 	1 	0 	0 	80
+Rihan 	0 	0 	0 	64 	0 	0 	0 	0 	0 	0 	0 	0 	64
+Pink 	0 	0 	1 	0 	59 	0 	0 	0 	0 	0 	0 	0 	60
+Beatl 	1 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	61
+Taylo 	0 	0 	1 	0 	0 	0 	59 	0 	0 	0 	0 	0 	60
+Maria 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	59
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	54 	0 	0 	0 	55
+Maroo 	0 	0 	2 	0 	0 	0 	0 	0 	0 	52 	0 	0 	54
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	47 	0 	47
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49 	49
+Got	124 	88 	84 	64 	59 	60 	59 	59 	54 	53 	47 	49 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	2 	2 	1 	0 	0 	0 	1 	4 	1 	3 	0 	23
+Justi 	3 	8 	2 	2 	0 	1 	0 	0 	1 	0 	2 	0 	19
+The%2 	0 	2 	8 	0 	0 	0 	1 	0 	0 	0 	1 	1 	13
+Rihan 	1 	0 	2 	3 	0 	0 	0 	0 	2 	1 	1 	0 	10
+Pink 	2 	0 	2 	0 	2 	0 	0 	0 	0 	0 	1 	0 	7
+Beatl 	0 	0 	1 	0 	2 	2 	1 	0 	0 	0 	1 	1 	8
+Taylo 	1 	0 	4 	0 	0 	0 	2 	0 	1 	0 	2 	0 	10
+Maria 	0 	0 	1 	0 	0 	2 	2 	3 	0 	0 	1 	0 	9
+Beyon 	0 	0 	3 	3 	0 	1 	0 	1 	2 	0 	0 	0 	10
+Maroo 	1 	0 	2 	0 	0 	0 	0 	1 	3 	3 	0 	0 	10
+Demi% 	4 	0 	5 	1 	1 	1 	0 	0 	0 	2 	3 	1 	18
+Param 	1 	0 	1 	2 	0 	0 	0 	1 	2 	2 	0 	4 	13
+Got	22 	12 	33 	12 	5 	7 	6 	7 	15 	9 	15 	7 	150
+
+Error checking:  4.817761  s
+Artist Train Error:  0.0125
+Artist Test Error:  0.673333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.590961  s
+Extract artist features:  4.46292  s
+B =  0
+Average norm =  516.900006598
+Number of features = 177445
+Train Artist Classifier:  42.16056  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	117 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	118
+Justi 	0 	91 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	91
+The%2 	0 	0 	74 	0 	1 	0 	0 	0 	1 	1 	0 	0 	77
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	1 	0 	0 	0 	57 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	0 	54
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	58 	0 	0 	0 	59
+Maroo 	0 	0 	1 	0 	1 	0 	0 	0 	0 	52 	0 	0 	54
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	0 	55
+Param 	0 	0 	1 	0 	1 	0 	0 	0 	0 	0 	0 	51 	53
+Got	117 	91 	79 	63 	64 	57 	57 	54 	59 	53 	55 	51 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	2 	3 	0 	1 	1 	1 	4 	0 	0 	0 	0 	25
+Justi 	6 	5 	1 	0 	2 	0 	1 	1 	0 	0 	0 	0 	16
+The%2 	3 	0 	2 	1 	2 	3 	3 	1 	0 	0 	0 	0 	15
+Rihan 	2 	0 	0 	0 	5 	0 	0 	0 	0 	1 	0 	2 	10
+Pink 	2 	0 	0 	1 	3 	1 	1 	0 	0 	0 	0 	1 	9
+Beatl 	0 	1 	1 	2 	1 	4 	0 	0 	0 	0 	1 	0 	10
+Taylo 	1 	0 	2 	0 	0 	0 	6 	0 	0 	0 	0 	1 	10
+Maria 	1 	1 	1 	0 	3 	2 	1 	5 	0 	0 	0 	0 	14
+Beyon 	1 	0 	0 	3 	0 	1 	0 	0 	2 	0 	0 	1 	8
+Maroo 	1 	0 	1 	0 	4 	1 	0 	0 	0 	2 	0 	2 	11
+Demi% 	2 	1 	1 	1 	1 	0 	1 	0 	0 	2 	1 	0 	10
+Param 	1 	0 	1 	0 	3 	1 	2 	1 	0 	0 	0 	3 	12
+Got	33 	10 	13 	8 	25 	14 	16 	12 	2 	5 	2 	10 	150
+
+Error checking:  5.000904  s
+Artist Train Error:  0.0125
+Artist Test Error:  0.693333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.181379  s
+Extract artist features:  4.350816  s
+B =  0
+Average norm =  600.963835247
+Number of features = 178720
+Train Artist Classifier:  42.237989  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	115 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	115
+Justi 	0 	94 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	95
+The%2 	1 	0 	76 	0 	0 	1 	0 	0 	0 	0 	1 	0 	79
+Rihan 	0 	0 	0 	62 	0 	0 	0 	0 	0 	0 	0 	0 	62
+Pink 	1 	0 	2 	0 	55 	0 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	63
+Taylo 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	57
+Maria 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	56
+Beyon 	0 	0 	2 	0 	0 	0 	0 	0 	50 	0 	0 	0 	52
+Maroo 	2 	0 	3 	0 	0 	1 	0 	0 	0 	49 	0 	0 	55
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	0 	55
+Param 	0 	0 	4 	0 	0 	0 	0 	0 	0 	0 	0 	49 	53
+Got	119 	94 	87 	62 	55 	65 	57 	56 	50 	49 	57 	49 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	3 	4 	0 	1 	0 	0 	5 	1 	0 	0 	0 	27
+Justi 	4 	4 	3 	0 	0 	0 	1 	0 	1 	0 	0 	0 	13
+The%2 	3 	1 	7 	0 	0 	0 	2 	1 	0 	0 	0 	0 	14
+Rihan 	2 	2 	1 	1 	0 	0 	3 	2 	0 	0 	0 	0 	11
+Pink 	3 	1 	3 	0 	3 	0 	0 	0 	0 	0 	1 	0 	11
+Beatl 	1 	0 	1 	0 	0 	1 	0 	1 	0 	1 	1 	0 	6
+Taylo 	4 	1 	6 	0 	0 	0 	1 	1 	0 	0 	0 	0 	13
+Maria 	2 	1 	1 	0 	0 	0 	1 	6 	1 	0 	0 	0 	12
+Beyon 	3 	0 	6 	0 	0 	0 	0 	1 	3 	0 	1 	0 	14
+Maroo 	2 	2 	2 	0 	1 	0 	0 	0 	0 	1 	0 	0 	8
+Demi% 	4 	1 	1 	0 	1 	0 	0 	0 	1 	1 	1 	0 	10
+Param 	1 	0 	3 	0 	0 	0 	1 	2 	2 	0 	1 	1 	11
+Got	42 	16 	38 	1 	6 	1 	9 	19 	9 	3 	5 	1 	150
+
+Error checking:  4.809961  s
+Artist Train Error:  0.02375
+Artist Test Error:  0.72  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.31343  s
+Extract artist features:  4.561481  s
+B =  0
+Average norm =  715.9808995
+Number of features = 179545
+Train Artist Classifier:  42.264993  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	119 	2 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	122
+Justi 	0 	95 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	95
+The%2 	0 	0 	74 	0 	0 	0 	0 	0 	0 	1 	0 	0 	75
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	1 	0 	0 	57 	0 	0 	0 	0 	0 	0 	58
+Taylo 	0 	0 	1 	0 	0 	0 	61 	0 	0 	0 	0 	0 	62
+Maria 	0 	1 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	56
+Beyon 	0 	1 	2 	0 	0 	0 	0 	0 	51 	0 	0 	0 	54
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	52 	0 	0 	53
+Demi% 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	51
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	52
+Got	119 	101 	80 	61 	61 	57 	61 	55 	51 	53 	50 	51 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	5 	1 	2 	1 	0 	2 	0 	0 	0 	0 	0 	19
+Justi 	0 	7 	2 	0 	1 	0 	0 	1 	5 	0 	0 	0 	16
+The%2 	0 	4 	5 	0 	2 	0 	3 	1 	0 	0 	0 	0 	15
+Rihan 	1 	2 	0 	4 	3 	0 	0 	1 	0 	1 	1 	0 	13
+Pink 	0 	0 	0 	0 	4 	0 	2 	0 	1 	0 	1 	1 	9
+Beatl 	0 	2 	0 	1 	1 	1 	1 	1 	1 	0 	2 	0 	10
+Taylo 	0 	1 	0 	1 	0 	0 	4 	0 	0 	0 	1 	0 	7
+Maria 	2 	1 	0 	0 	0 	0 	4 	3 	1 	0 	2 	0 	13
+Beyon 	0 	1 	0 	1 	1 	0 	2 	2 	4 	0 	0 	0 	11
+Maroo 	1 	3 	0 	3 	0 	0 	1 	0 	1 	2 	2 	0 	13
+Demi% 	1 	2 	1 	0 	2 	2 	1 	0 	1 	1 	2 	0 	13
+Param 	0 	1 	3 	2 	0 	0 	0 	0 	1 	0 	2 	2 	11
+Got	13 	29 	12 	14 	15 	3 	20 	9 	15 	4 	13 	3 	150
+
+Error checking:  4.905591  s
+Artist Train Error:  0.01625
+Artist Test Error:  0.693333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.486795  s
+Extract artist features:  4.393374  s
+B =  0
+Average norm =  781.09082527
+Number of features = 177877
+Train Artist Classifier:  41.397323  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	115 	2 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	118
+Justi 	1 	98 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	99
+The%2 	1 	1 	79 	0 	0 	0 	1 	0 	0 	1 	0 	0 	83
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	0 	59
+Beatl 	0 	0 	1 	0 	0 	59 	0 	0 	0 	0 	0 	0 	60
+Taylo 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	61
+Maria 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	59
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	49 	0 	0 	0 	50
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	47 	0 	0 	48
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	54
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49 	49
+Got	117 	101 	82 	60 	59 	59 	62 	59 	49 	48 	55 	49 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	3 	2 	1 	0 	3 	0 	0 	0 	0 	1 	2 	23
+Justi 	1 	6 	1 	1 	0 	0 	0 	1 	0 	0 	0 	0 	10
+The%2 	0 	0 	2 	0 	3 	0 	0 	0 	0 	2 	1 	1 	9
+Rihan 	2 	3 	0 	1 	1 	0 	0 	1 	0 	1 	3 	3 	15
+Pink 	0 	2 	0 	2 	2 	1 	0 	0 	1 	0 	1 	1 	10
+Beatl 	0 	2 	1 	0 	0 	1 	0 	0 	0 	1 	0 	3 	8
+Taylo 	1 	0 	0 	0 	0 	3 	2 	0 	0 	0 	0 	1 	7
+Maria 	2 	0 	0 	1 	0 	0 	2 	2 	0 	0 	1 	2 	10
+Beyon 	2 	0 	2 	2 	0 	3 	0 	0 	1 	0 	2 	2 	14
+Maroo 	0 	2 	2 	2 	1 	1 	1 	2 	0 	0 	1 	6 	18
+Demi% 	0 	2 	0 	0 	0 	1 	0 	1 	0 	0 	3 	4 	11
+Param 	0 	2 	2 	1 	0 	2 	0 	1 	0 	1 	0 	6 	15
+Got	19 	22 	12 	11 	7 	15 	5 	8 	2 	5 	13 	31 	150
+
+Error checking:  4.858593  s
+Artist Train Error:  0.01375
+Artist Test Error:  0.753333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.542923  s
+Extract artist features:  4.435717  s
+B =  0
+Average norm =  110.357429513
+Number of features = 177756
+Train Artist Classifier:  41.936894  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	114 	1 	1 	0 	0 	0 	1 	0 	0 	0 	0 	0 	117
+Justi 	0 	88 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	89
+The%2 	0 	0 	75 	0 	0 	2 	2 	0 	1 	0 	0 	0 	80
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	1 	0 	0 	0 	62 	0 	0 	0 	0 	0 	0 	0 	63
+Beatl 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	0 	0 	53
+Taylo 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	56
+Maria 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	60
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	55
+Maroo 	0 	0 	3 	0 	0 	0 	0 	0 	0 	56 	0 	0 	59
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	52
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	55 	56
+Got	115 	89 	80 	60 	62 	55 	59 	60 	57 	56 	52 	55 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	1 	0 	3 	0 	0 	2 	0 	2 	0 	2 	0 	23
+Justi 	5 	6 	0 	0 	2 	0 	2 	1 	2 	0 	1 	0 	19
+The%2 	3 	1 	2 	1 	2 	0 	2 	1 	0 	0 	1 	2 	15
+Rihan 	2 	2 	1 	1 	3 	1 	0 	0 	0 	0 	4 	0 	14
+Pink 	0 	0 	1 	0 	4 	0 	1 	1 	0 	0 	0 	0 	7
+Beatl 	2 	1 	3 	1 	1 	4 	2 	2 	0 	0 	0 	0 	16
+Taylo 	2 	0 	2 	0 	0 	0 	6 	0 	1 	0 	0 	1 	12
+Maria 	0 	0 	1 	0 	1 	0 	2 	3 	0 	1 	0 	0 	8
+Beyon 	1 	1 	1 	1 	0 	0 	0 	0 	5 	0 	1 	0 	10
+Maroo 	2 	1 	0 	1 	0 	0 	1 	0 	0 	0 	1 	1 	7
+Demi% 	1 	0 	1 	2 	2 	0 	0 	0 	0 	1 	6 	0 	13
+Param 	0 	1 	0 	0 	1 	0 	1 	1 	0 	0 	0 	2 	6
+Got	31 	14 	12 	10 	16 	5 	19 	9 	10 	2 	16 	6 	150
+
+Error checking:  4.772574  s
+Artist Train Error:  0.0175
+Artist Test Error:  0.653333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.263815  s
+Extract artist features:  4.379956  s
+B =  0
+Average norm =  196.147365369
+Number of features = 178213
+Train Artist Classifier:  41.485745  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	117 	2 	2 	0 	0 	1 	0 	0 	0 	0 	0 	0 	122
+Justi 	0 	89 	0 	0 	0 	1 	0 	0 	0 	0 	0 	0 	90
+The%2 	0 	2 	66 	0 	0 	2 	0 	0 	4 	1 	0 	1 	76
+Rihan 	0 	0 	0 	65 	0 	0 	0 	0 	0 	0 	0 	0 	65
+Pink 	0 	0 	0 	0 	56 	2 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	61
+Taylo 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	60
+Maria 	0 	0 	0 	0 	0 	1 	0 	55 	0 	0 	0 	0 	56
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	58
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	1 	53 	0 	0 	54
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	50
+Param 	0 	1 	0 	0 	0 	2 	0 	0 	0 	0 	0 	47 	50
+Got	117 	94 	68 	65 	56 	70 	60 	55 	63 	54 	50 	48 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	9 	0 	0 	0 	2 	0 	0 	1 	1 	0 	0 	19
+Justi 	0 	15 	0 	1 	0 	1 	1 	0 	1 	0 	1 	0 	20
+The%2 	1 	4 	0 	1 	1 	5 	4 	0 	0 	0 	0 	0 	16
+Rihan 	0 	2 	0 	3 	1 	1 	0 	0 	2 	0 	0 	0 	9
+Pink 	1 	2 	0 	0 	4 	2 	0 	0 	2 	0 	1 	0 	12
+Beatl 	0 	2 	0 	1 	0 	5 	0 	0 	0 	0 	1 	0 	9
+Taylo 	0 	4 	0 	0 	0 	1 	1 	0 	0 	0 	1 	0 	7
+Maria 	1 	2 	0 	0 	0 	3 	3 	2 	0 	0 	0 	0 	11
+Beyon 	0 	1 	0 	0 	0 	0 	0 	0 	5 	0 	1 	0 	7
+Maroo 	0 	5 	0 	2 	0 	2 	1 	0 	1 	0 	0 	0 	11
+Demi% 	1 	6 	0 	1 	1 	3 	0 	0 	1 	1 	1 	0 	15
+Param 	1 	5 	0 	0 	1 	1 	1 	0 	2 	1 	0 	2 	14
+Got	11 	57 	0 	9 	8 	26 	11 	2 	15 	3 	6 	2 	150
+
+Error checking:  4.705997  s
+Artist Train Error:  0.02875
+Artist Test Error:  0.706666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.19919  s
+Extract artist features:  4.490755  s
+B =  0
+Average norm =  268.963056272
+Number of features = 179792
+Train Artist Classifier:  41.60275  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	0 	1 	0 	0 	0 	0 	0 	4 	0 	0 	0 	125
+Justi 	1 	89 	1 	0 	0 	0 	0 	0 	1 	0 	0 	0 	92
+The%2 	0 	0 	80 	0 	1 	0 	0 	0 	1 	1 	0 	0 	83
+Rihan 	0 	0 	0 	59 	0 	0 	0 	0 	1 	0 	0 	0 	60
+Pink 	0 	0 	0 	1 	55 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	1 	0 	0 	54 	0 	0 	0 	0 	0 	0 	55
+Taylo 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	55
+Maria 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	60
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	54
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	52
+Demi% 	0 	1 	1 	0 	0 	0 	0 	0 	3 	0 	47 	0 	52
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	55 	56
+Got	121 	90 	85 	60 	56 	54 	55 	60 	64 	53 	47 	55 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	3 	2 	0 	0 	0 	1 	0 	4 	0 	0 	0 	15
+Justi 	1 	2 	0 	0 	1 	1 	0 	0 	9 	0 	0 	0 	14
+The%2 	0 	2 	4 	1 	0 	0 	0 	1 	2 	1 	0 	0 	11
+Rihan 	0 	1 	1 	3 	1 	0 	0 	0 	7 	1 	0 	0 	14
+Pink 	0 	1 	1 	0 	6 	0 	0 	2 	3 	0 	0 	0 	13
+Beatl 	0 	0 	2 	1 	0 	2 	1 	0 	8 	1 	0 	0 	15
+Taylo 	0 	2 	2 	0 	0 	0 	1 	1 	8 	0 	0 	0 	14
+Maria 	1 	0 	0 	0 	1 	0 	0 	5 	1 	0 	0 	0 	8
+Beyon 	0 	0 	1 	3 	0 	0 	0 	1 	7 	0 	0 	0 	12
+Maroo 	0 	0 	3 	2 	0 	0 	0 	1 	2 	4 	0 	0 	12
+Demi% 	1 	2 	0 	1 	1 	0 	0 	1 	5 	1 	1 	0 	13
+Param 	0 	1 	0 	1 	0 	0 	1 	1 	3 	0 	0 	2 	9
+Got	8 	14 	16 	12 	10 	3 	4 	13 	59 	8 	1 	2 	150
+
+Error checking:  4.768546  s
+Artist Train Error:  0.025
+Artist Test Error:  0.72  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.293581  s
+Extract artist features:  4.409559  s
+B =  0
+Average norm =  364.736703061
+Number of features = 176281
+Train Artist Classifier:  40.786186  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	0 	2 	0 	1 	0 	0 	0 	0 	0 	0 	0 	123
+Justi 	0 	85 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	86
+The%2 	0 	0 	78 	0 	1 	0 	1 	0 	0 	2 	0 	0 	82
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	0 	59
+Beatl 	0 	0 	1 	0 	0 	52 	0 	0 	1 	0 	0 	0 	54
+Taylo 	0 	0 	0 	0 	6 	0 	55 	0 	0 	0 	0 	0 	61
+Maria 	0 	0 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	53
+Beyon 	0 	0 	1 	0 	1 	0 	0 	0 	57 	0 	0 	0 	59
+Maroo 	0 	0 	1 	0 	2 	0 	0 	0 	0 	50 	0 	0 	53
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	54
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	55 	56
+Got	120 	85 	85 	60 	70 	52 	56 	53 	58 	52 	54 	55 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	2 	1 	0 	5 	0 	0 	0 	1 	0 	3 	1 	20
+Justi 	4 	3 	2 	1 	7 	0 	0 	1 	1 	0 	2 	1 	22
+The%2 	0 	1 	2 	0 	4 	0 	0 	0 	2 	0 	2 	2 	13
+Rihan 	1 	0 	1 	2 	5 	0 	0 	1 	0 	2 	0 	1 	13
+Pink 	2 	0 	0 	0 	6 	0 	0 	1 	0 	1 	1 	0 	11
+Beatl 	0 	1 	3 	0 	7 	0 	0 	1 	0 	2 	0 	1 	15
+Taylo 	2 	1 	1 	0 	2 	0 	0 	0 	0 	0 	1 	1 	8
+Maria 	3 	0 	0 	0 	2 	0 	0 	7 	0 	0 	0 	3 	15
+Beyon 	0 	0 	0 	0 	2 	0 	0 	0 	1 	0 	1 	0 	4
+Maroo 	2 	0 	0 	0 	3 	0 	0 	1 	0 	4 	0 	2 	12
+Demi% 	2 	0 	0 	0 	6 	0 	0 	0 	0 	0 	0 	1 	9
+Param 	0 	1 	0 	0 	2 	0 	0 	1 	1 	0 	1 	2 	8
+Got	23 	9 	10 	3 	51 	0 	0 	13 	6 	9 	11 	15 	150
+
+Error checking:  4.765892  s
+Artist Train Error:  0.0275
+Artist Test Error:  0.773333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.29745  s
+Extract artist features:  4.414735  s
+B =  0
+Average norm =  440.561715122
+Number of features = 177291
+Train Artist Classifier:  40.806702  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	112 	1 	1 	0 	0 	0 	0 	1 	0 	0 	1 	0 	116
+Justi 	0 	92 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	94
+The%2 	1 	1 	78 	0 	0 	0 	0 	0 	0 	0 	0 	0 	80
+Rihan 	0 	0 	3 	55 	0 	0 	0 	0 	0 	0 	0 	0 	58
+Pink 	0 	0 	0 	0 	65 	0 	0 	0 	0 	1 	0 	0 	66
+Beatl 	0 	0 	1 	0 	0 	58 	0 	0 	0 	0 	0 	0 	59
+Taylo 	0 	0 	1 	0 	0 	0 	57 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	59
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	57 	0 	0 	0 	58
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	52 	0 	0 	53
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	51
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	47 	48
+Got	113 	94 	88 	55 	65 	58 	57 	60 	58 	53 	52 	47 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	4 	4 	0 	0 	1 	1 	3 	2 	2 	1 	0 	25
+Justi 	2 	4 	2 	0 	0 	2 	0 	0 	0 	3 	0 	0 	13
+The%2 	0 	0 	8 	0 	0 	1 	1 	1 	2 	1 	1 	0 	15
+Rihan 	0 	1 	7 	2 	1 	0 	0 	1 	2 	0 	1 	0 	15
+Pink 	0 	0 	0 	0 	2 	0 	0 	0 	1 	1 	0 	0 	4
+Beatl 	0 	0 	2 	1 	0 	2 	0 	1 	1 	2 	2 	0 	11
+Taylo 	1 	0 	4 	0 	0 	2 	3 	0 	0 	0 	1 	0 	11
+Maria 	1 	0 	1 	0 	1 	0 	0 	3 	0 	1 	1 	0 	8
+Beyon 	0 	2 	1 	0 	0 	0 	0 	0 	3 	0 	1 	0 	7
+Maroo 	0 	0 	3 	1 	0 	1 	1 	2 	0 	4 	1 	0 	13
+Demi% 	2 	1 	4 	0 	0 	0 	0 	0 	1 	1 	4 	0 	13
+Param 	2 	0 	4 	0 	0 	0 	2 	1 	2 	2 	0 	2 	15
+Got	15 	12 	40 	4 	4 	9 	8 	12 	14 	17 	13 	2 	150
+
+Error checking:  4.653965  s
+Artist Train Error:  0.02125
+Artist Test Error:  0.706666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.152342  s
+Extract artist features:  4.447483  s
+B =  0
+Average norm =  524.963046401
+Number of features = 178246
+Train Artist Classifier:  41.162176  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	117 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	117
+Justi 	0 	94 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	95
+The%2 	0 	0 	78 	0 	0 	0 	0 	0 	1 	2 	0 	1 	82
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	61
+Beatl 	0 	0 	1 	0 	0 	49 	0 	0 	0 	0 	0 	0 	50
+Taylo 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	55
+Maria 	0 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	55
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	59
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	60
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	50
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	53
+Got	117 	94 	79 	63 	61 	49 	55 	55 	60 	62 	51 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	2 	0 	2 	5 	0 	0 	3 	2 	2 	1 	1 	25
+Justi 	1 	3 	3 	2 	1 	0 	0 	1 	3 	1 	0 	0 	15
+The%2 	1 	0 	5 	0 	1 	1 	1 	0 	1 	0 	0 	1 	11
+Rihan 	2 	0 	1 	2 	2 	0 	0 	0 	1 	2 	0 	0 	10
+Pink 	1 	0 	0 	0 	1 	0 	0 	2 	1 	2 	0 	1 	8
+Beatl 	2 	0 	3 	4 	2 	2 	0 	2 	0 	2 	0 	0 	17
+Taylo 	0 	0 	1 	0 	1 	1 	3 	1 	0 	5 	0 	1 	13
+Maria 	2 	0 	0 	1 	4 	0 	0 	1 	4 	1 	0 	0 	13
+Beyon 	2 	0 	1 	0 	1 	1 	0 	0 	1 	1 	0 	0 	7
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	4 	0 	0 	5
+Demi% 	4 	0 	1 	0 	2 	0 	0 	0 	1 	6 	0 	1 	15
+Param 	2 	0 	0 	0 	0 	0 	1 	1 	0 	6 	0 	1 	11
+Got	24 	5 	16 	11 	20 	5 	5 	11 	14 	32 	1 	6 	150
+
+Error checking:  4.73363  s
+Artist Train Error:  0.0075
+Artist Test Error:  0.8  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.204916  s
+Extract artist features:  4.369877  s
+B =  0
+Average norm =  608.414853144
+Number of features = 178975
+Train Artist Classifier:  41.083336  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	1 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	122
+Justi 	0 	88 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	88
+The%2 	1 	0 	72 	2 	1 	2 	1 	0 	0 	0 	0 	0 	79
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	60
+Taylo 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	58
+Maria 	0 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	61
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	46 	0 	0 	0 	47
+Maroo 	0 	0 	0 	2 	0 	2 	0 	0 	0 	51 	0 	0 	55
+Demi% 	0 	1 	0 	2 	0 	0 	0 	0 	0 	0 	50 	0 	53
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	55 	56
+Got	121 	90 	74 	70 	59 	64 	59 	61 	46 	51 	50 	55 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	3 	1 	2 	0 	3 	1 	1 	2 	0 	0 	3 	21
+Justi 	0 	8 	0 	6 	1 	2 	1 	0 	1 	0 	1 	2 	22
+The%2 	0 	3 	1 	1 	2 	2 	2 	0 	1 	0 	0 	3 	15
+Rihan 	0 	1 	0 	4 	0 	1 	0 	0 	2 	0 	0 	1 	9
+Pink 	2 	1 	1 	0 	1 	2 	0 	0 	0 	0 	0 	0 	7
+Beatl 	0 	0 	1 	2 	1 	5 	0 	1 	0 	0 	0 	0 	10
+Taylo 	0 	0 	0 	3 	0 	3 	5 	0 	0 	0 	0 	0 	11
+Maria 	1 	0 	0 	1 	0 	2 	0 	4 	0 	0 	0 	0 	8
+Beyon 	0 	4 	1 	4 	0 	5 	1 	0 	1 	0 	1 	2 	19
+Maroo 	0 	0 	1 	4 	2 	1 	1 	0 	0 	1 	0 	1 	11
+Demi% 	0 	1 	0 	3 	3 	0 	0 	0 	2 	0 	0 	0 	9
+Param 	0 	0 	0 	2 	0 	0 	1 	0 	0 	0 	0 	5 	8
+Got	8 	21 	6 	32 	10 	26 	12 	6 	9 	1 	2 	17 	150
+
+Error checking:  4.794469  s
+Artist Train Error:  0.0225
+Artist Test Error:  0.733333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.310245  s
+Extract artist features:  4.499264  s
+B =  0
+Average norm =  703.662163775
+Number of features = 177313
+Train Artist Classifier:  41.202386  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	108 	0 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	110
+Justi 	0 	99 	1 	0 	0 	1 	0 	0 	0 	0 	0 	0 	101
+The%2 	0 	0 	77 	0 	0 	1 	0 	0 	0 	0 	0 	0 	78
+Rihan 	0 	0 	1 	62 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	1 	0 	0 	58 	0 	0 	0 	0 	0 	0 	59
+Taylo 	0 	0 	3 	0 	0 	1 	56 	0 	0 	0 	0 	0 	60
+Maria 	0 	0 	1 	0 	0 	0 	0 	53 	0 	0 	0 	0 	54
+Beyon 	0 	0 	3 	0 	0 	0 	0 	0 	50 	0 	0 	0 	53
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	58 	0 	0 	59
+Demi% 	1 	0 	4 	0 	0 	0 	0 	0 	0 	0 	49 	0 	54
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	51
+Got	109 	99 	94 	62 	58 	61 	56 	53 	50 	58 	49 	51 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	4 	6 	0 	0 	4 	0 	3 	2 	0 	1 	1 	32
+Justi 	0 	5 	2 	0 	0 	2 	0 	0 	0 	0 	0 	0 	9
+The%2 	0 	1 	8 	0 	0 	4 	1 	1 	0 	0 	1 	0 	16
+Rihan 	0 	0 	3 	1 	0 	2 	0 	0 	2 	1 	1 	0 	10
+Pink 	1 	0 	6 	0 	2 	1 	0 	1 	0 	0 	0 	0 	11
+Beatl 	0 	2 	2 	0 	0 	3 	0 	0 	0 	0 	1 	0 	8
+Taylo 	0 	0 	5 	0 	0 	2 	2 	0 	0 	0 	0 	0 	9
+Maria 	1 	2 	0 	0 	0 	2 	0 	6 	0 	0 	0 	0 	11
+Beyon 	1 	3 	6 	0 	0 	1 	0 	0 	1 	0 	1 	0 	13
+Maroo 	0 	0 	2 	0 	1 	0 	0 	2 	0 	1 	0 	0 	6
+Demi% 	2 	1 	1 	0 	0 	1 	0 	2 	0 	0 	4 	0 	11
+Param 	0 	1 	6 	0 	0 	1 	0 	1 	0 	0 	3 	2 	14
+Got	16 	19 	47 	1 	3 	23 	3 	16 	5 	2 	12 	3 	150
+
+Error checking:  4.695036  s
+Artist Train Error:  0.02625
+Artist Test Error:  0.693333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.284001  s
+Extract artist features:  4.430951  s
+B =  0
+Average norm =  787.996227697
+Number of features = 176820
+Train Artist Classifier:  41.825347  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	105 	2 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	108
+Justi 	0 	98 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	99
+The%2 	1 	0 	69 	0 	0 	0 	0 	1 	0 	1 	0 	0 	72
+Rihan 	0 	0 	0 	62 	0 	0 	0 	0 	0 	0 	0 	0 	62
+Pink 	0 	0 	1 	0 	59 	0 	0 	0 	0 	0 	0 	0 	60
+Beatl 	0 	0 	0 	0 	0 	63 	0 	1 	0 	0 	0 	0 	64
+Taylo 	0 	0 	0 	0 	0 	0 	66 	0 	0 	0 	0 	0 	66
+Maria 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	56
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	49 	0 	0 	0 	49
+Maroo 	1 	0 	1 	0 	0 	0 	0 	0 	0 	53 	0 	0 	55
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	52
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	56 	57
+Got	107 	100 	73 	62 	59 	63 	66 	58 	49 	54 	53 	56 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	10 	4 	7 	1 	0 	2 	1 	2 	1 	1 	3 	0 	32
+Justi 	0 	6 	1 	1 	0 	1 	0 	0 	0 	0 	2 	0 	11
+The%2 	2 	1 	5 	2 	0 	0 	3 	0 	2 	0 	5 	0 	20
+Rihan 	0 	3 	0 	1 	0 	1 	0 	0 	3 	0 	2 	0 	10
+Pink 	2 	0 	1 	1 	0 	0 	0 	0 	1 	0 	3 	0 	8
+Beatl 	2 	0 	1 	2 	0 	0 	1 	0 	0 	0 	0 	0 	6
+Taylo 	0 	0 	0 	0 	0 	0 	2 	0 	0 	0 	1 	0 	3
+Maria 	2 	0 	0 	0 	1 	2 	1 	3 	0 	0 	3 	0 	12
+Beyon 	0 	4 	4 	2 	0 	0 	0 	1 	0 	0 	6 	0 	17
+Maroo 	0 	2 	1 	1 	0 	1 	0 	0 	0 	2 	4 	0 	11
+Demi% 	0 	0 	0 	1 	0 	0 	0 	1 	0 	1 	10 	0 	13
+Param 	0 	0 	1 	0 	1 	0 	1 	0 	0 	0 	4 	0 	7
+Got	18 	20 	21 	12 	2 	7 	9 	7 	7 	4 	43 	0 	150
+
+Error checking:  4.946601  s
+Artist Train Error:  0.015
+Artist Test Error:  0.74  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.442184  s
+Extract artist features:  4.384688  s
+B =  0
+Average norm =  110.066409712
+Number of features = 176658
+Train Artist Classifier:  41.047974  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	115 	0 	0 	2 	1 	0 	0 	0 	0 	1 	0 	0 	119
+Justi 	0 	86 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	86
+The%2 	1 	1 	74 	0 	0 	0 	0 	0 	0 	1 	0 	2 	79
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	1 	60
+Beatl 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	0 	55
+Taylo 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	3 	58
+Maria 	0 	0 	0 	1 	0 	0 	0 	57 	0 	0 	0 	0 	58
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	58 	0 	0 	1 	59
+Maroo 	0 	0 	0 	1 	0 	0 	0 	0 	0 	51 	0 	1 	53
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	58 	0 	58
+Param 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	54 	55
+Got	116 	87 	75 	64 	60 	55 	55 	57 	58 	53 	58 	62 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	3 	0 	2 	1 	1 	0 	0 	2 	2 	1 	1 	24
+Justi 	1 	2 	2 	1 	1 	4 	0 	0 	7 	0 	0 	0 	18
+The%2 	2 	2 	1 	0 	0 	2 	0 	0 	1 	1 	0 	7 	16
+Rihan 	1 	0 	1 	4 	1 	1 	0 	1 	2 	1 	1 	1 	14
+Pink 	1 	0 	2 	0 	4 	1 	0 	0 	1 	1 	0 	0 	10
+Beatl 	0 	2 	5 	0 	0 	5 	1 	0 	1 	0 	0 	0 	14
+Taylo 	1 	0 	1 	0 	1 	1 	2 	0 	0 	0 	0 	5 	11
+Maria 	1 	0 	0 	1 	0 	2 	1 	1 	0 	0 	1 	1 	8
+Beyon 	1 	1 	0 	1 	0 	1 	0 	0 	4 	0 	0 	0 	8
+Maroo 	0 	0 	1 	0 	1 	0 	0 	0 	2 	5 	1 	1 	11
+Demi% 	1 	1 	0 	0 	0 	0 	0 	0 	1 	1 	1 	1 	6
+Param 	0 	0 	1 	0 	1 	0 	0 	1 	0 	0 	0 	7 	10
+Got	20 	11 	14 	9 	10 	18 	4 	3 	21 	11 	5 	24 	150
+
+Error checking:  4.708904  s
+Artist Train Error:  0.0225
+Artist Test Error:  0.686666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.262967  s
+Extract artist features:  4.482275  s
+B =  0
+Average norm =  188.334856671
+Number of features = 178154
+Train Artist Classifier:  41.288507  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	114 	1 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	116
+Justi 	0 	95 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	95
+The%2 	1 	1 	79 	0 	0 	1 	0 	0 	0 	1 	0 	1 	84
+Rihan 	0 	0 	0 	65 	0 	0 	0 	0 	0 	0 	0 	0 	65
+Pink 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	0 	0 	57
+Beatl 	0 	0 	1 	0 	0 	56 	0 	0 	0 	0 	0 	0 	57
+Taylo 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	0 	61
+Maria 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	56
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	50 	0 	0 	0 	51
+Maroo 	0 	2 	1 	0 	0 	0 	0 	0 	0 	50 	0 	1 	54
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	55 	0 	55
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49 	49
+Got	115 	99 	82 	65 	57 	57 	61 	56 	50 	51 	56 	51 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	4 	5 	0 	1 	0 	2 	0 	1 	0 	0 	0 	26
+Justi 	5 	8 	2 	0 	1 	0 	0 	0 	0 	0 	0 	0 	16
+The%2 	0 	2 	6 	0 	0 	0 	0 	0 	0 	0 	0 	1 	9
+Rihan 	1 	2 	1 	2 	1 	0 	1 	0 	0 	0 	0 	1 	9
+Pink 	3 	3 	1 	0 	1 	1 	0 	0 	1 	0 	2 	0 	12
+Beatl 	1 	3 	2 	1 	1 	3 	0 	0 	0 	0 	1 	0 	12
+Taylo 	0 	3 	4 	1 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Maria 	1 	4 	2 	1 	1 	0 	0 	3 	0 	0 	0 	1 	13
+Beyon 	3 	3 	1 	3 	1 	0 	0 	0 	2 	0 	0 	0 	13
+Maroo 	2 	4 	1 	0 	0 	0 	2 	0 	0 	0 	0 	1 	10
+Demi% 	2 	2 	2 	1 	1 	0 	0 	0 	0 	0 	1 	0 	9
+Param 	0 	1 	2 	1 	2 	0 	2 	0 	0 	0 	1 	4 	13
+Got	31 	39 	29 	10 	10 	4 	7 	3 	4 	0 	5 	8 	150
+
+Error checking:  4.694182  s
+Artist Train Error:  0.01625
+Artist Test Error:  0.713333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.350381  s
+Extract artist features:  4.43568  s
+B =  0
+Average norm =  277.968390074
+Number of features = 179370
+Train Artist Classifier:  41.676425  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	121 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	122
+Justi 	1 	95 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	96
+The%2 	0 	0 	71 	0 	1 	0 	0 	0 	3 	1 	0 	0 	76
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	59
+Taylo 	0 	0 	0 	0 	0 	0 	64 	0 	0 	0 	0 	0 	64
+Maria 	0 	0 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	53
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	56
+Maroo 	0 	0 	1 	1 	0 	0 	1 	0 	1 	52 	0 	0 	56
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	50
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	52
+Got	122 	96 	72 	61 	57 	59 	65 	53 	60 	53 	50 	52 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	6 	0 	1 	0 	1 	1 	0 	2 	0 	1 	1 	21
+Justi 	2 	5 	1 	2 	1 	0 	0 	0 	2 	0 	1 	0 	14
+The%2 	3 	1 	1 	2 	1 	1 	1 	1 	1 	0 	3 	2 	17
+Rihan 	3 	1 	0 	4 	0 	0 	0 	0 	1 	1 	3 	1 	14
+Pink 	1 	4 	1 	0 	2 	1 	0 	0 	2 	0 	0 	1 	12
+Beatl 	1 	0 	1 	1 	2 	1 	0 	1 	1 	0 	1 	0 	9
+Taylo 	0 	0 	1 	0 	0 	0 	3 	0 	0 	0 	0 	1 	5
+Maria 	1 	1 	0 	1 	2 	0 	0 	5 	3 	0 	2 	1 	16
+Beyon 	0 	1 	0 	2 	0 	0 	1 	0 	3 	0 	1 	2 	10
+Maroo 	2 	0 	0 	0 	0 	0 	1 	2 	1 	0 	2 	0 	8
+Demi% 	2 	1 	0 	2 	1 	0 	0 	0 	0 	1 	5 	0 	12
+Param 	2 	1 	1 	0 	3 	0 	2 	1 	1 	0 	0 	1 	12
+Got	25 	21 	6 	15 	12 	4 	9 	10 	17 	2 	19 	10 	150
+
+Error checking:  4.79295  s
+Artist Train Error:  0.01375
+Artist Test Error:  0.746666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.192272  s
+Extract artist features:  4.455911  s
+B =  0
+Average norm =  349.760481852
+Number of features = 176797
+Train Artist Classifier:  40.836006  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	0 	0 	0 	0 	0 	1 	0 	0 	0 	1 	0 	122
+Justi 	1 	91 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	93
+The%2 	0 	0 	69 	1 	1 	0 	2 	0 	1 	1 	0 	0 	75
+Rihan 	0 	0 	0 	69 	0 	0 	0 	0 	0 	0 	0 	0 	69
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	59
+Taylo 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	0 	0 	54
+Maria 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	56
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	0 	0 	54
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	52
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	0 	56
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	53 	54
+Got	121 	91 	69 	70 	58 	59 	57 	56 	56 	53 	57 	53 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	3 	2 	0 	3 	0 	2 	0 	3 	0 	0 	0 	21
+Justi 	7 	3 	1 	0 	1 	0 	2 	0 	0 	1 	0 	0 	15
+The%2 	3 	2 	1 	0 	2 	1 	5 	0 	2 	1 	1 	1 	19
+Rihan 	2 	1 	0 	3 	0 	0 	0 	0 	0 	0 	0 	0 	6
+Pink 	0 	1 	0 	1 	3 	1 	1 	0 	4 	2 	0 	0 	13
+Beatl 	3 	0 	0 	0 	1 	1 	1 	0 	3 	0 	0 	0 	9
+Taylo 	1 	0 	1 	0 	1 	1 	5 	1 	2 	1 	1 	0 	14
+Maria 	3 	1 	0 	0 	1 	1 	1 	1 	1 	0 	0 	0 	9
+Beyon 	1 	1 	0 	2 	2 	0 	2 	1 	4 	0 	0 	0 	13
+Maroo 	0 	1 	1 	0 	2 	1 	1 	0 	4 	2 	2 	0 	14
+Demi% 	1 	1 	0 	3 	0 	0 	1 	0 	0 	0 	2 	0 	8
+Param 	0 	1 	0 	1 	2 	0 	0 	1 	0 	1 	2 	1 	9
+Got	29 	15 	6 	10 	18 	6 	21 	4 	23 	8 	8 	2 	150
+
+Error checking:  4.75773  s
+Artist Train Error:  0.01375
+Artist Test Error:  0.773333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.134901  s
+Extract artist features:  4.439193  s
+B =  0
+Average norm =  440.941405952
+Number of features = 177473
+Train Artist Classifier:  40.899554  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	114 	1 	2 	0 	0 	1 	0 	0 	0 	0 	1 	0 	119
+Justi 	1 	83 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	84
+The%2 	0 	0 	75 	0 	0 	1 	1 	0 	0 	1 	0 	0 	78
+Rihan 	0 	0 	0 	56 	0 	0 	1 	0 	0 	1 	0 	0 	58
+Pink 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	0 	58
+Beatl 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	59
+Taylo 	0 	0 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	57
+Maria 	0 	0 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	58
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	59
+Maroo 	0 	0 	2 	0 	0 	0 	0 	0 	0 	53 	0 	0 	55
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	0 	56
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	59 	59
+Got	115 	84 	79 	56 	58 	61 	59 	58 	59 	55 	57 	59 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	3 	1 	1 	0 	4 	4 	2 	0 	0 	0 	0 	22
+Justi 	3 	9 	4 	1 	0 	2 	5 	0 	1 	0 	0 	0 	25
+The%2 	1 	1 	7 	0 	0 	1 	3 	0 	2 	1 	0 	1 	17
+Rihan 	1 	3 	0 	3 	0 	2 	2 	0 	1 	2 	1 	1 	16
+Pink 	1 	0 	4 	0 	2 	0 	2 	1 	0 	0 	1 	0 	11
+Beatl 	0 	0 	1 	1 	0 	2 	3 	1 	0 	0 	0 	1 	9
+Taylo 	0 	0 	4 	0 	0 	0 	5 	0 	0 	0 	0 	0 	9
+Maria 	0 	1 	0 	1 	1 	0 	2 	4 	0 	0 	2 	0 	11
+Beyon 	0 	0 	0 	2 	1 	0 	1 	0 	3 	0 	0 	0 	7
+Maroo 	0 	1 	0 	0 	0 	0 	1 	1 	0 	4 	1 	0 	8
+Demi% 	0 	1 	3 	0 	0 	0 	1 	0 	1 	1 	2 	0 	9
+Param 	0 	0 	0 	1 	1 	0 	0 	0 	0 	1 	1 	2 	6
+Got	13 	19 	24 	10 	5 	11 	29 	9 	8 	9 	8 	5 	150
+
+Error checking:  4.705627  s
+Artist Train Error:  0.01625
+Artist Test Error:  0.666666666667  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.325521  s
+Extract artist features:  4.463251  s
+B =  0
+Average norm =  530.452238475
+Number of features = 177068
+Train Artist Classifier:  40.502245  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	116 	0 	2 	0 	0 	0 	0 	0 	0 	0 	3 	0 	121
+Justi 	0 	96 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	96
+The%2 	0 	1 	73 	0 	0 	1 	0 	0 	0 	0 	0 	1 	76
+Rihan 	0 	0 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Pink 	0 	0 	0 	0 	59 	0 	0 	0 	0 	0 	0 	0 	59
+Beatl 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	58
+Taylo 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	60
+Maria 	0 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	61
+Beyon 	0 	0 	1 	0 	0 	0 	0 	1 	53 	0 	0 	0 	55
+Maroo 	0 	0 	2 	1 	0 	0 	0 	0 	0 	44 	0 	0 	47
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	51
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	56
+Got	116 	97 	78 	61 	59 	59 	60 	62 	53 	44 	54 	57 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	3 	1 	0 	0 	5 	3 	3 	0 	0 	2 	0 	22
+Justi 	0 	2 	1 	2 	0 	1 	2 	2 	0 	0 	3 	0 	13
+The%2 	1 	1 	4 	2 	2 	0 	2 	1 	1 	1 	2 	0 	17
+Rihan 	0 	0 	0 	3 	3 	1 	0 	3 	0 	1 	2 	1 	14
+Pink 	1 	0 	1 	0 	2 	0 	3 	0 	0 	0 	1 	1 	9
+Beatl 	0 	0 	4 	0 	1 	4 	0 	0 	1 	0 	1 	0 	11
+Taylo 	0 	0 	2 	0 	0 	0 	5 	1 	0 	0 	1 	1 	10
+Maria 	0 	0 	0 	0 	0 	0 	1 	5 	1 	0 	0 	0 	7
+Beyon 	1 	1 	1 	1 	1 	1 	1 	2 	2 	0 	0 	0 	11
+Maroo 	0 	0 	0 	1 	0 	3 	2 	4 	0 	1 	5 	0 	16
+Demi% 	0 	0 	3 	0 	1 	3 	1 	2 	0 	0 	2 	0 	12
+Param 	0 	0 	1 	0 	3 	1 	1 	0 	0 	0 	1 	1 	8
+Got	8 	7 	18 	9 	13 	19 	21 	23 	5 	3 	20 	4 	150
+
+Error checking:  4.738082  s
+Artist Train Error:  0.01625
+Artist Test Error:  0.76  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.233611  s
+Extract artist features:  4.486625  s
+B =  0
+Average norm =  607.43452319
+Number of features = 177590
+Train Artist Classifier:  41.023875  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	110 	1 	0 	0 	0 	0 	0 	1 	0 	0 	3 	0 	115
+Justi 	0 	95 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	96
+The%2 	0 	0 	75 	0 	0 	0 	0 	0 	0 	0 	1 	1 	77
+Rihan 	0 	0 	0 	61 	0 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	2 	0 	58
+Beatl 	0 	0 	0 	0 	0 	57 	1 	0 	0 	0 	1 	0 	59
+Taylo 	0 	0 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	60
+Maria 	0 	0 	0 	0 	0 	0 	0 	59 	0 	0 	0 	0 	59
+Beyon 	0 	1 	1 	0 	0 	0 	0 	0 	57 	0 	1 	0 	60
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	52 	0 	0 	53
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	51
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	51
+Got	110 	97 	78 	61 	56 	57 	61 	60 	57 	52 	59 	52 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	1 	1 	0 	0 	0 	4 	1 	1 	0 	10 	1 	27
+Justi 	1 	4 	4 	0 	0 	0 	0 	0 	0 	0 	3 	1 	13
+The%2 	2 	1 	5 	0 	0 	0 	1 	0 	2 	1 	6 	0 	18
+Rihan 	1 	7 	2 	0 	0 	0 	0 	0 	1 	0 	3 	0 	14
+Pink 	0 	1 	0 	0 	0 	0 	1 	1 	0 	0 	6 	0 	9
+Beatl 	0 	3 	1 	0 	0 	0 	1 	0 	0 	0 	3 	0 	8
+Taylo 	0 	0 	1 	0 	0 	0 	7 	0 	0 	0 	1 	1 	10
+Maria 	0 	3 	0 	0 	1 	0 	0 	3 	0 	0 	2 	0 	9
+Beyon 	0 	1 	1 	0 	0 	0 	0 	0 	3 	0 	1 	0 	6
+Maroo 	0 	1 	1 	0 	0 	0 	0 	0 	0 	3 	6 	1 	12
+Demi% 	1 	1 	0 	0 	1 	0 	1 	0 	0 	0 	8 	2 	14
+Param 	0 	1 	1 	0 	0 	0 	2 	0 	0 	0 	5 	1 	10
+Got	13 	24 	17 	0 	2 	0 	17 	5 	7 	4 	54 	7 	150
+
+Error checking:  4.723735  s
+Artist Train Error:  0.02
+Artist Test Error:  0.72  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.261377  s
+Extract artist features:  4.431225  s
+B =  0
+Average norm =  689.183150045
+Number of features = 180781
+Train Artist Classifier:  41.540386  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	120 	0 	0 	0 	0 	1 	0 	0 	0 	0 	0 	0 	121
+Justi 	0 	90 	0 	0 	0 	1 	0 	0 	0 	0 	0 	0 	91
+The%2 	1 	0 	76 	0 	0 	3 	0 	0 	1 	1 	0 	1 	83
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	0 	0 	0 	63
+Pink 	0 	0 	0 	0 	62 	0 	0 	0 	0 	0 	0 	0 	62
+Beatl 	0 	0 	0 	0 	0 	58 	0 	0 	0 	0 	0 	0 	58
+Taylo 	0 	0 	1 	0 	0 	0 	61 	0 	0 	0 	0 	0 	62
+Maria 	0 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	55
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	0 	52
+Maroo 	0 	0 	0 	0 	0 	1 	0 	0 	0 	49 	0 	1 	51
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54 	0 	54
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	48 	48
+Got	121 	90 	77 	63 	62 	64 	61 	55 	53 	50 	54 	50 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	2 	1 	0 	0 	3 	1 	0 	0 	2 	0 	0 	20
+Justi 	4 	4 	5 	1 	1 	2 	0 	0 	0 	0 	0 	0 	17
+The%2 	2 	1 	5 	0 	0 	2 	1 	0 	0 	0 	0 	0 	11
+Rihan 	0 	1 	2 	5 	0 	1 	0 	0 	0 	1 	1 	0 	11
+Pink 	1 	2 	3 	0 	1 	1 	0 	0 	0 	0 	0 	0 	8
+Beatl 	1 	0 	2 	1 	0 	5 	0 	1 	0 	0 	0 	0 	10
+Taylo 	1 	1 	2 	0 	0 	0 	1 	0 	1 	1 	0 	1 	8
+Maria 	4 	1 	1 	0 	0 	2 	1 	3 	0 	0 	0 	2 	14
+Beyon 	4 	0 	3 	2 	0 	0 	0 	0 	3 	1 	0 	1 	14
+Maroo 	2 	2 	3 	2 	1 	1 	1 	0 	0 	0 	0 	1 	13
+Demi% 	1 	2 	1 	0 	0 	3 	0 	0 	1 	0 	1 	0 	9
+Param 	2 	1 	2 	1 	0 	1 	0 	0 	0 	1 	3 	4 	15
+Got	33 	17 	30 	12 	3 	21 	5 	4 	5 	6 	5 	9 	150
+
+Error checking:  4.712955  s
+Artist Train Error:  0.015
+Artist Test Error:  0.713333333333  with 12 artist labels
+Total number of songs =  2535
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.365198  s
+Extract artist features:  4.442522  s
+B =  0
+Average norm =  783.305077623
+Number of features = 176061
+Train Artist Classifier:  41.497221  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	118 	1 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	120
+Justi 	0 	96 	1 	0 	1 	0 	0 	0 	0 	0 	0 	0 	98
+The%2 	2 	1 	68 	0 	1 	1 	0 	0 	1 	0 	0 	1 	75
+Rihan 	1 	0 	0 	59 	1 	0 	0 	0 	0 	0 	0 	0 	61
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	0 	0 	0 	56
+Beatl 	0 	0 	1 	0 	0 	60 	0 	0 	0 	0 	0 	0 	61
+Taylo 	0 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	55
+Maria 	0 	0 	0 	0 	0 	0 	0 	63 	0 	0 	0 	0 	63
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	50 	0 	0 	0 	51
+Maroo 	1 	0 	3 	0 	0 	0 	0 	0 	0 	51 	2 	0 	57
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53 	0 	53
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	50
+Got	122 	98 	74 	59 	59 	61 	55 	63 	52 	51 	55 	51 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	1 	6 	1 	1 	0 	1 	2 	2 	0 	1 	0 	21
+Justi 	2 	3 	1 	1 	4 	0 	0 	1 	0 	0 	0 	0 	12
+The%2 	0 	2 	9 	0 	1 	0 	2 	1 	0 	0 	3 	1 	19
+Rihan 	3 	0 	0 	2 	0 	0 	1 	0 	0 	1 	1 	2 	10
+Pink 	3 	0 	0 	0 	6 	0 	1 	1 	0 	0 	1 	1 	13
+Beatl 	1 	0 	3 	0 	0 	2 	0 	0 	0 	0 	1 	0 	7
+Taylo 	1 	0 	3 	0 	3 	0 	4 	0 	0 	0 	2 	2 	15
+Maria 	2 	0 	0 	0 	0 	0 	0 	3 	0 	0 	1 	0 	6
+Beyon 	1 	0 	4 	0 	3 	0 	2 	1 	3 	0 	2 	0 	16
+Maroo 	1 	0 	1 	0 	1 	0 	0 	0 	0 	0 	2 	2 	7
+Demi% 	2 	0 	0 	0 	3 	0 	0 	0 	0 	0 	4 	1 	10
+Param 	2 	0 	0 	0 	2 	0 	1 	1 	0 	1 	2 	5 	14
+Got	24 	6 	27 	4 	24 	2 	12 	10 	5 	2 	20 	14 	150
+
+Error checking:  4.717926  s
+Artist Train Error:  0.02625
+Artist Test Error:  0.686666666667  with 12 artist labels
