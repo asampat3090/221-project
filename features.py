@@ -39,7 +39,7 @@ def extractBigramFeatures(x):
     return bigrams
 
 
-def extractUnigrams(x):
+def extractUnigramFeatures(x):
     unigrams = Counter()
     unigrams.update([word for word in x.split()])
     return unigrams

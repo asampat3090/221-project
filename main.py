@@ -35,7 +35,7 @@ def main():
         elif sys.argv[7] == 'genre':
             isArtist = 0
         else:
-            print "Error, last argument must be either 'genre' or 'artist'!"
+            print "Error, second to the last argument must be either 'genre' or 'artist'!"
         featureExtractor = sys.argv[8]
     else:
         print "Main function takes 7 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre"
@@ -64,7 +64,10 @@ def main():
     #ARTIST!
     if isArtist:
         #Extracted features based on system arg 
-        if featureExtractor == 'bigram':
+        if featureExtractor == 'unigram':
+            artistTrainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]   
+        elif featureExtractor == 'bigram':
             artistTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
             artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                
         elif featureExtractor == 'trigram':
@@ -97,7 +100,10 @@ def main():
     else:
         #Features
         #Extracted features based on system arg 
-        if featureExtractor == 'bigram':
+        if featureExtractor == 'unigram':
+            genreTrainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]     
+        elif featureExtractor == 'bigram':
             genreTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
             genreTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                
         elif featureExtractor == 'trigram':
