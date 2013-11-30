@@ -1,52 +1,41 @@
 import glob, os, random
 import sys, time
-from Classifier import *
 from features import *
 from loadExamples import *
+from nb import *
 
 """
 ARGUMENTS:
 numLabels:              0 means no preference. 1 - n means "only draw examples from numLabels most popular"
 numTrainSongs:       how many songs to use for training
 numTestSongs:        how many songs to use for testing
-trainingIters:            number of iterations through all the training songs during SGD
-alpha:                      an int from 0 - 100 that will be devided by 100 to obtain the learning rate.
-B:                            the regularization parameter, if set to something higher than 0, norm(w) will never exeed B
 'artist' or 'genre'      which one to classify
-'unigram','bigram','trigram' or 'fourgram' which feature extractor to use.
-
+featureExtractor       which feature extractor to use (unigram, bigram, etc)
 """
 
-def main():
+def nb():
     lastTime = time.clock()
     
     #If arguments were given, read them in:
-    #Arguments are: numTrain, numTest, trainingIter, alpha
-    if len(sys.argv) == 9:
+    if len(sys.argv) == 6:
         numLabels = int(sys.argv[1])
         numTrainSongs = int(sys.argv[2])
         numTestSongs = int(sys.argv[3])
-        trainingIters = int(sys.argv[4])
-        alpha = 1.0*int(sys.argv[5])/100
-        B = int(sys.argv[6])
-        if sys.argv[7] == 'artist':
+        if sys.argv[4] == 'artist':
             isArtist = 1
-        elif sys.argv[7] == 'genre':
+        elif sys.argv[4] == 'genre':
             isArtist = 0
         else:
-            print "Error, second to the last argument must be either 'genre' or 'artist'!"
-        featureExtractor = sys.argv[8]
+            print "Error, 2nd to last argument must be either 'genre' or 'artist'!"
+        featureExtractor = sys.argv[5]
     else:
-        print "Main function takes 7 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre"
-        print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' (alpha = 90/100 = .9)"
-        numLabels = 0 #no preference
-        numTrainSongs = 20
-        numTestSongs = 20
-        trainingIters = 10
-        alpha = 0.9
-        B = 0
+        print "Main function takes 4 arguments: numLabels, numTrainSongs, numTestSongs, artist/genre"
+        print "Using defaults instead: 5 200 100 'genre' 'trigram'"
+        numLabels = 5
+        numTrainSongs = 200
+        numTestSongs = 100
         isArtist = 0
-        featureExtractor = 'bigram'
+        featureExtractor = 'trigram'
     
     #Load lyrics, genres, and artists
     if isArtist:
@@ -80,14 +69,13 @@ def main():
         lastTime = thisTime
             
         #Train classifier
-        artistClassifier = trainMultiClassClassifier(artistTrainFeaturesAndLabels, artistLabels, logisticH, trainingIters, alpha, B)
-        thisTime = time.clock()
+        logProbXGivenY, logProbY = nbTrain(artistTrainFeaturesAndLabels, artistLabels)
         print "Train Artist Classifier: ", thisTime - lastTime, ' s'
         lastTime = thisTime
         
         #Test for errors
-        aTrainError = artistClassifier.getErrorRate(artistLabels, artistTrainFeaturesAndLabels)
-        aTestError = artistClassifier.getErrorRate(artistLabels, artistTestFeaturesAndLabels)
+        aTrainError = 0
+        aTestError = 0
         thisTime = time.clock()
         print "Error checking: ", thisTime - lastTime, ' s'
         lastTime = thisTime
@@ -116,14 +104,14 @@ def main():
         lastTime = thisTime
             
         #Train classifier
-        genreClassifier = trainMultiClassClassifier(genreTrainFeaturesAndLabels, genreLabels, logisticH, trainingIters, alpha, B)
+        
         thisTime = time.clock()
         print "Train genre Classifier: ", thisTime - lastTime, ' s'
         lastTime = thisTime
         
         #Test for errors
-        gTrainError = genreClassifier.getErrorRate(genreLabels, genreTrainFeaturesAndLabels)
-        gTestError = genreClassifier.getErrorRate(genreLabels, genreTestFeaturesAndLabels)
+        gTrainError = 0
+        gTestError = 0
         thisTime = time.clock()
         print "Error checking: ", thisTime - lastTime, ' s'    
         lastTime = thisTime
@@ -132,4 +120,4 @@ def main():
         print "Genre Test Error: ", gTestError, " with", len(genreLabels), "genre labels"
 
 if __name__ == "__main__":
-    main()
+    nb()
