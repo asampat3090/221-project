@@ -13,7 +13,7 @@ def extractBigramFeatures(x):
     artistTestFeaturesAndLabels = [(ex
     Extract unigram + bigram features for a text document $x$. 
 
-    @param string x: represents the contents of an email message.
+    @param string x: represents the contents of lyrics.
     @return dict: feature vector representation of x.
     """
     # BEGIN_YOUR_CODE (around 12 lines of code expected)

@@ -14,6 +14,7 @@ alpha:                      an int from 0 - 100 that will be devided by 100 to o
 B:                            the regularization parameter, if set to something higher than 0, norm(w) will never exeed B
 'artist' or 'genre'      which one to classify
 'unigram','bigram','trigram' or 'fourgram' which feature extractor to use.
+numFeatures:             how many features do we want to use? - if 0 then just take the number of features
 
 """
 
@@ -36,6 +37,7 @@ def main():
         else:
             print "Error, second to the last argument must be either 'genre' or 'artist'!"
         featureExtractor = sys.argv[8]
+        numFeatures = sys.argv[9]
     else:
         print "Main function takes 7 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre"
         print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' (alpha = 90/100 = .9)"
@@ -47,6 +49,7 @@ def main():
         B = 0
         isArtist = 0
         featureExtractor = 'bigram'
+        numFeatures = 0
     
     #Load lyrics, genres, and artists
     if isArtist:
