@@ -1,10 +1,12 @@
 # import all files in order to classify 
 import glob, os, random
 import sys, time
-import numpy as np
+from numpy import *
 from Classifier import *
 from features import *
 from loadExamples import *
+from collections import Counter
+from array import array
 
 # Calculate information gain for a given feature 
 def informationGain(trainData,feature,labels):
@@ -12,13 +14,12 @@ def informationGain(trainData,feature,labels):
     For K labels, calculates the information gain for the given feature
     
     @param list of training data
-    @param list of features
     @param feature of interest
     @param list of strings - a list of the unique labels
     
     """
     
-    # get all of the features
+    # get all of the features   
     allFeatures = Counter()
     featureArray = []
     featureArray = [features for (features, label) in trainData]
@@ -28,7 +29,7 @@ def informationGain(trainData,feature,labels):
     # get some numbers
     numLabels = len(labels)
     numExamples = len(trainData)
-    numFeatures = sum([allFeatures[feature] for feature in allFeatures])
+    numFeatures = sum([allFeatures[f] for f in allFeatures])
     
     # Separate data:
     labeledData = []
@@ -36,18 +37,19 @@ def informationGain(trainData,feature,labels):
         labeledData.append([(features, label) for (features, label) in trainData if label == i])    
     
     # Calculate logProbY (logP(Y) = [logP(y1),logP(y2),....logP(yk)])
-    logProbY = array([len(i) for i in labeledData])
-    logProbY = log(logProbY*1.0/numExamples)
+    logProbY = [float(len(i)) for i in labeledData]
+    logProbY = log(multiply(logProbY,1.0)/numExamples)
     
     # Calculate logProbFGivenY  
-    logProbFGivenY = zeros((numLabels,numWords))
+    logProbFGivenY = zeros((numLabels,1))
     for i, data in enumerate(labeledData):
-        totFeatures = sum([sum(features.values() for (features,label) in data)]) + numFeatures 
         # Calculate this value only for the feature given
+        totFeatures = sum([features[feature] for (features,label) in data]) + numFeatures
         logProbFGivenY[i] = log((sum([features[feature] for (features, label) in data])+1)*1.0/totFeatures)
-    
+        #print logProbFGivenY[i]
     # Calculate logJointProbFY
-    logJointProbFY = log(np.multiply(exp(np.array(logProbFGivenY)),exp(np.array(logProbY))))
+    logProbY = transpose(tile(logProbY, (logProbFGivenY.shape[1],1)))
+    logJointProbFY = log(multiply(exp(logProbFGivenY),exp(logProbY)))
     
     # Calculate logProbF (logP(f))
     # sum up all of the features
@@ -58,16 +60,39 @@ def informationGain(trainData,feature,labels):
     logTerm = log(exp(logJointProbFY)/(exp(logProbF)*exp(logProbY)))
     
     # Calculate the mutual information term
-    mutualInformation = sum(np.multiply(exp(logJointProbFY),logTerm))
+    mutualInformation = sum(multiply(exp(logJointProbFY),logTerm))
 
-return mutualInformation
+    return mutualInformation
       
     
 # Use mutual information to select 
 
-def featureSelection(trainExample,numFeatures):
+def featureSelection(features,trainData,labels,numFeatures):
     """
+    Given the feature set of example, will give a reduced feature set.
     
+    @param list of features for this example
+    @param list of training data
+    @param list of strings - a list of the unique labels
+    @param number of features we want to choose
     """
-
+    print "Selecting Features for this example"
+    informationGains = []
+    featureNames = []
+    reducedFeatureSet = Counter()
+    # Loop through all of the features and calculate the information gain for each 
+    for feature in features: 
+        informationGains.append(informationGain(trainData, feature, labels))
+        featureNames.append(feature) 
+    informationGains, featureNames = zip(*sorted(zip(informationGains, featureNames)))
+    informationGains = list(informationGains)
+    featureNames = list(featureNames)
+    informationGains.reverse()
+    featureNames.reverse()
+    # Add the top numFeatures to the counter.
+    for i in range(0,numFeatures):
+        reducedFeatureSet.update(featureNames[i])
+    return reducedFeatureSet
+        
+        
 
