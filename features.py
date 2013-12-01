@@ -1,6 +1,7 @@
 import random
 from loadExamples import *
 import time
+import string
 
 
 """
@@ -8,41 +9,39 @@ This class deals with parsing the lyric files and extracting the features.
 """
 from collections import Counter
 
+def extractUnigramFeatures(x):
+    #Clean up the string x
+    x = ''.join(char for char in x if char not in set(string.punctuation))
+    x = x.lower()
+    
+    unigrams = Counter()
+    unigrams.update([word for word in x.split()])
+
+    return unigrams
+
 def extractBigramFeatures(x):
     """
-    artistTestFeaturesAndLabels = [(ex
     Extract unigram + bigram features for a text document $x$. 
 
     @param string x: represents the contents of an email message.
     @return dict: feature vector representation of x.
     """
-    # BEGIN_YOUR_CODE (around 12 lines of code expected)
+    #Clean up string
+    x = ''.join(char for char in x if char not in set(string.punctuation))
+    x = x.lower()    
 
-    punctuationSet = set('!@#$%^&*()_+-={}[]|\:;/?.,><~`')
-    endOfSentenceSet = set('.?!')
     bigrams = Counter()
+    bigrams.update([word for word in x.split()]) #do unigrams
     
     #Split on sentences
     sentenceList = x.split('\n')
     for sentence in sentenceList:
         wordList = sentence.split()
-        if (len(wordList) > 0):
-            bigrams.update([x for x in wordList if x not in punctuationSet]) #add unigrams
-            firstWord = "-BEGIN- " + wordList[0]; #add first word
-            bigrams.update([firstWord])
-            for i, word in enumerate(wordList[:-1]): #add bigrams
-                    if word not in punctuationSet: 
-                        # add bigrams
-                        if wordList[i+1] not in punctuationSet:
-                            newWord = word + " " + wordList[i+1]
-                            bigrams.update([newWord]) #add all non-punctuation bigrams 
+        if len(wordList) == 0: continue
+        bigrams.update(["-BEGIN- " + wordList[0]]); #add first word
+        for i, word in enumerate(wordList[:-1]): #add bigrams
+            bigrams.update([word + " " + wordList[i+1]])
     return bigrams
-
-
-def extractUnigramFeatures(x):
-    unigrams = Counter()
-    unigrams.update([word for word in x.split()])
-    return unigrams
 
 def extractTrigramFeatures(x):
     """
@@ -52,35 +51,32 @@ def extractTrigramFeatures(x):
     @return dict: feature vector representation of x.
     """    
     
-    punctuationSet = set('!@#$%^&*()_+-={}[]|\:;/?.,><~`')
-    endOfSentenceSet = set('.?!')    
+    #Clean up string
+    x = ''.join(char for char in x if char not in set(string.punctuation))
+    x = x.lower()      
+
     trigrams = Counter()
+    trigrams.update([word for word in x.split()]) #do unigrams
     
     #Split on newlines 
     lines = x.split('\n')
     for line in lines:
         wordList = line.split()
-        if len(wordList)>0: 
-            # add unigram features features
-            trigrams.update([x for x in wordList if x not in punctuationSet]) #add unigrams
-            trigrams.update(["-BEGIN- " + wordList[0]]) # add bigram first word
-            trigrams.update(["-BEGIN- "+"-BEGIN- "+wordList[0]]) # add first word 
-        if len(wordList)>1:
-            trigrams.update(["-BEGIN- "+wordList[0]+" "+wordList[1]])# add second word
-        if len(wordList)>2:
-            # Add the rest of the trigrams
-            for i, word in enumerate(wordList[:-2]):
-                if word not in punctuationSet: 
-                    # add bigrams 
-                    if wordList[i+1] not in punctuationSet:
-                        newWord = word + " " + wordList[i+1]
-                        trigrams.update([newWord]) #add all non-punctuation bigrams          
-                    # add trigrams
-                    if wordList[i+1] not in punctuationSet and wordList[i+2] not in punctuationSet:
-                        newWord = word + " " + wordList[i+1] + " " + wordList[i+2]
-                        trigrams.update([newWord]) #add all non-punctuation trigrams
-            # add final bigram 
-            trigrams.update([wordList[-2]+" "+wordList[-1]])
+        if len(wordList) == 0: continue
+        trigrams.update(["-BEGIN- " + wordList[0]]) # add bigram first word
+        trigrams.update(["-BEGIN- "+"-BEGIN- "+wordList[0]]) # add trigram first word
+        if len(wordList) == 1: continue
+        trigrams.update(["-BEGIN- " + wordList[0] + wordList[1]]) #trigram second word
+        if len(wordList) == 2: continue
+
+        # Add the rest of the trigrams
+        for i, word in enumerate(wordList[:-2]): 
+            # add bigrams 
+            trigrams.update([word + " " + wordList[i+1]])
+            # add trigrams
+            trigrams.update([word + " " + wordList[i+1] + " " + wordList[i+2]]) #add all non-punctuation trigrams
+        # add final bigram 
+        trigrams.update([wordList[-2]+" "+wordList[-1]])
     return trigrams
 
 def extractFourgramFeatures(x):
@@ -90,16 +86,18 @@ def extractFourgramFeatures(x):
     @param string x: represents the contents of an email message.
     @return dict: feature vector representation of x.
     """
-    punctuationSet = set('!@#$%^&*()_+-={}[]|\:;/?.,><~`')
-    endOfSentenceSet = set('.?!') 
+    #Clean up string
+    x = ''.join(char for char in x if char not in set(string.punctuation))
+    x = x.lower() 
+    
     fourgrams = Counter()
+    fourgrams.update([word for word in x.split()]) #do unigrams
     
     #Split on newLines
     lines = x.split('\n')
     for line in lines:
         wordList = line.split()
         if len(wordList) > 0:
-            fourgrams.update([x for x in wordList if x not in punctuationSet]) #add unigrams
             fourgrams.update(["-BEGIN- "+wordList[0]]) # add bigram first word 
             fourgrams.update(["-BEGIN- "+"-BEGIN- "+wordList[0]]) # add trigram first word 
             fourgrams.update(["-BEGIN- "+"-BEGIN- "+"-BEGIN- "+wordList[0]]) # add fourgram first word 
@@ -111,24 +109,22 @@ def extractFourgramFeatures(x):
         if len(wordList) > 3:
             # Add the rest of the trigrams
             for i, word in enumerate(wordList[:-3]):
-                if word not in punctuationSet: 
-                    # add bigrams 
-                    if wordList[i+1] not in punctuationSet:
-                        newWord = word + " " + wordList[i+1]
-                        fourgrams.update([newWord]) #add all non-punctuation bigrams           
-                    # add trigrams
-                    if wordList[i+1] not in punctuationSet and wordList[i+2] not in punctuationSet:
-                        newWord = word + " " + wordList[i+1] + " " + wordList[i+2]
-                        fourgrams.update([newWord]) #add all non-punctuation trigrams   
-                    # add fourgrams
-                    if wordList[i+1] not in punctuationSet and wordList[i+2] not in punctuationSet and wordList[i+3] not in punctuationSet:
-                        newWord = word + " " + wordList[i+1] + " " + wordList[i+2] + " " + wordList[i+3]
-                        fourgrams.update([newWord]) #add all non-punctuation trigrams
+                # add bigrams 
+                newWord = word + " " + wordList[i+1]
+                fourgrams.update([newWord]) #add all non-punctuation bigrams           
+                # add trigrams
+                newWord = word + " " + wordList[i+1] + " " + wordList[i+2]
+                fourgrams.update([newWord]) #add all non-punctuation trigrams   
+                # add fourgrams
+                newWord = word + " " + wordList[i+1] + " " + wordList[i+2] + " " + wordList[i+3]
+                fourgrams.update([newWord]) #add all non-punctuation trigrams
+            
             # Add the final Trigram
             fourgrams.update([wordList[-3] + " " + wordList[-2]+" "+wordList[-1]])
             # Add the two final Bigrams
             fourgrams.update([wordList[-3] + " " + wordList[-2]])
             fourgrams.update([wordList[-2]+" "+wordList[-1]])
+
     return fourgrams
 
             
