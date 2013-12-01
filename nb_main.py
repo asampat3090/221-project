@@ -25,8 +25,7 @@ def nb():
         elif sys.argv[4] == 'genre':
             isArtist = 0
         else:
-            print "Error, 2nd to last argument must be either 'genre' or 'artist'!"
-        featureExtractor = sys.argv[5]
+            print "Error, last argument must be either 'genre' or 'artist'!"
     else:
         print "Main function takes 4 arguments: numLabels, numTrainSongs, numTestSongs, artist/genre"
         print "Using defaults instead: 5 200 100 'genre'"
@@ -63,18 +62,24 @@ def nb():
         
     #Train classifier
     nbClassifier = nbTrain(trainFeaturesAndLabels, labels)
+    
+    print "LogProbY: ", nbClassifier.logProbY
+    print "LogProbXGivenY: ", nbClassifier.logProbXGivenY
+    
+    thisTime = time.clock()
     print "Train Classifier: ", thisTime - lastTime, ' s'
     lastTime = thisTime
     
     #Test for errors
     trainError = nbClassifier.getErrorRate(trainFeaturesAndLabels)
     testError = nbClassifier.getErrorRate(testFeaturesAndLabels)
+    
     thisTime = time.clock()
     print "Error checking: ", thisTime - lastTime, ' s'
     lastTime = thisTime
     
-    print "Artist Train Error: ", aTrainError     
-    print "Artist Test Error: ", aTestError, " with", len(artistLabels), "artist labels"        
+    print "Train Error: ", trainError     
+    print "Test Error: ", testError, " with", len(labels), "labels"        
         
 if __name__ == "__main__":
     nb()
