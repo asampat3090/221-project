@@ -1,5 +1,6 @@
 from collections import Counter
 from numpy import *
+import time
 
 def nbTrain(trainData, labels):
     """
@@ -8,10 +9,7 @@ def nbTrain(trainData, labels):
     @param list of (counter, string) - the featureVector and label for each training sample
     @param list of strings - a list of the unique labels
     
-    @return (logProbXGivenY, logP(Y)) 
-    2D numpy array of size numLabels by numWords. The i,j entry corresponds to the log 
-       of the conditional probability of the jth word in the vocabulary appearing given y = the ith label.
-    Numpy array of size numLabels where the ith entry is the log(p(y = ith label))
+    @return NBClassfier object
     """
     trainData = list(trainData)
     labels = list(labels)
@@ -20,6 +18,7 @@ def nbTrain(trainData, labels):
     words = Counter()
     for (features, label) in trainData:
         words.update(features)
+    words = list(words)
     
     #get some numbers
     numLabels = len(labels)
@@ -38,24 +37,84 @@ def nbTrain(trainData, labels):
     #Calculate logProbXGivenY:
     logProbXGivenY = zeros((numLabels, numWords))    
     for i, data in enumerate(labeledData):
-        totWords = sum([sum(features.values() for (featuures,label) in data)]) + numWords 
+        totWords = sum([sum(features.values()) for (features,label) in data])
+        print totWords, numWords
         for j, word in enumerate(words):
-            logProbXGivenY[i,j] = log((sum([features[word] for (features, label) in data])+1)*1.0/totWords)
+            logProbXGivenY[i,j] = log((sum([features[word] for (features, label) in data])+1)*1.0/(totWords+numWords))
     
-    return (logProbXGivenY, logProbY)
-
-
-
-def nbClassify(featureVector, logProbXGivenY, logProbY):
-    """
-    Make a prediction of the label for the given featureVector
+    print sum(exp(logProbXGivenY),1)
     
-    @param Counter - a feature vector
-    @param 2D numpy array of size numLables x numWords, logProbXGivenY i,j entry = log(p(x = jth word | y = ith label)) 
-    @param Numpy array of size numLabels, ith entry = log(p(y = ith label))
+    return NBClassifier(labels, logProbXGivenY, logProbY, words)
+
+class NBClassifier(object):
+    def __init__(self, labels, logProbXGivenY, logProbY, words):
+        '''
+        @param list of string - a unique list of labels
+        @param 2D numpy array of size numLables x numWords, logProbXGivenY i,j entry = log(p(x = jth word | y = ith label)) 
+        @param Numpy array of size numLabels, ith entry = log(p(y = ith label))
+        @param List of strings - a list of all the words in the vocab
+        '''
+        self.labels = labels
+        self.logProbXGivenY = logProbXGivenY
+        self.logProbY = logProbY
+        self.words = words
+        
+    def classify(self, featureVector):
+        """
+        Make a prediction of the label for the given featureVector
+        
+        @param Counter - a feature vector
+               
+        @return string - the predicted label
+        """
+        numLabels = len(self.labels)
+        
+        probYGivenX = [0 for label in self.labels]
+        for i in range(numLabels):
+            for feature in featureVector:
+                if any([word == feature for word in self.words]):
+                    probYGivenX[i] += featureVector[feature]*self.logProbXGivenY[i, self.words.index(feature)]
+                else:
+                    probYGivenX[i] += featureVector[feature]*log(1.0/len(self.words))
+            probYGivenX[i] += self.logProbY[i]
+                
+        return self.labels[probYGivenX.index(max(probYGivenX))]
     
-    @return string - the predicted label
-    """
+    def getErrorRate(self, data):
+        """
+        Classify each feature vector given and compare result to label. Return the error rate (out of 1)
+        @param a list of (feature vector, label) tuples
+
+        @return float: error rate [0-1]
+        """
+        
+        numLabels = len(self.labels)
+        errors = [[0 for i in range(numLabels)] for i in range(numLabels)]
+        numErrors = 0
+        for (featureVector, label) in data:
+            prediction = self.classify(featureVector)
+            errors[self.labels.index(label)][self.labels.index(prediction)] += 1
+            if prediction != label:
+                numErrors += 1
+                
+        #print confusion matrix
+        print "\t",
+        for label in self.labels: 
+            print label, "\t",
+        print "Wanted"
+        for i, label in enumerate(self.labels):
+            print label, "\t",
+            for j,x in enumerate(self.labels):
+                print errors[i][j], "\t",
+            print sum(errors[i])
+        print "Got\t",
+        for j, label in enumerate(self.labels):
+            print sum([errors[i][j] for i in range(numLabels)]), "\t",
+        print sum([sum(errors[i]) for i in range(numLabels)])
+        print ""
+      
+        return 1.0*numErrors/len(data) 
+    
     
     
     
