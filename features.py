@@ -23,7 +23,7 @@ def extractBigramFeatures(x):
     """
     Extract unigram + bigram features for a text document $x$. 
 
-    @param string x: represents the contents of an email message.
+    @param string x: represents the contents of lyrics.
     @return dict: feature vector representation of x.
     """
     #Clean up string

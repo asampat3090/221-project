@@ -3,6 +3,7 @@ import sys, time
 from Classifier import *
 from features import *
 from loadExamples import *
+from feature_selector import *
 
 """
 ARGUMENTS:
@@ -13,7 +14,8 @@ trainingIters:            number of iterations through all the training songs du
 alpha:                      an int from 0 - 100 that will be devided by 100 to obtain the learning rate.
 B:                            the regularization parameter, if set to something higher than 0, norm(w) will never exeed B
 'artist' or 'genre'      which one to classify
-'bigram' or 'trigram' or 'fourgram' which feature extractor to use.
+'unigram','bigram','trigram' or 'fourgram' which feature extractor to use.
+numFeatures:             how many features do we want to use? - if 0 then just take the number of features
 
 """
 
@@ -22,7 +24,7 @@ def main():
     
     #If arguments were given, read them in:
     #Arguments are: numTrain, numTest, trainingIter, alpha
-    if len(sys.argv) == 9:
+    if len(sys.argv) == 10:
         numLabels = int(sys.argv[1])
         numTrainSongs = int(sys.argv[2])
         numTestSongs = int(sys.argv[3])
@@ -36,6 +38,7 @@ def main():
         else:
             print "Error, second to the last argument must be either 'genre' or 'artist'!"
         featureExtractor = sys.argv[8]
+        numFeatures = int(sys.argv[9])
     else:
         print "Main function takes 7 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre"
         print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' (alpha = 90/100 = .9)"
@@ -47,6 +50,7 @@ def main():
         B = 0
         isArtist = 0
         featureExtractor = 'bigram'
+        numFeatures = 0
     
     #Load lyrics, genres, and artists
     if isArtist:
@@ -65,16 +69,24 @@ def main():
         #Extracted features based on system arg 
         if featureExtractor == 'unigram':
             artistTrainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
-            artistTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]   
+            artistTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]
+            artistTrainFeaturesAndLabels = [(featureSelection(extractUnigramFeatures(lyrics),artistTrainFeaturesAndLabels,[artist for (lyrics,artist) in trainSongs],numFeatures),artist) for (lyrics,artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(featureSelection(extractUnigramFeatures(lyrics),artistTestFeaturesAndLabels,[artist for (lyrics,artist) in testSongs],numFeatures),artist) for (lyrics,artist) in testSongs]
         elif featureExtractor == 'bigram':
             artistTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
-            artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                
+            artistTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]
+            artistTrainFeaturesAndLabels = [(featureSelection(extractBigramFeatures(lyrics),artistTrainFeaturesAndLabels,[artist for (lyrics,artist) in trainSongs],numFeatures),artist) for (lyrics,artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(featureSelection(extractBigramFeatures(lyrics),artistTestFeaturesAndLabels,[artist for (lyrics,artist) in testSongs],numFeatures),artist) for (lyrics,artist) in testSongs]            
         elif featureExtractor == 'trigram':
             artistTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
             artistTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                  
+            artistTrainFeaturesAndLabels = [(featureSelection(extractTrigramFeatures(lyrics),artistTrainFeaturesAndLabels,[artist for (lyrics,artist) in trainSongs],numFeatures),artist) for (lyrics,artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(featureSelection(extractTrigramFeatures(lyrics),artistTestFeaturesAndLabels,[artist for (lyrics,artist) in testSongs],numFeatures),artist) for (lyrics,artist) in testSongs]
         else: 
             artistTrainFeaturesAndLabels = [(extractFourgramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
-            artistTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                                      
+            artistTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]
+            artistTrainFeaturesAndLabels = [(featureSelection(extractFourgramFeatures(lyrics),artistTrainFeaturesAndLabels,[artist for (lyrics,artist) in trainSongs],numFeatures),artist) for (lyrics,artist) in trainSongs]
+            artistTestFeaturesAndLabels = [(featureSelection(extractFourgramFeatures(lyrics),artistTestFeaturesAndLabels,[artist for (lyrics,artist) in testSongs],numFeatures),artist) for (lyrics,artist) in testSongs]            
         thisTime = time.clock()
         print "Extract artist features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
@@ -109,16 +121,24 @@ def main():
         #Extracted features based on system arg 
         if featureExtractor == 'unigram':
             genreTrainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-            genreTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]     
+            genreTestFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]  
+            genreTrainFeaturesAndLabels = [(featureSelection(extractUnigramFeatures(lyrics),genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),genre) for (lyrics,genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(featureSelection(extractUnigramFeatures(lyrics),genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),genre) for (lyrics,genre) in testSongs]            
         elif featureExtractor == 'bigram':
             genreTrainFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-            genreTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                
+            genreTestFeaturesAndLabels = [(extractBigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]
+            genreTrainFeaturesAndLabels = [(featureSelection(extractBigramFeatures(lyrics),genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),genre) for (lyrics,genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(featureSelection(extractBigramFeatures(lyrics),genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),genre) for (lyrics,genre) in testSongs]              
         elif featureExtractor == 'trigram':
             genreTrainFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-            genreTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                      
+            genreTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]
+            genreTrainFeaturesAndLabels = [(featureSelection(extractTrigramFeatures(lyrics),genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),genre) for (lyrics,genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(featureSelection(extractTrigramFeatures(lyrics),genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),genre) for (lyrics,genre) in testSongs]              
         else: 
             genreTrainFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-            genreTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]                        
+            genreTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]
+            genreTrainFeaturesAndLabels = [(featureSelection(extractFourgramFeatures(lyrics),genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),genre) for (lyrics,genre) in trainSongs]
+            genreTestFeaturesAndLabels = [(featureSelection(extractFourgramFeatures(lyrics),genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),genre) for (lyrics,genre) in testSongs]              
         thisTime = time.clock()
         print "Extract genre features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
