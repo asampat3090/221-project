@@ -90,6 +90,14 @@ def main():
         thisTime = time.clock()
         print "Extract artist features: ", thisTime - lastTime, ' s'
         lastTime = thisTime
+        
+        features = Counter()
+        for (feature, label) in artistTrainFeaturesAndLabels:
+            features.update(feature)
+        for (feature, label) in artistTestFeaturesAndLabels:
+            features.update(feature)
+            
+        print list(features)
             
         #Train classifier
         artistClassifier = trainMultiClassClassifier(artistTrainFeaturesAndLabels, artistLabels, logisticH, trainingIters, alpha, B)

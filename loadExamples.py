@@ -47,8 +47,6 @@ def getExamples(numLabels, numTrain, numTest, files, isArtist):
             labels.add(genre)
             labelCounter.update([genre])
     
-    print "Total number of songs = ", len(songs)
-    
     #if numLabels is a reasonable number, make a list of the top numLabels most popular labels
     if 0 < numLabels <= len(labels):
         useLabels = [label for (label, count) in labelCounter.most_common(numLabels)]

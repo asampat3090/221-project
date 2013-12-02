@@ -1,6 +1,5 @@
 import glob, os, random
 import sys, time
-from features import *
 from loadExamples import *
 from nb import *
 
@@ -45,26 +44,25 @@ def nb():
     thisTime = time.clock()
     print "Load examples: ", thisTime - lastTime, ' s'
     lastTime = thisTime
+    
+    words = loadDict()
         
     #ARTIST!
     if isArtist:
-        trainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in trainSongs]
-        testFeaturesAndLabels = [(extractUnigramFeatures(lyrics), artist) for (lyrics, artist) in testSongs]                                         
+        trainFeaturesAndLabels = [(featureExtractor(lyrics, words), artist) for (lyrics, artist) in trainSongs]
+        testFeaturesAndLabels = [(featureExtractor(lyrics, words), artist) for (lyrics, artist) in testSongs]                                         
         
     #Genre!
     else:
-        trainFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-        testFeaturesAndLabels = [(extractUnigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs] 
+        trainFeaturesAndLabels = [(featureExtractor(lyrics, words), genre) for (lyrics, genre) in trainSongs]
+        testFeaturesAndLabels = [(featureExtractor(lyrics, words), genre) for (lyrics, genre) in testSongs] 
     
     thisTime = time.clock()
     print "Extract features: ", thisTime - lastTime, ' s'
     lastTime = thisTime    
         
     #Train classifier
-    nbClassifier = nbTrain(trainFeaturesAndLabels, labels)
-    
-    print "LogProbY: ", nbClassifier.logProbY
-    print "LogProbXGivenY: ", nbClassifier.logProbXGivenY
+    nbClassifier = nbTrain(trainFeaturesAndLabels, labels, words)
     
     thisTime = time.clock()
     print "Train Classifier: ", thisTime - lastTime, ' s'
