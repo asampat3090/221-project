@@ -1,0 +1,7 @@
+maxSongs 6
+minSongs 6
+genre only hiphop min 3 max 5
+genre only rock
+genre not pop
+#genre hiphop min 3 max 5
+genre rock min 0 max 1
