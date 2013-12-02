@@ -5,3 +5,5 @@ genre only rock
 genre not pop
 #genre hiphop min 3 max 5
 genre rock min 0 max 1
+keywords a the
+keywords love

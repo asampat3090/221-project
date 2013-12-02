@@ -14,10 +14,49 @@ def make_playlist():
         print "Using defaults instead: 10, 'request.txt'"
         numSongsInLib = 10
         requestPath = 'request.txt'
+    
+    #Read in all the songs we have a make lists of artists, genres, keywords:
+    allSongs = []
+    
+    #os.chdir("lyrics/artist/")             ##Commented this stuff out because it was taking 8 seconds and not useful.
+    #files = glob.glob("*.txt")
+        
+    #for i in range(len(files)-1):
+        #allSongs.append(parseSongFile(open(files[i], 'r')))
+    
+    #thisTime = time.clock()
+    #print "Read in songs from artist: ", thisTime - lastTime, ' s'
+    #lastTime = thisTime         
+    
+    #os.chdir("..")
+    #os.chdir("..")
+    os.chdir("lyrics/genre/")
+    files = glob.glob("*.txt")
+            
+    for i in range(len(files)-1):    
+        allSongs.append(parseSongFile(open(files[i], 'r')))    
+    
+    thisTime = time.clock()
+    print "Read in songs from genre: ", thisTime - lastTime, ' s'
+    lastTime = thisTime     
+
+    allGenres = set([song.genre for song in allSongs])
+    allArtists = set([song.artist for song in allSongs])
+    allKeywords = set()
+    for song in allSongs:
+        allKeywords.update(song.keywords)
+    
+    #Go back to home directory for finding 'request.txt'    
+    os.chdir("..")
+    os.chdir("..")
+
+    thisTime = time.clock()
+    print "Assemble genre, artist, keyword sets: ", thisTime - lastTime, ' s'
+    lastTime = thisTime     
         
     #Parse prefs file and check for obvious problems
     request = Request(requestPath)
-    if not request.checkRequest(): return
+    if not request.isRequestValid(allGenres): return
     
     thisTime = time.clock()
     print "Parse request: ", thisTime - lastTime, ' s'
@@ -26,12 +65,7 @@ def make_playlist():
     #Load the songs
     songLibrary = []
 
-    os.chdir("lyrics/artist/")
-    files = glob.glob("*.txt")
-    
-    for i in range(len(files)-1):
-        nextSong = parseSongFile(open(files[i], 'r'))
-        
+    for nextSong in allSongs:
         #check genre:
         if nextSong.genre in request.notGenres: continue
         if request.onlyGenres:
@@ -40,18 +74,14 @@ def make_playlist():
         songLibrary.append(nextSong)
     
         if len(songLibrary) == numSongsInLib: break
-    
-    for song in songLibrary: print song
 
-    #os.chdir("..")
-    #os.chdir("genre/")
-    #files = glob.glob("*.txt")
-    
-    #for i in range(len(files)-1):    
-        #songs.append(parseSongFile(open(files[i], 'r')))
+    #See if we were able to get enough songs
+    if len(songLibrary) != numSongsInLib:
+        print "Couldn't find as many songs as requested"
+        print "Have:", len(songLibary), "Wanted:", numSongsInLib
     
     thisTime = time.clock()
-    print "Load examples: ", thisTime - lastTime, ' s'
+    print "Assemble song library:", thisTime - lastTime, ' s'
     lastTime = thisTime        
     
     #Create a CSP and add the variables

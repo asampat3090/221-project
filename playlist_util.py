@@ -49,7 +49,7 @@ class Song(object):
         self.genre = genre
         
         #set of strings, lowercase no punctuation words in the lyrics
-        self.keywords = keywords
+        self.keywords = set(keywords)
     
     def __str__(self):
         return self.artist + " - " + self.title + " - " + self.genre
@@ -79,6 +79,7 @@ class Request():
         self.genres = [] #holds tuples of (genre, min, max)
         self.onlyGenres = []
         self.notGenres = [] 
+        self.keywords = []
         
         for line in open(path):
             m = re.match('minSongs (.+)', line)
@@ -110,25 +111,48 @@ class Request():
                 if minSongs or (maxSongs != float('+inf')): self.genres.append((m.group(3), minSongs, maxSongs))
                 continue
             
+            m = re.match('keywords (.+)', line)
+            if m:
+                self.keywords.extend(m.group(1).split())
+                continue
+            
             #If got here, the line didn't match!
             if len(line.split()): print "Line not matched: ", line
             
         
-        print self.minSongs
-        print self.maxSongs
+        print "Number of songs: ", self.minSongs, "-", self.maxSongs
+        print "Genres:",
         print self.genres
+        print "Only:",
         print self.onlyGenres
+        print "Not:",
         print self.notGenres
+        print "Keywords:", self.keywords
     
-    def checkRequest(self):
+    def isRequestValid(self, allGenres):
         """
         Makes sure the request CAN be satisfied.
-        @return True or False - True if it is ok
-        """
-        genreSet = set(genre for (genre, minS, maxS) in self.genres)
-        notGenreSet = set(self.notGenres)
-        onlyGenreSet = set(self.onlyGenres)
+        @param list of strings - a list of all the genres in our library
         
+        @return True or False - True if it is ok
+        """        
+        #Make sure all genres are actual genres
+        for (genre, minSongs, maxSongs) in self.genres:
+            if genre not in allGenres:
+                print "Genre:", genre, "not in our list of genres"
+                print "Available genres:", allGenres
+                return False
+        for genre in self.onlyGenres:
+            if genre not in allGenres:
+                print "Genre:", genre, "not in our list of genres"
+                print "Available genres:", allGenres
+                return False
+        for genre in self.notGenres:
+            if genre not in allGenres:
+                print "Genre:", genre, "not in our list of genres"
+                print "Available genres:", allGenres
+                return False            
+             
         #Make sure no genre is in both nonGenre and with nonzero min in genre:
         for (genre, minSongs, maxSongs) in self.genres:
             if minSongs > 0 and genre in self.notGenres:
