@@ -19,8 +19,6 @@ def informationGain(trainData,feature,labels):
     
     """
     
-    print feature
-    
     # get all of the features   
     allFeatures = Counter()
     featureArray = []
@@ -93,7 +91,7 @@ def featureSelection(features,trainData,labels,numFeatures):
     featureNames.reverse()
     # Add the top numFeatures to the counter.
     for i in range(0,numFeatures):
-        reducedFeatureSet.update(featureNames[i])
+        reducedFeatureSet.update([featureNames[i]])
     print reducedFeatureSet
     return reducedFeatureSet
         

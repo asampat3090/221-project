@@ -38,13 +38,13 @@ def extractBigramFeatures(x):
     for sentence in sentenceList:
         wordList = sentence.split()
         if (len(wordList) > 0):
-            bigrams.update([x for x in wordList if x not in punctuationSet]) #add unigrams
+            bigrams.update([x for x in wordList if x not in set(string.punctuation)]) #add unigrams
             firstWord = "-BEGIN- " + wordList[0]; #add first word
             bigrams.update([firstWord])
             for i, word in enumerate(wordList[:-1]): #add bigrams
-                    if word not in punctuationSet: 
+                    if word not in set(string.punctuation): 
                         # add bigrams
-                        if wordList[i+1] not in punctuationSet:
+                        if wordList[i+1] not in set(string.punctuation):
                             newWord = word + " " + wordList[i+1]
                             bigrams.update([newWord]) #add all non-punctuation bigrams 
     return bigrams
