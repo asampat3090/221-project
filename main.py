@@ -40,7 +40,7 @@ def main():
         featureExtractor = sys.argv[8]
         numFeatures = int(sys.argv[9])
     else:
-        print "Main function takes 7 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre"
+        print "Main function takes 9 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre uni/bi/tri/fourgram numFeatures"
         print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' (alpha = 90/100 = .9)"
         numLabels = 0 #no preference
         numTrainSongs = 20
