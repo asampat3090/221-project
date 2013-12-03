@@ -125,7 +125,7 @@ def main():
         for feature in features:
             if feature in bestFeatures: newFeatures[feature] = features[feature]
         print "Test feature vector length:", len(newFeatures)
-        testData.append(newFeatures, label)    
+        testData.append((newFeatures, label))    
         
     thisTime = time.clock()
     print "Rearrange data: ", thisTime - lastTime, ' s'
@@ -138,8 +138,8 @@ def main():
     lastTime = thisTime
     
     #Test for errors
-    trainError = artistClassifier.getErrorRate(labels, trainFeaturesAndLabels)
-    testError = artistClassifier.getErrorRate(labels, testFeaturesAndLabels)
+    trainError = classifier.getErrorRate(labels, trainFeaturesAndLabels)
+    testError = classifier.getErrorRate(labels, testFeaturesAndLabels)
     thisTime = time.clock()
     print "Error checking: ", thisTime - lastTime, ' s'
     lastTime = thisTime
