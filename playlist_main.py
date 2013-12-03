@@ -1,6 +1,7 @@
 import glob, os, random, string
 import sys, time, re
 from playlist_util import *
+from playlist_csp import *
 
 def make_playlist():
     lastTime = time.clock()
@@ -40,8 +41,8 @@ def make_playlist():
     print "Read in songs from genre: ", thisTime - lastTime, ' s'
     lastTime = thisTime     
 
-    allGenres = set([song.genre for song in allSongs])
-    allArtists = set([song.artist for song in allSongs])
+    allGenres = sorted(set([song.genre for song in allSongs]))
+    allArtists = sorted(set([song.artist for song in allSongs]))
     allKeywords = set()
     for song in allSongs:
         allKeywords.update(song.keywords)
@@ -56,7 +57,7 @@ def make_playlist():
         
     #Parse prefs file and check for obvious problems
     request = Request(requestPath)
-    if not request.isRequestValid(allGenres): return
+    if not request.isRequestValid(allGenres, allArtists): return
     
     thisTime = time.clock()
     print "Parse request: ", thisTime - lastTime, ' s'
@@ -64,6 +65,7 @@ def make_playlist():
     
     #Load the songs
     songLibrary = []
+    secondChoiceSongLibrary = []
 
     for nextSong in allSongs:
         #check genre:
@@ -71,34 +73,41 @@ def make_playlist():
         if request.onlyGenres:
             if nextSong.genre not in request.onlyGenres: continue
         
+        #check artist:
+        if nextSong.artist in request.notArtists: continue
+        if request.onlyArtists:
+            if nextSong.artist not in request.onlyArtists: continue
+        
+        #check keywords:
+        if request.keywords:
+            if len(nextSong.keywords.intersection(request.keywords)) < 1: 
+                secondChoiceSongLibrary.append(nextSong)
+                continue
+        print nextSong    
         songLibrary.append(nextSong)
     
         if len(songLibrary) == numSongsInLib: break
 
-    #See if we were able to get enough songs
+    #If we didn't get enough songs, add second choice songs:
+    if len(songLibrary) != numSongsInLib:
+        print "Only got", len(songLibrary), "songs, using second choice songs"
+        for song in secondChoiceSongLibrary:
+            songLibrary.append(song)
+            if len(songLibrary) == numSongsInLib: break
+    
+    #If we STILL didn't get enough songs, let user know and move on
     if len(songLibrary) != numSongsInLib:
         print "Couldn't find as many songs as requested"
-        print "Have:", len(songLibary), "Wanted:", numSongsInLib
+        print "Have:", len(songLibrary), "Wanted:", numSongsInLib
+    
+    #print "Song Library:"
+    #for song in songLibrary: print song
     
     thisTime = time.clock()
     print "Assemble song library:", thisTime - lastTime, ' s'
     lastTime = thisTime        
     
-    #Create a CSP and add the variables
-    csp = CSP()
-    
-    for i in range(numSongsInLib):
-        csp.add_variable(i, [0,1])
-    
-    #Make sure only numSongs get added
-    sumVar = get_sum_variable(csp, 'totSongs', range(numSongsInLib), request.maxSongs)
-    csp.add_unary_potential(sumVar, lambda x: request.minSongs <= x <= request.maxSongs)
-    
-    #Add genre constraints
-    for (genre, minSongs, maxSongs) in request.genres:
-        if maxSongs > request.maxSongs: maxSongs = request.maxSongs
-        sumVar = get_sum_variable(csp, genre, [i for i in range(numSongsInLib) if songLibrary[i].genre == genre], maxSongs)
-        csp.add_unary_potential(sumVar, lambda x: minSongs <= x <=maxSongs)
+    csp = createPlaylistCSP(request, songLibrary)
     
     thisTime = time.clock()
     print "Add variables: ", thisTime - lastTime, ' s'
@@ -106,8 +115,7 @@ def make_playlist():
     
     alg = BacktrackingSearch()
     alg.solve(csp, True, True, True)
-    chosenSongs = [i for i in alg.optimalAssignment if (i in range(numSongsInLib)) and (alg.optimalAssignment[i] == 1)]
-    printPlayList(chosenSongs, songLibrary)
+    printPlayList(alg.optimalAssignment, songLibrary, request)
     
     thisTime = time.clock()
     print "Run search: ", thisTime - lastTime, ' s'

@@ -1,10 +1,16 @@
-maxSongs 20
-minSongs 10
-genre only hiphop min 5 max 10
-genre only rock
-genre not pop
-#genre hiphop min 3 max 5
-genre rock min 5 max 10
-genre rock min 0 max 1
-keywords a the
-keywords love
+maxSongs 6
+minSongs 4
+#genre only hiphop min 0 max 5 10
+#genre only rock
+#genre not pop
+#genre rock min 0 max 5 20
+#keywords a the
+#keyword love 3
+artist only ImogenHea 10
+artist only Jay-Z 4
+
+genre hiphop 3
+genre pop 3
+
+keywords love heart lover boy girl 
+
