@@ -116,6 +116,7 @@ def featureSelection(trainData,labels,numFeatures):
     """
     informationGains = []
     featureNames = []
+    featureLibraryInfo = []
     featureLibrary = []
     
     # Calculate all of the features (not just those from the example)  
@@ -132,12 +133,14 @@ def featureSelection(trainData,labels,numFeatures):
     informationGains, featureNames = zip(*sorted(zip(informationGains, featureNames)))
     informationGains = list(informationGains)
     featureNames = list(featureNames)
-    informationGains.reverse()
-    featureNames.reverse()
+    #informationGains.reverse()
+    #featureNames.reverse()
     # Add the top numFeatures to the counter.
     # if requesting too many features change number of requested features.
     if(numFeatures>len(featureNames)):
         numFeatures = len(featureNames)
     for i in range(0,numFeatures):
+        featureLibraryInfo.append(informationGains[i])
         featureLibrary.append(featureNames[i])
+    #print featureLibraryInfo
     return featureLibrary

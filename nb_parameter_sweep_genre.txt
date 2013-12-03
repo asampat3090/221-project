@@ -773,3 +773,172 @@ Got	83 	30 	44 	1 	8 	5 	15 	8 	6 	200
 Error checking:  38.054317  s
 Train Error:  0.097
 Test Error:  0.51  with 9 labels
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.262017  s
+Extract features:  6.492758  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.548036  s
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	73 	0 	0 	0 	0 	0 	5 	2 	0 	0 	80
+elect 	0 	68 	2 	2 	0 	0 	7 	5 	1 	1 	86
+indie 	0 	0 	67 	0 	0 	1 	4 	2 	0 	0 	74
+hipho 	0 	0 	0 	130 	0 	2 	13 	0 	1 	1 	147
+punk 	0 	0 	0 	0 	26 	1 	1 	1 	0 	0 	29
+metal 	0 	0 	0 	1 	0 	70 	2 	1 	0 	1 	75
+pop 	1 	1 	0 	2 	0 	0 	229 	3 	1 	2 	239
+rock 	1 	1 	0 	0 	0 	0 	4 	119 	0 	1 	126
+blues 	1 	0 	0 	1 	0 	2 	5 	0 	62 	0 	71
+alter 	1 	0 	0 	0 	0 	0 	2 	3 	1 	66 	73
+Got	77 	70 	69 	136 	26 	76 	272 	136 	66 	72 	1000
+
+	count 	elect 	indie 	hipho 	punk 	metal 	pop 	rock 	blues 	alter 	Wanted
+count 	2 	0 	1 	0 	0 	0 	4 	3 	0 	0 	10
+elect 	1 	1 	2 	0 	0 	0 	4 	3 	0 	1 	12
+indie 	0 	1 	2 	0 	0 	1 	3 	8 	1 	1 	17
+hipho 	0 	0 	1 	23 	0 	0 	4 	0 	0 	0 	28
+punk 	0 	0 	0 	0 	0 	0 	2 	2 	0 	0 	4
+metal 	1 	0 	0 	0 	0 	9 	4 	0 	0 	0 	14
+pop 	6 	4 	0 	6 	0 	0 	36 	9 	0 	1 	62
+rock 	1 	2 	0 	1 	1 	1 	8 	9 	0 	0 	23
+blues 	2 	0 	1 	1 	0 	0 	5 	3 	1 	1 	14
+alter 	0 	1 	1 	2 	0 	1 	3 	4 	0 	4 	16
+Got	13 	9 	8 	33 	1 	12 	73 	41 	2 	8 	200
+
+Error checking:  41.873936  s
+Train Error:  0.09
+Test Error:  0.565  with 10 labels
+pop 343
+Requested 1200 but only have 343
+pop 343
+hipho 196
+Requested 1200 but only have 539
+pop 343
+hipho 196
+rock 166
+Requested 1200 but only have 705
+pop 343
+hipho 196
+rock 166
+elect 103
+Requested 1200 but only have 808
+pop 343
+hipho 196
+rock 166
+elect 103
+count 100
+Requested 1200 but only have 908
+pop 343
+hipho 196
+rock 166
+elect 103
+count 100
+indie 100
+Requested 1200 but only have 1008
+pop 343
+hipho 196
+rock 166
+elect 103
+count 100
+indie 100
+metal 100
+Requested 1200 but only have 1108
+pop 343
+hipho 196
+rock 166
+elect 103
+count 100
+indie 100
+metal 100
+blues 100
+Load examples:  0.539473  s
+Extract features:  6.734175  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.246739  s
+	pop 	hipho 	rock 	elect 	count 	indie 	metal 	blues 	Wanted
+pop 	267 	4 	10 	0 	4 	2 	2 	0 	289
+hipho 	15 	137 	0 	0 	0 	1 	3 	1 	157
+rock 	4 	0 	130 	1 	0 	0 	1 	0 	136
+elect 	7 	3 	6 	66 	0 	3 	1 	1 	87
+count 	2 	0 	2 	0 	74 	0 	1 	0 	79
+indie 	4 	0 	2 	0 	1 	81 	1 	0 	89
+metal 	5 	1 	0 	0 	1 	0 	75 	0 	82
+blues 	4 	1 	1 	0 	1 	1 	2 	71 	81
+Got	308 	146 	151 	67 	81 	88 	86 	73 	1000
+
+	pop 	hipho 	rock 	elect 	count 	indie 	metal 	blues 	Wanted
+pop 	33 	4 	8 	1 	2 	4 	0 	2 	54
+hipho 	5 	30 	1 	0 	0 	0 	1 	0 	37
+rock 	9 	0 	6 	1 	2 	5 	3 	3 	29
+elect 	5 	0 	0 	3 	2 	2 	3 	0 	15
+count 	7 	1 	1 	0 	9 	1 	0 	2 	21
+indie 	2 	1 	3 	1 	1 	2 	0 	0 	10
+metal 	3 	0 	3 	0 	1 	2 	8 	0 	17
+blues 	8 	3 	0 	0 	0 	0 	0 	6 	17
+Got	72 	39 	22 	6 	17 	16 	15 	13 	200
+
+Error checking:  34.539944  s
+Train Error:  0.099
+Test Error:  0.515  with 8 labels
+pop 343
+hipho 196
+rock 166
+elect 103
+count 100
+indie 100
+metal 100
+blues 100
+alter 99
+Load examples:  0.298469  s
+Extract features:  6.507233  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.40387  s
+	pop 	hipho 	rock 	elect 	count 	indie 	metal 	blues 	alter 	Wanted
+pop 	248 	2 	7 	0 	3 	0 	1 	0 	0 	261
+hipho 	15 	133 	1 	0 	0 	1 	3 	1 	0 	154
+rock 	3 	0 	131 	0 	1 	0 	1 	0 	0 	136
+elect 	7 	3 	6 	59 	0 	3 	0 	0 	1 	79
+count 	2 	0 	1 	0 	67 	0 	1 	0 	0 	71
+indie 	5 	0 	3 	0 	0 	69 	0 	0 	1 	78
+metal 	4 	1 	0 	0 	0 	0 	67 	0 	2 	74
+blues 	6 	0 	2 	0 	0 	0 	0 	66 	0 	74
+alter 	3 	0 	3 	0 	1 	0 	2 	0 	64 	73
+Got	293 	139 	154 	59 	72 	73 	75 	67 	68 	1000
+
+	pop 	hipho 	rock 	elect 	count 	indie 	metal 	blues 	alter 	Wanted
+pop 	30 	8 	8 	2 	2 	1 	0 	1 	0 	52
+hipho 	3 	20 	1 	0 	0 	0 	1 	0 	0 	25
+rock 	4 	0 	7 	1 	1 	2 	1 	0 	2 	18
+elect 	5 	1 	4 	3 	1 	1 	1 	1 	1 	18
+count 	8 	0 	2 	0 	5 	2 	1 	1 	0 	19
+indie 	2 	0 	6 	0 	1 	4 	0 	0 	0 	13
+metal 	6 	0 	4 	1 	1 	0 	4 	0 	2 	18
+blues 	11 	0 	3 	0 	1 	0 	1 	3 	1 	20
+alter 	6 	1 	4 	0 	1 	1 	3 	1 	0 	17
+Got	75 	30 	39 	7 	13 	11 	12 	7 	6 	200
+
+Error checking:  37.806501  s
+Train Error:  0.096
+Test Error:  0.62  with 9 labels
+count 100
+elect 103
+indie 100
+hipho 196
+punk 38
+metal 100
+pop 343
+rock 166
+blues 100
+alter 99
+Load examples:  0.266906  s
+Extract features:  6.492024  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.499991  s
