@@ -44,16 +44,6 @@ states, parameters = pickle.load( open('data/english.binary.crf') )
 englishCRF = submission.LinearChainCRF( states, submission.binaryFeatureFunction, parameters ) 
 
 
-############################################################
-# -- 1a: Viterbi decoding
-
-def part1a_0():
-    """Check that you get the gold labelling."""
-    xs = exampleInput
-    ys = exampleTags
-    ys_ = submission.computeViterbi(simpleCRF, xs)
-    grader.requireIsEqual( ys, ys_ )
-grader.addBasicPart('1a-0', part1a_0, 1)
 
 
 def part1a_2():
@@ -86,43 +76,6 @@ def part1a_2():
         grader.requireIsEqual( ys, ys_ )
 grader.addBasicPart('1a-2', part1a_2, 0)
 
-############################################################
-# -- 1b: Forward backward
-
-def part1b_0():
-    """
-    Check that the forward algorithm's output is normalized at each iteration
-    """
-    xs = exampleInput
-    _, forward = submission.computeForward(simpleCRF, xs)
-    for i in xrange(len(xs)):
-        grader.requireIsEqual( 1.0, sum( forward[i].values() ) )
-grader.addBasicPart('1b-0', part1b_0, 0)
-
-def part1b_1():
-    """
-    Check that the backward algorithm's output is normalized at each iteration
-    """
-    xs = exampleInput
-    backward = submission.computeBackward(simpleCRF, xs)
-    for i in xrange(len(xs)):
-        grader.requireIsEqual( 1.0, sum( backward[i].values() ) )
-grader.addBasicPart('1b-1', part1b_1, 0)
-
-def part1b_2():
-    """Check that values match our reference"""
-    xs = exampleInput
-    z = 5.881
-    forward = [
-            Counter({'-FEAT-': 0.622, '-SIZE-': 0.377}), 
-            Counter({'-SIZE-': 0.761, '-FEAT-': 0.238}), 
-            Counter({'-SIZE-': 0.741, '-FEAT-': 0.258})]
-    
-    z_, forward_ = submission.computeForward(simpleCRF, xs)
-    for vec, vec_ in zip( forward, forward_):
-        grader.requireIsTrue( Counters.approximateEquals( vec, vec_ ) )
-    grader.requireIsEqual( z, z_, 1e-2)
-grader.addBasicPart('1b-2', part1b_2, 0)
 
 def part1b_3():
     """Check that values match our reference"""

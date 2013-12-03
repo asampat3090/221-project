@@ -9,7 +9,7 @@ from collections import Counter
 from array import array
 
 # Calculate information gain for a given feature 
-def informationGain(trainData,feature,labels):
+def informationGain(trainData,allFeatures,feature,labels):
     """
     For K labels, calculates the information gain for the given feature
     
@@ -17,15 +17,7 @@ def informationGain(trainData,feature,labels):
     @param feature of interest
     @param list of strings - a list of the unique labels
     
-    """
-    
-    # get all of the features   
-    allFeatures = Counter()
-    featureArray = []
-    featureArray = [features for (features, label) in trainData]
-    for featureSet in featureArray :
-        allFeatures.update(featureSet) 
-    
+    """ 
     # get some numbers
     numLabels = len(labels)
     numExamples = len(trainData)
@@ -79,20 +71,37 @@ def featureSelection(features,trainData,labels,numFeatures):
     print "Selecting Features for this example"
     informationGains = []
     featureNames = []
-    reducedFeatureSet = Counter()
+    reducedFeatureSet = Counter()  
+    
+    # Calculate all of the features (not just those from the example)  
+    allFeatures = Counter()
+    featureArray = []
+    featureArray = [fs for (fs, label) in trainData]
+    for featureSet in featureArray :
+        allFeatures.update(featureSet)
+ 
     # Loop through all of the features and calculate the information gain for each 
     for feature in features: 
-        informationGains.append(informationGain(trainData, feature, labels))
+        informationGains.append(informationGain(trainData,allFeatures,feature, labels))
         featureNames.append(feature) 
     informationGains, featureNames = zip(*sorted(zip(informationGains, featureNames)))
     informationGains = list(informationGains)
     featureNames = list(featureNames)
     informationGains.reverse()
     featureNames.reverse()
+    #print len(informationGains)
+    #print informationGains
+    #print len(featureNames)
+    #print featureNames
     # Add the top numFeatures to the counter.
+    # if requesting too many features change number of requested features.
+    if(numFeatures>len(featureNames)):
+        numFeatures = len(featureNames)
     for i in range(0,numFeatures):
         reducedFeatureSet.update([featureNames[i]])
-    print reducedFeatureSet
+        # Add the correct value for the given feature.
+        reducedFeatureSet[featureNames[i]] = features[featureNames[i]]
+   # print reducedFeatureSet
     return reducedFeatureSet
         
         
