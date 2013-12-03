@@ -147,53 +147,5 @@ def main():
     print "Train Error: ", trainError     
     print "Test Error:", testError, "with", len(labels), "labels"        
     
-
-        #if(numFeatures!=0):
-            #trainarray = [None]*2*len(genreTrainFeaturesAndLabels)
-            #testarray = [None]*2*len(genreTestFeaturesAndLabels)      
-            ##for i in range(0,len(trainarray),2):
-                ##trainarray[i] = genreTrainFeaturesAndLabels[i/2]
-            ##for i in range(0,len(testarray),2):
-                ##testarray[i] = genreTestFeaturesAndLabels[i/2]     
-            #tempGenreTrainLabels = [(featureSelection(grams,genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),g) for (grams,g) in genreTrainFeaturesAndLabels]
-            #tempGenreTestLabels = [(featureSelection(grams,genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),g) for (grams,g) in genreTestFeaturesAndLabels]         
-            #genreTrainFeaturesAndLabels = tempGenreTrainLabels
-            #genreTestFeaturesAndLabels = tempGenreTestLabels
-        ##TEST CODE 
-        ##for i in range(1,len(trainarray),2):
-            ##trainarray[i] = genreTrainFeaturesAndLabels[(i-1)/2]
-        ##for i in range(1,len(testarray),2):
-            ##testarray[i] = genreTestFeaturesAndLabels[(i-1)/2]
-        ##print("TRAIN ARRAYS")
-        ##for i in range(0,len(trainarray)-1,2):
-            ##print trainarray[i]==trainarray[i+1]
-            ##if (trainarray[i]==trainarray[i+1])==False:
-                ##print trainarray[i]
-                ##print trainarray[i+1]
-        ##print("TEST ARRAYS")
-        ##for i in range(0,len(testarray)-1,2):
-            ##print testarray[i]==testarray[i+1]
-            ##if (testarray[i]==testarray[i+1])==False:
-                ##print testarray[i]
-                ##print testarray[i+1]
-        #thisTime = time.clock()
-        #print "Extract genre features: ", thisTime - lastTime, ' s'
-        #lastTime = thisTime
-        ##Train classifier
-        #genreClassifier = trainMultiClassClassifier(genreTrainFeaturesAndLabels, genreLabels, logisticH, trainingIters, alpha, B)
-        #thisTime = time.clock()
-        #print "Train genre Classifier: ", thisTime - lastTime, ' s'
-        #lastTime = thisTime
-        
-        ##Test for errors
-        #gTrainError = genreClassifier.getErrorRate(genreLabels, genreTrainFeaturesAndLabels)
-        #gTestError = genreClassifier.getErrorRate(genreLabels, genreTestFeaturesAndLabels)
-        #thisTime = time.clock()
-        #print "Error checking: ", thisTime - lastTime, ' s'    
-        #lastTime = thisTime
-      
-        #print "Genre Train Error: ", gTrainError
-        #print "Genre Test Error: ", gTestError, " with", len(genreLabels), "genre labels"
-
 if __name__ == "__main__":
     main()

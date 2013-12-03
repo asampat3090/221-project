@@ -57,13 +57,59 @@ def informationGain(trainData,allFeatures,feature,labels):
     return mutualInformation
       
     
-# Use mutual information to select 
+## Use mutual information to select 
 
-def featureSelection(features,trainData,labels,numFeatures):
+#def featureSelection(features,trainData,labels,numFeatures):
+    #"""
+    #Given the feature set of example, will give a reduced feature set.
+    
+    #@param list of features for this example
+    #@param list of training data
+    #@param list of strings - a list of the unique labels
+    #@param number of features we want to choose
+    #"""
+    #print "Selecting Features for this example"
+    #informationGains = []
+    #featureNames = []
+    #reducedFeatureSet = Counter()  
+    
+    ## Calculate all of the features (not just those from the example)  
+    #allFeatures = Counter()
+    #featureArray = []
+    #featureArray = [fs for (fs, label) in trainData]
+    #for featureSet in featureArray :
+        #allFeatures.update(featureSet)
+ 
+    ## Loop through all of the features and calculate the information gain for each 
+    #for feature in features: 
+        #informationGains.append(informationGain(trainData,allFeatures,feature, labels))
+        #featureNames.append(feature) 
+    #informationGains, featureNames = zip(*sorted(zip(informationGains, featureNames)))
+    #informationGains = list(informationGains)
+    #featureNames = list(featureNames)
+    #informationGains.reverse()
+    #featureNames.reverse()
+    ##print len(informationGains)
+    ##print informationGains
+    ##print len(featureNames)
+    #print featureNames
+    ## Add the top numFeatures to the counter.
+    ## if requesting too many features change number of requested features.
+    #if(numFeatures>len(featureNames)):
+        #numFeatures = len(featureNames)
+    #for i in range(0,numFeatures):
+        #reducedFeatureSet.update([featureNames[i]])
+        ## Add the correct value for the given feature.
+        #reducedFeatureSet[featureNames[i]] = features[featureNames[i]]
+   ## print reducedFeatureSet
+    #return reducedFeatureSet
+        
+        
+# Return featureLibrary with the number of features we want to consider.
+def featureSelection(trainData,labels,numFeatures):
     """
     Given the feature set of example, will give a reduced feature set.
     
-    @param list of features for this example
     @param list of training data
     @param list of strings - a list of the unique labels
     @param number of features we want to choose
@@ -71,7 +117,7 @@ def featureSelection(features,trainData,labels,numFeatures):
     print "Selecting Features for this example"
     informationGains = []
     featureNames = []
-    reducedFeatureSet = Counter()  
+    featureLibrary = []
     
     # Calculate all of the features (not just those from the example)  
     allFeatures = Counter()
@@ -81,7 +127,7 @@ def featureSelection(features,trainData,labels,numFeatures):
         allFeatures.update(featureSet)
  
     # Loop through all of the features and calculate the information gain for each 
-    for feature in features: 
+    for feature in allFeatures: 
         informationGains.append(informationGain(trainData,allFeatures,feature, labels))
         featureNames.append(feature) 
     informationGains, featureNames = zip(*sorted(zip(informationGains, featureNames)))
@@ -89,20 +135,10 @@ def featureSelection(features,trainData,labels,numFeatures):
     featureNames = list(featureNames)
     informationGains.reverse()
     featureNames.reverse()
-    #print len(informationGains)
-    #print informationGains
-    #print len(featureNames)
-    #print featureNames
     # Add the top numFeatures to the counter.
     # if requesting too many features change number of requested features.
     if(numFeatures>len(featureNames)):
         numFeatures = len(featureNames)
     for i in range(0,numFeatures):
-        reducedFeatureSet.update([featureNames[i]])
-        # Add the correct value for the given feature.
-        reducedFeatureSet[featureNames[i]] = features[featureNames[i]]
-   # print reducedFeatureSet
-    return reducedFeatureSet
-        
-        
-
+        featureLibrary.append(featureNames[i])
+    return featureLibrary
