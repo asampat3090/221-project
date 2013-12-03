@@ -114,7 +114,6 @@ def featureSelection(trainData,labels,numFeatures):
     @param list of strings - a list of the unique labels
     @param number of features we want to choose
     """
-    print "Selecting Features for this example"
     informationGains = []
     featureNames = []
     featureLibrary = []
