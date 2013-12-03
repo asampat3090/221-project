@@ -101,38 +101,41 @@ def main():
     lastTime = thisTime
     
     #Feature Selection
-    bestFeatures = featureSelection(trainFeaturesAndLabels, labels, numFeatures)
-    
-    print bestFeatures
-    print len(bestFeatures)
-    
-    thisTime = time.clock()
-    print "Select features: ", thisTime - lastTime, ' s'
-    lastTime = thisTime
-    
-    #Reduce features in train and test sets to only those in bestFeatures
-    trainData = []
-    for (features, label) in trainFeaturesAndLabels:
-        newFeatures = Counter()
-        for feature in features:
-            if feature in bestFeatures: newFeatures[feature] = features[feature]
-        print "Train feature vector length:", len(newFeatures)
-        trainData.append((newFeatures, label))
+    if numFeatures != 0:
+        bestFeatures = featureSelection(trainFeaturesAndLabels, labels, numFeatures)
         
-    testData = []
-    for (features, label) in testFeaturesAndLabels:
-        newFeatures = Counter()
-        for feature in features:
-            if feature in bestFeatures: newFeatures[feature] = features[feature]
-        print "Test feature vector length:", len(newFeatures)
-        testData.append((newFeatures, label))    
+        print bestFeatures
+        print len(bestFeatures)
         
-    thisTime = time.clock()
-    print "Rearrange data: ", thisTime - lastTime, ' s'
-    lastTime = thisTime
+        thisTime = time.clock()
+        print "Select features: ", thisTime - lastTime, ' s'
+        lastTime = thisTime
+        
+        #Reduce features in train and test sets to only those in bestFeatures
+        trainData = []
+        for (features, label) in trainFeaturesAndLabels:
+            newFeatures = Counter()
+            for feature in features:
+                if feature in bestFeatures: newFeatures[feature] = features[feature]
+            print "Train feature vector length:", len(newFeatures)
+            trainData.append((newFeatures, label))
+        trainFeaturesAndLabels = trainData
+            
+        testData = []
+        for (features, label) in testFeaturesAndLabels:
+            newFeatures = Counter()
+            for feature in features:
+                if feature in bestFeatures: newFeatures[feature] = features[feature]
+            print "Test feature vector length:", len(newFeatures)
+            testData.append((newFeatures, label))
+        testFeaturesAndLabels = testData
+        
+        thisTime = time.clock()
+        print "Rearrange data: ", thisTime - lastTime, ' s'
+        lastTime = thisTime
     
     #Train classifier
-    classifier = trainMultiClassClassifier(trainData, labels, logisticH, trainingIters, alpha, B)
+    classifier = trainMultiClassClassifier(trainFeaturesAndLabels, labels, logisticH, trainingIters, alpha, B)
     thisTime = time.clock()
     print "Train Classifier: ", thisTime - lastTime, ' s'
     lastTime = thisTime
