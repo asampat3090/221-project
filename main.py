@@ -117,7 +117,7 @@ def main():
         for feature in features:
             if feature in bestFeatures: newFeatures[feature] = features[feature]
         print "Train feature vector length:", len(newFeatures)
-        trainData.append(newFeatures, label)
+        trainData.append((newFeatures, label))
         
     testData = []
     for (features, label) in testFeaturesAndLabels:
