@@ -133,18 +133,20 @@ def main():
             genreTestFeaturesAndLabels = [(extractTrigramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]     
         else: 
             genreTrainFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in trainSongs]
-            genreTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]  
-        if(numFeatures!=0):
-            trainarray = [None]*2*len(genreTrainFeaturesAndLabels)
-            testarray = [None]*2*len(genreTestFeaturesAndLabels)      
+            genreTestFeaturesAndLabels = [(extractFourgramFeatures(lyrics), genre) for (lyrics, genre) in testSongs]          
+        
+        ## OLD FEATURE SELECTION CODE - BY EXAMPLE...VERY SLOW
+        #if(numFeatures!=0):
+            #trainarray = [None]*2*len(genreTrainFeaturesAndLabels)
+            #testarray = [None]*2*len(genreTestFeaturesAndLabels)      
             #for i in range(0,len(trainarray),2):
                 #trainarray[i] = genreTrainFeaturesAndLabels[i/2]
             #for i in range(0,len(testarray),2):
                 #testarray[i] = genreTestFeaturesAndLabels[i/2]     
-            tempGenreTrainLabels = [(featureSelection(grams,genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),g) for (grams,g) in genreTrainFeaturesAndLabels]
-            tempGenreTestLabels = [(featureSelection(grams,genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),g) for (grams,g) in genreTestFeaturesAndLabels]         
-            genreTrainFeaturesAndLabels = tempGenreTrainLabels
-            genreTestFeaturesAndLabels = tempGenreTestLabels
+            #tempGenreTrainLabels = [(featureSelection(grams,genreTrainFeaturesAndLabels,[genre for (lyrics,genre) in trainSongs],numFeatures),g) for (grams,g) in genreTrainFeaturesAndLabels]
+            #tempGenreTestLabels = [(featureSelection(grams,genreTestFeaturesAndLabels,[genre for (lyrics,genre) in testSongs],numFeatures),g) for (grams,g) in genreTestFeaturesAndLabels]         
+            #genreTrainFeaturesAndLabels = tempGenreTrainLabels
+            #genreTestFeaturesAndLabels = tempGenreTestLabels
         #TEST CODE 
         #for i in range(1,len(trainarray),2):
             #trainarray[i] = genreTrainFeaturesAndLabels[(i-1)/2]
