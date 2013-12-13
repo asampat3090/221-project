@@ -1,0 +1,1960 @@
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.480083  s
+Extract features:  1.351994  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.560087  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	18 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	18
+Justi 	0 	10 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10
+The%2 	0 	0 	8 	0 	0 	0 	0 	0 	0 	1 	0 	0 	9
+Rihan 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Pink 	0 	0 	0 	0 	7 	0 	0 	0 	0 	0 	0 	0 	7
+Beatl 	1 	0 	0 	0 	0 	2 	0 	0 	0 	0 	0 	0 	3
+Taylo 	0 	0 	0 	0 	0 	0 	10 	0 	0 	0 	0 	0 	10
+Maria 	0 	0 	0 	0 	0 	0 	0 	6 	0 	0 	0 	0 	6
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	8 	0 	0 	0 	8
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6 	0 	0 	6
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	7 	0 	7
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	8 	8
+Got	19 	10 	8 	8 	7 	2 	10 	6 	8 	7 	7 	8 	100
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	17 	3 	0 	0 	2 	0 	0 	0 	1 	0 	0 	1 	24
+Justi 	5 	5 	0 	1 	1 	0 	2 	0 	2 	0 	0 	0 	16
+The%2 	4 	5 	0 	0 	1 	0 	3 	0 	0 	0 	0 	1 	14
+Rihan 	8 	4 	0 	3 	4 	0 	1 	0 	0 	0 	0 	0 	20
+Pink 	3 	2 	0 	0 	0 	0 	1 	0 	0 	0 	0 	0 	6
+Beatl 	3 	3 	0 	0 	0 	0 	3 	0 	0 	1 	0 	1 	11
+Taylo 	6 	2 	0 	0 	0 	0 	4 	0 	2 	0 	0 	0 	14
+Maria 	7 	2 	0 	1 	0 	0 	1 	1 	1 	0 	0 	0 	13
+Beyon 	2 	0 	0 	0 	0 	0 	0 	0 	2 	0 	1 	0 	5
+Maroo 	4 	6 	0 	1 	0 	0 	1 	0 	1 	0 	0 	0 	13
+Demi% 	7 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	0 	8
+Param 	2 	2 	0 	0 	0 	0 	1 	0 	1 	0 	0 	0 	6
+Got	68 	34 	0 	6 	8 	0 	18 	1 	10 	1 	1 	3 	150
+
+Error checking:  9.828944  s
+Train Error:  0.02
+Test Error:  0.786666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.166051  s
+Extract features:  1.959015  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.831854  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	26 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	26
+Justi 	1 	28 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	29
+The%2 	0 	0 	23 	0 	0 	0 	0 	0 	0 	0 	0 	0 	23
+Rihan 	0 	0 	0 	13 	0 	0 	0 	0 	0 	0 	0 	0 	13
+Pink 	0 	0 	0 	0 	12 	0 	0 	0 	0 	0 	0 	0 	12
+Beatl 	0 	0 	0 	0 	0 	15 	0 	0 	0 	0 	1 	0 	16
+Taylo 	0 	0 	0 	0 	0 	0 	17 	0 	0 	0 	0 	0 	17
+Maria 	0 	0 	0 	0 	0 	0 	0 	12 	0 	0 	0 	0 	12
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	17 	0 	0 	0 	17
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10 	0 	0 	10
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	13 	0 	13
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	12 	12
+Got	27 	28 	23 	13 	12 	15 	17 	12 	17 	10 	14 	12 	200
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	9 	3 	1 	0 	0 	2 	2 	0 	0 	0 	0 	25
+Justi 	4 	13 	0 	0 	0 	0 	1 	0 	1 	0 	1 	0 	20
+The%2 	0 	2 	4 	1 	0 	0 	0 	0 	0 	0 	0 	0 	7
+Rihan 	0 	8 	3 	1 	1 	0 	2 	0 	2 	0 	0 	0 	17
+Pink 	0 	7 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9
+Beatl 	1 	2 	5 	1 	0 	0 	3 	0 	0 	0 	0 	0 	12
+Taylo 	2 	3 	6 	0 	0 	0 	1 	0 	0 	0 	0 	0 	12
+Maria 	1 	4 	0 	0 	0 	0 	0 	1 	1 	0 	3 	0 	10
+Beyon 	2 	5 	1 	1 	0 	0 	2 	0 	1 	0 	0 	0 	12
+Maroo 	1 	4 	6 	0 	0 	0 	0 	0 	0 	0 	0 	0 	11
+Demi% 	1 	3 	1 	0 	0 	0 	0 	1 	0 	0 	0 	0 	6
+Param 	2 	2 	4 	0 	0 	0 	0 	0 	0 	0 	0 	1 	9
+Got	22 	62 	35 	5 	1 	0 	11 	4 	5 	0 	4 	1 	150
+
+Error checking:  14.228992  s
+Train Error:  0.01
+Test Error:  0.8  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.222658  s
+Extract features:  2.413136  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.107683  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	53 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	53
+Justi 	0 	31 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	31
+The%2 	0 	0 	26 	0 	0 	0 	1 	0 	1 	0 	0 	0 	28
+Rihan 	0 	0 	0 	23 	0 	0 	0 	0 	0 	0 	0 	0 	23
+Pink 	0 	0 	0 	0 	18 	0 	0 	0 	0 	0 	0 	0 	18
+Beatl 	0 	0 	0 	0 	0 	25 	0 	0 	0 	0 	0 	0 	25
+Taylo 	0 	1 	0 	0 	0 	0 	23 	0 	0 	0 	0 	0 	24
+Maria 	0 	0 	0 	0 	0 	0 	0 	23 	0 	0 	0 	0 	23
+Beyon 	0 	2 	0 	0 	0 	0 	0 	0 	18 	0 	0 	0 	20
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	20 	0 	0 	20
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	16 	0 	16
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	18 	19
+Got	53 	35 	26 	23 	18 	25 	24 	23 	19 	20 	16 	18 	300
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	6 	0 	1 	0 	0 	1 	1 	0 	1 	0 	0 	18
+Justi 	5 	13 	1 	2 	0 	0 	0 	0 	1 	2 	0 	0 	24
+The%2 	7 	5 	4 	2 	0 	0 	2 	0 	0 	0 	1 	0 	21
+Rihan 	2 	3 	1 	0 	0 	0 	1 	1 	0 	1 	0 	0 	9
+Pink 	4 	6 	2 	0 	0 	1 	0 	1 	1 	1 	0 	0 	16
+Beatl 	1 	2 	1 	0 	0 	2 	0 	1 	0 	0 	0 	0 	7
+Taylo 	0 	1 	5 	0 	0 	0 	1 	0 	0 	0 	0 	1 	8
+Maria 	5 	1 	0 	0 	0 	1 	0 	3 	0 	0 	0 	1 	11
+Beyon 	3 	2 	1 	1 	0 	0 	1 	2 	3 	0 	1 	0 	14
+Maroo 	0 	3 	0 	0 	0 	0 	0 	0 	0 	2 	0 	0 	5
+Demi% 	1 	0 	2 	0 	0 	1 	1 	2 	0 	0 	1 	1 	9
+Param 	1 	1 	1 	1 	0 	0 	2 	1 	0 	0 	0 	1 	8
+Got	37 	43 	18 	7 	0 	5 	9 	12 	5 	7 	3 	4 	150
+
+Error checking:  18.567147  s
+Train Error:  0.02
+Test Error:  0.746666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.28814  s
+Extract features:  2.929373  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.379362  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	53 	3 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	57
+Justi 	0 	37 	0 	0 	0 	0 	0 	0 	0 	0 	2 	0 	39
+The%2 	0 	2 	46 	0 	1 	0 	0 	0 	2 	0 	0 	0 	51
+Rihan 	0 	1 	0 	34 	0 	0 	0 	0 	0 	0 	0 	0 	35
+Pink 	0 	0 	0 	0 	21 	1 	0 	0 	1 	0 	0 	0 	23
+Beatl 	0 	2 	0 	0 	0 	34 	0 	0 	0 	0 	0 	0 	36
+Taylo 	0 	1 	1 	0 	0 	0 	23 	0 	0 	0 	0 	0 	25
+Maria 	0 	0 	0 	0 	0 	0 	0 	31 	0 	0 	0 	0 	31
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	31 	0 	0 	0 	31
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	23 	0 	0 	24
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	23 	0 	24
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	23 	24
+Got	54 	46 	48 	35 	22 	35 	23 	31 	35 	23 	25 	23 	400
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	15 	6 	1 	0 	0 	0 	0 	1 	2 	0 	0 	1 	26
+Justi 	2 	7 	4 	3 	0 	1 	0 	1 	1 	0 	0 	0 	19
+The%2 	0 	1 	7 	1 	0 	0 	1 	1 	0 	0 	0 	0 	11
+Rihan 	0 	3 	1 	1 	0 	0 	0 	0 	2 	0 	0 	0 	7
+Pink 	4 	1 	6 	1 	0 	0 	1 	1 	3 	1 	0 	0 	18
+Beatl 	0 	0 	2 	1 	0 	2 	1 	1 	0 	0 	0 	0 	7
+Taylo 	2 	2 	5 	0 	1 	0 	4 	0 	0 	1 	1 	0 	16
+Maria 	1 	0 	0 	1 	0 	0 	1 	2 	0 	2 	0 	0 	7
+Beyon 	0 	3 	1 	0 	0 	0 	0 	0 	4 	0 	0 	0 	8
+Maroo 	1 	5 	2 	0 	0 	0 	0 	0 	0 	1 	0 	2 	11
+Demi% 	3 	1 	2 	1 	1 	0 	0 	0 	0 	0 	1 	1 	10
+Param 	1 	0 	4 	0 	1 	0 	0 	2 	1 	0 	0 	1 	10
+Got	29 	29 	35 	9 	3 	3 	8 	9 	13 	5 	2 	5 	150
+
+Error checking:  21.639634  s
+Train Error:  0.0525
+Test Error:  0.7  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.375357  s
+Extract features:  3.485351  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.641391  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	77 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	79
+Justi 	0 	60 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	61
+The%2 	0 	1 	46 	0 	0 	0 	0 	0 	0 	0 	0 	0 	47
+Rihan 	0 	0 	0 	32 	0 	0 	0 	0 	0 	0 	0 	0 	32
+Pink 	0 	0 	0 	0 	37 	0 	0 	0 	0 	0 	0 	0 	37
+Beatl 	0 	1 	0 	0 	0 	36 	0 	0 	0 	1 	0 	0 	38
+Taylo 	0 	0 	0 	0 	0 	0 	42 	0 	0 	0 	0 	0 	42
+Maria 	1 	0 	0 	0 	0 	0 	0 	34 	0 	0 	0 	0 	35
+Beyon 	0 	1 	0 	0 	0 	0 	1 	0 	34 	0 	0 	0 	36
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	28 	0 	0 	28
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	37 	0 	38
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	27 	27
+Got	79 	65 	47 	32 	37 	36 	43 	34 	34 	29 	37 	27 	500
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	16 	3 	0 	0 	1 	0 	0 	3 	0 	0 	0 	0 	23
+Justi 	1 	6 	4 	0 	0 	0 	0 	0 	1 	0 	0 	0 	12
+The%2 	1 	3 	5 	0 	2 	0 	7 	0 	0 	0 	0 	0 	18
+Rihan 	2 	1 	0 	2 	1 	0 	1 	1 	3 	2 	1 	0 	14
+Pink 	1 	0 	0 	0 	2 	0 	1 	0 	3 	0 	0 	0 	7
+Beatl 	0 	1 	2 	1 	0 	3 	1 	2 	0 	0 	1 	0 	11
+Taylo 	1 	1 	0 	0 	0 	0 	6 	1 	0 	0 	2 	0 	11
+Maria 	0 	0 	0 	1 	1 	0 	1 	3 	1 	0 	0 	0 	7
+Beyon 	3 	3 	1 	0 	0 	0 	3 	1 	2 	0 	1 	0 	14
+Maroo 	0 	2 	2 	0 	0 	0 	0 	0 	0 	3 	0 	0 	7
+Demi% 	1 	3 	0 	0 	0 	0 	0 	1 	0 	0 	6 	0 	11
+Param 	1 	1 	2 	0 	0 	0 	2 	0 	1 	0 	5 	3 	15
+Got	27 	24 	16 	4 	7 	3 	22 	12 	11 	5 	16 	3 	150
+
+Error checking:  25.987834  s
+Train Error:  0.02
+Test Error:  0.62  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.509936  s
+Extract features:  3.978432  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.944422  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	85 	2 	0 	1 	0 	0 	0 	1 	0 	1 	0 	0 	90
+Justi 	1 	64 	0 	0 	0 	0 	0 	1 	0 	0 	1 	1 	68
+The%2 	0 	1 	46 	0 	0 	0 	1 	0 	1 	3 	0 	0 	52
+Rihan 	0 	0 	0 	46 	0 	0 	0 	0 	0 	0 	0 	1 	47
+Pink 	0 	0 	0 	0 	38 	0 	0 	0 	0 	0 	0 	0 	38
+Beatl 	0 	2 	0 	0 	0 	43 	0 	1 	2 	1 	0 	0 	49
+Taylo 	1 	0 	0 	0 	0 	0 	46 	0 	0 	0 	0 	0 	47
+Maria 	0 	0 	0 	0 	0 	0 	0 	40 	0 	0 	0 	0 	40
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	47 	0 	0 	0 	48
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	38 	0 	0 	38
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	37 	0 	38
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	45 	45
+Got	88 	69 	47 	47 	38 	43 	47 	43 	50 	43 	38 	47 	600
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	4 	0 	1 	0 	1 	2 	2 	1 	2 	0 	0 	22
+Justi 	4 	9 	2 	0 	0 	0 	3 	0 	0 	0 	1 	0 	19
+The%2 	1 	2 	2 	0 	1 	1 	3 	0 	1 	1 	1 	0 	13
+Rihan 	2 	2 	2 	2 	0 	0 	0 	1 	1 	0 	0 	0 	10
+Pink 	0 	3 	0 	0 	3 	0 	0 	0 	2 	1 	2 	0 	11
+Beatl 	1 	2 	0 	3 	1 	1 	0 	1 	2 	0 	0 	0 	11
+Taylo 	0 	0 	1 	0 	0 	0 	7 	0 	0 	1 	0 	2 	11
+Maria 	2 	2 	0 	1 	0 	0 	0 	6 	0 	1 	0 	0 	12
+Beyon 	2 	2 	0 	1 	1 	0 	0 	0 	2 	1 	0 	0 	9
+Maroo 	0 	3 	1 	0 	0 	0 	0 	0 	1 	4 	0 	3 	12
+Demi% 	1 	3 	1 	0 	0 	0 	0 	1 	0 	2 	1 	0 	9
+Param 	1 	1 	1 	0 	0 	0 	2 	2 	1 	1 	0 	2 	11
+Got	23 	33 	10 	8 	6 	3 	17 	13 	11 	14 	5 	7 	150
+
+Error checking:  29.61945  s
+Train Error:  0.0416666666667
+Test Error:  0.68  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.752989  s
+Extract features:  4.616928  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.203611  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	94 	3 	0 	2 	0 	0 	0 	2 	1 	1 	0 	1 	104
+Justi 	3 	75 	0 	1 	0 	0 	0 	1 	0 	0 	1 	1 	82
+The%2 	1 	0 	62 	0 	1 	0 	1 	1 	1 	2 	0 	1 	70
+Rihan 	1 	1 	0 	54 	0 	0 	0 	0 	0 	0 	0 	0 	56
+Pink 	0 	0 	0 	0 	50 	0 	0 	0 	0 	0 	0 	0 	50
+Beatl 	0 	0 	1 	1 	1 	50 	0 	1 	0 	0 	0 	0 	54
+Taylo 	1 	0 	0 	0 	0 	0 	48 	0 	0 	1 	0 	0 	50
+Maria 	0 	0 	0 	1 	0 	0 	0 	49 	0 	0 	0 	0 	50
+Beyon 	0 	1 	1 	0 	0 	0 	0 	1 	45 	0 	0 	0 	48
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	48 	0 	0 	48
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	42 	0 	42
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	46 	46
+Got	100 	80 	64 	59 	52 	50 	49 	55 	47 	52 	43 	49 	700
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	3 	1 	1 	0 	0 	0 	2 	0 	1 	2 	0 	19
+Justi 	5 	6 	3 	0 	0 	0 	0 	1 	0 	0 	0 	0 	15
+The%2 	3 	1 	6 	0 	0 	0 	2 	1 	2 	1 	0 	0 	16
+Rihan 	1 	4 	1 	4 	0 	0 	0 	0 	1 	0 	0 	1 	12
+Pink 	2 	1 	1 	0 	3 	0 	1 	0 	0 	2 	2 	1 	13
+Beatl 	2 	1 	1 	2 	0 	2 	0 	0 	1 	2 	0 	0 	11
+Taylo 	2 	0 	1 	0 	2 	0 	5 	0 	0 	0 	0 	0 	10
+Maria 	0 	1 	0 	0 	0 	0 	0 	4 	1 	0 	1 	0 	7
+Beyon 	1 	2 	1 	2 	1 	0 	1 	0 	2 	1 	2 	0 	13
+Maroo 	0 	2 	2 	0 	1 	0 	0 	0 	0 	2 	0 	1 	8
+Demi% 	5 	2 	1 	2 	1 	0 	0 	0 	0 	1 	4 	1 	17
+Param 	0 	1 	0 	0 	0 	0 	1 	0 	0 	0 	1 	6 	9
+Got	30 	24 	18 	11 	8 	2 	10 	8 	7 	10 	12 	10 	150
+
+Error checking:  34.799031  s
+Train Error:  0.0528571428571
+Test Error:  0.646666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.433276  s
+Extract features:  5.091725  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.472127  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	110 	7 	1 	1 	0 	0 	0 	3 	0 	1 	0 	0 	123
+Justi 	5 	84 	2 	0 	0 	0 	0 	0 	0 	0 	2 	1 	94
+The%2 	1 	0 	68 	0 	1 	1 	2 	0 	3 	1 	0 	1 	78
+Rihan 	0 	0 	0 	59 	0 	0 	0 	0 	0 	1 	0 	0 	60
+Pink 	0 	0 	0 	0 	59 	0 	0 	0 	1 	1 	0 	0 	61
+Beatl 	0 	2 	0 	0 	0 	57 	0 	0 	1 	2 	0 	0 	62
+Taylo 	0 	2 	0 	0 	0 	0 	48 	0 	0 	0 	0 	0 	50
+Maria 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	0 	0 	56
+Beyon 	1 	2 	1 	0 	0 	0 	0 	0 	51 	0 	1 	1 	57
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	57 	0 	0 	57
+Demi% 	2 	0 	0 	0 	0 	0 	0 	0 	0 	1 	49 	0 	52
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49 	50
+Got	119 	98 	72 	60 	60 	58 	50 	59 	56 	64 	52 	52 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	5 	0 	0 	0 	0 	0 	0 	1 	0 	0 	1 	18
+Justi 	3 	8 	2 	0 	0 	1 	0 	1 	0 	1 	0 	0 	16
+The%2 	0 	0 	6 	1 	2 	0 	1 	0 	0 	2 	2 	2 	16
+Rihan 	0 	2 	4 	2 	2 	0 	0 	0 	1 	1 	1 	0 	13
+Pink 	0 	1 	2 	1 	1 	1 	0 	0 	0 	1 	0 	1 	8
+Beatl 	1 	0 	2 	0 	1 	2 	0 	0 	1 	0 	0 	0 	7
+Taylo 	3 	1 	5 	1 	2 	0 	5 	0 	0 	0 	0 	0 	17
+Maria 	3 	1 	0 	0 	0 	0 	0 	4 	0 	2 	1 	1 	12
+Beyon 	0 	2 	3 	1 	0 	0 	0 	0 	3 	0 	0 	0 	9
+Maroo 	0 	0 	1 	0 	0 	2 	0 	0 	0 	3 	0 	0 	6
+Demi% 	1 	0 	0 	1 	3 	0 	0 	0 	0 	0 	5 	3 	13
+Param 	0 	0 	1 	1 	1 	0 	1 	1 	1 	3 	2 	4 	15
+Got	22 	20 	26 	8 	12 	6 	7 	6 	7 	13 	11 	12 	150
+
+Error checking:  38.30532  s
+Train Error:  0.06625
+Test Error:  0.64  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.147745  s
+Extract features:  1.312919  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.531204  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	18 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	18
+Justi 	0 	9 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	10
+The%2 	0 	0 	9 	0 	0 	0 	1 	0 	0 	0 	0 	0 	10
+Rihan 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Pink 	0 	0 	0 	0 	11 	0 	0 	0 	0 	0 	0 	0 	11
+Beatl 	0 	0 	0 	0 	0 	5 	0 	0 	0 	0 	0 	0 	5
+Taylo 	0 	0 	0 	0 	0 	0 	6 	0 	0 	0 	0 	0 	6
+Maria 	0 	0 	0 	0 	0 	0 	0 	4 	0 	0 	0 	0 	4
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	6 	0 	0 	0 	6
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9 	0 	0 	9
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	7 	0 	7
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6 	6
+Got	18 	9 	9 	8 	11 	5 	7 	5 	6 	9 	7 	6 	100
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	2 	1 	1 	5 	0 	0 	0 	0 	2 	0 	0 	17
+Justi 	10 	2 	0 	2 	1 	0 	1 	0 	2 	0 	2 	0 	20
+The%2 	7 	4 	1 	0 	1 	0 	1 	0 	1 	2 	0 	0 	17
+Rihan 	8 	1 	1 	0 	1 	0 	0 	0 	1 	2 	1 	0 	15
+Pink 	2 	2 	0 	1 	7 	0 	0 	0 	0 	1 	0 	0 	13
+Beatl 	4 	1 	0 	1 	2 	0 	0 	0 	1 	1 	2 	0 	12
+Taylo 	2 	1 	0 	0 	4 	0 	1 	0 	1 	3 	0 	0 	12
+Maria 	6 	0 	0 	0 	1 	0 	0 	0 	0 	1 	1 	0 	9
+Beyon 	2 	0 	0 	2 	2 	0 	0 	0 	1 	3 	0 	0 	10
+Maroo 	2 	2 	0 	0 	5 	0 	0 	0 	0 	1 	0 	0 	10
+Demi% 	0 	1 	0 	0 	4 	0 	0 	0 	0 	0 	3 	0 	8
+Param 	1 	1 	0 	0 	3 	0 	0 	0 	0 	0 	2 	0 	7
+Got	50 	17 	3 	7 	36 	0 	3 	0 	7 	16 	11 	0 	150
+
+Error checking:  9.976708  s
+Train Error:  0.02
+Test Error:  0.853333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.176489  s
+Extract features:  1.872581  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.846784  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	36 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	37
+Justi 	1 	19 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	20
+The%2 	1 	0 	15 	0 	0 	0 	0 	0 	0 	0 	0 	0 	16
+Rihan 	0 	0 	0 	9 	0 	0 	0 	0 	0 	0 	0 	0 	9
+Pink 	0 	0 	0 	0 	20 	0 	0 	0 	0 	0 	0 	0 	20
+Beatl 	1 	1 	0 	0 	0 	14 	0 	0 	0 	0 	0 	0 	16
+Taylo 	0 	0 	0 	0 	0 	0 	12 	0 	0 	0 	0 	0 	12
+Maria 	0 	0 	0 	0 	0 	0 	0 	12 	0 	0 	0 	0 	12
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	12 	0 	0 	0 	12
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	21 	0 	0 	21
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	11 	0 	11
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	14 	14
+Got	39 	21 	15 	9 	20 	14 	12 	12 	12 	21 	11 	14 	200
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	5 	2 	0 	1 	0 	1 	3 	0 	0 	0 	0 	20
+Justi 	6 	7 	1 	0 	1 	0 	0 	0 	0 	3 	0 	0 	18
+The%2 	2 	5 	2 	1 	2 	0 	1 	0 	2 	1 	0 	2 	18
+Rihan 	6 	3 	1 	2 	1 	0 	1 	0 	1 	1 	0 	0 	16
+Pink 	4 	1 	0 	0 	2 	0 	0 	0 	0 	1 	0 	1 	9
+Beatl 	2 	4 	0 	0 	2 	2 	1 	0 	1 	4 	1 	0 	17
+Taylo 	2 	0 	0 	0 	3 	0 	2 	0 	0 	1 	0 	1 	9
+Maria 	4 	1 	1 	0 	0 	0 	0 	2 	0 	2 	0 	0 	10
+Beyon 	5 	1 	0 	1 	1 	0 	0 	1 	0 	1 	0 	0 	10
+Maroo 	0 	5 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	6
+Demi% 	3 	1 	0 	1 	2 	0 	1 	0 	1 	1 	1 	0 	11
+Param 	2 	1 	0 	0 	1 	0 	0 	0 	0 	2 	0 	0 	6
+Got	44 	34 	7 	5 	16 	2 	7 	6 	5 	18 	2 	4 	150
+
+Error checking:  13.949437  s
+Train Error:  0.025
+Test Error:  0.806666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.229758  s
+Extract features:  2.457917  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.127049  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	49 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49
+Justi 	0 	37 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	37
+The%2 	0 	0 	29 	0 	0 	1 	0 	0 	1 	0 	0 	0 	31
+Rihan 	0 	0 	0 	26 	0 	0 	0 	0 	0 	0 	0 	0 	26
+Pink 	0 	0 	0 	0 	16 	0 	0 	0 	0 	0 	0 	0 	16
+Beatl 	0 	0 	0 	0 	0 	19 	0 	0 	0 	0 	0 	0 	19
+Taylo 	0 	0 	0 	0 	0 	0 	19 	0 	0 	0 	0 	0 	19
+Maria 	0 	0 	0 	0 	0 	0 	0 	19 	0 	0 	0 	0 	19
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	21 	0 	0 	0 	21
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	23 	0 	0 	23
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	22 	0 	22
+Param 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	17 	18
+Got	50 	37 	29 	26 	16 	20 	19 	19 	22 	23 	22 	17 	300
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	7 	1 	0 	0 	0 	0 	1 	0 	1 	0 	0 	21
+Justi 	3 	15 	2 	0 	0 	0 	0 	0 	2 	0 	0 	0 	22
+The%2 	3 	4 	1 	0 	0 	0 	1 	0 	0 	0 	1 	0 	10
+Rihan 	2 	5 	0 	3 	0 	0 	0 	0 	2 	2 	0 	0 	14
+Pink 	1 	3 	1 	1 	1 	0 	0 	0 	0 	3 	0 	0 	10
+Beatl 	4 	1 	3 	1 	0 	0 	0 	0 	0 	1 	0 	0 	10
+Taylo 	1 	2 	1 	0 	0 	0 	4 	0 	0 	2 	0 	0 	10
+Maria 	3 	4 	0 	2 	0 	0 	2 	3 	1 	1 	1 	0 	17
+Beyon 	2 	4 	1 	1 	0 	0 	0 	0 	1 	0 	1 	0 	10
+Maroo 	1 	6 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Demi% 	2 	3 	0 	1 	1 	0 	1 	1 	0 	0 	2 	0 	11
+Param 	1 	1 	1 	1 	0 	0 	1 	0 	0 	1 	1 	0 	7
+Got	34 	55 	12 	10 	2 	0 	9 	5 	6 	11 	6 	0 	150
+
+Error checking:  18.68639  s
+Train Error:  0.01
+Test Error:  0.726666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.285567  s
+Extract features:  2.9609  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.38441  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	49 	3 	0 	0 	0 	0 	0 	0 	0 	2 	0 	0 	54
+Justi 	0 	48 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	49
+The%2 	0 	1 	40 	0 	0 	0 	1 	0 	0 	0 	0 	0 	42
+Rihan 	0 	0 	0 	26 	0 	0 	0 	0 	0 	0 	0 	0 	26
+Pink 	0 	0 	0 	0 	32 	0 	0 	0 	0 	0 	0 	0 	32
+Beatl 	0 	0 	1 	0 	0 	33 	0 	0 	0 	0 	0 	0 	34
+Taylo 	0 	0 	0 	0 	0 	0 	31 	0 	0 	0 	0 	0 	31
+Maria 	0 	1 	0 	0 	0 	0 	0 	32 	0 	0 	0 	0 	33
+Beyon 	0 	1 	0 	0 	0 	0 	0 	0 	24 	0 	0 	0 	25
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	22 	0 	0 	22
+Demi% 	0 	2 	0 	0 	0 	0 	0 	0 	0 	0 	22 	0 	24
+Param 	0 	1 	0 	0 	0 	0 	0 	1 	0 	0 	0 	26 	28
+Got	49 	57 	41 	26 	32 	33 	32 	33 	24 	24 	23 	26 	400
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	6 	3 	1 	2 	0 	0 	2 	0 	1 	0 	0 	20
+Justi 	2 	11 	1 	1 	0 	0 	1 	1 	1 	0 	0 	0 	18
+The%2 	2 	3 	3 	0 	2 	0 	1 	1 	0 	0 	1 	0 	13
+Rihan 	1 	4 	0 	3 	0 	0 	1 	1 	1 	0 	1 	0 	12
+Pink 	2 	4 	1 	0 	2 	0 	0 	0 	1 	0 	1 	1 	12
+Beatl 	0 	3 	2 	0 	0 	3 	0 	3 	0 	0 	0 	0 	11
+Taylo 	0 	1 	4 	0 	2 	0 	7 	0 	0 	0 	0 	0 	14
+Maria 	0 	1 	0 	2 	1 	1 	0 	3 	0 	1 	0 	0 	9
+Beyon 	1 	2 	0 	2 	0 	0 	1 	1 	3 	0 	0 	0 	10
+Maroo 	0 	4 	2 	1 	1 	0 	2 	0 	0 	1 	0 	1 	12
+Demi% 	1 	1 	3 	0 	3 	0 	1 	1 	0 	0 	0 	0 	10
+Param 	0 	2 	3 	0 	0 	0 	1 	0 	0 	1 	1 	1 	9
+Got	14 	42 	22 	10 	13 	4 	15 	13 	6 	4 	4 	3 	150
+
+Error checking:  22.151923  s
+Train Error:  0.0375
+Test Error:  0.72  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.375112  s
+Extract features:  3.447368  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.632131  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	65 	0 	0 	0 	0 	0 	0 	3 	0 	0 	0 	0 	68
+Justi 	1 	51 	0 	1 	0 	0 	0 	0 	0 	0 	1 	0 	54
+The%2 	1 	1 	49 	0 	0 	0 	0 	0 	2 	0 	0 	0 	53
+Rihan 	0 	0 	0 	39 	0 	0 	0 	0 	0 	0 	0 	0 	39
+Pink 	0 	0 	0 	0 	29 	0 	0 	1 	0 	0 	0 	0 	30
+Beatl 	0 	1 	0 	0 	0 	37 	0 	1 	0 	0 	0 	0 	39
+Taylo 	0 	1 	0 	0 	0 	0 	35 	0 	0 	0 	0 	0 	36
+Maria 	0 	0 	0 	0 	0 	0 	0 	42 	0 	0 	0 	0 	42
+Beyon 	0 	1 	0 	0 	0 	0 	0 	1 	34 	0 	0 	0 	36
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	36 	0 	0 	36
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	33 	0 	33
+Param 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	33 	34
+Got	67 	55 	49 	40 	29 	37 	35 	49 	36 	36 	34 	33 	500
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	10 	5 	5 	0 	0 	0 	2 	1 	0 	1 	1 	0 	25
+Justi 	5 	4 	1 	1 	1 	0 	0 	1 	0 	3 	0 	0 	16
+The%2 	2 	3 	5 	1 	0 	1 	3 	0 	0 	1 	3 	1 	20
+Rihan 	4 	1 	1 	1 	0 	0 	0 	1 	0 	1 	1 	1 	11
+Pink 	1 	0 	3 	1 	2 	1 	1 	0 	0 	3 	0 	0 	12
+Beatl 	0 	0 	4 	1 	0 	1 	1 	0 	1 	1 	2 	0 	11
+Taylo 	1 	1 	4 	0 	1 	0 	3 	0 	0 	1 	1 	0 	12
+Maria 	2 	3 	1 	2 	0 	0 	0 	1 	1 	0 	2 	0 	12
+Beyon 	0 	2 	1 	0 	0 	0 	0 	0 	2 	0 	1 	0 	6
+Maroo 	0 	2 	2 	1 	0 	0 	1 	1 	0 	3 	0 	0 	10
+Demi% 	0 	2 	1 	0 	1 	0 	1 	1 	0 	1 	2 	0 	9
+Param 	0 	1 	3 	0 	0 	0 	1 	0 	0 	1 	0 	0 	6
+Got	25 	24 	31 	8 	5 	3 	13 	6 	4 	16 	13 	2 	150
+
+Error checking:  26.474388  s
+Train Error:  0.034
+Test Error:  0.773333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.524941  s
+Extract features:  4.020912  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.926804  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	78 	4 	0 	1 	0 	0 	0 	1 	0 	0 	0 	1 	85
+Justi 	0 	72 	0 	0 	1 	0 	0 	1 	0 	0 	0 	0 	74
+The%2 	0 	1 	48 	0 	1 	0 	0 	0 	3 	2 	0 	0 	55
+Rihan 	0 	1 	0 	38 	0 	0 	0 	0 	0 	0 	0 	0 	39
+Pink 	0 	0 	0 	0 	48 	0 	0 	0 	0 	1 	0 	0 	49
+Beatl 	0 	0 	0 	0 	1 	45 	0 	0 	1 	0 	0 	0 	47
+Taylo 	0 	1 	0 	0 	0 	0 	35 	0 	0 	1 	0 	0 	37
+Maria 	1 	0 	0 	0 	0 	0 	0 	45 	0 	0 	0 	0 	46
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	47 	0 	0 	0 	47
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	45 	0 	0 	45
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	39 	0 	39
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	36 	37
+Got	79 	80 	48 	39 	51 	45 	35 	47 	51 	49 	39 	37 	600
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	10 	6 	0 	0 	3 	0 	2 	0 	1 	0 	0 	1 	23
+Justi 	2 	12 	4 	1 	1 	0 	0 	1 	0 	0 	1 	0 	22
+The%2 	0 	3 	5 	0 	0 	0 	1 	0 	1 	0 	0 	0 	10
+Rihan 	1 	2 	1 	4 	1 	0 	1 	0 	3 	0 	1 	0 	14
+Pink 	1 	1 	0 	1 	6 	0 	0 	1 	0 	1 	0 	0 	11
+Beatl 	2 	0 	1 	1 	0 	1 	1 	0 	1 	1 	0 	0 	8
+Taylo 	0 	0 	6 	0 	1 	0 	9 	0 	0 	1 	0 	0 	17
+Maria 	1 	1 	1 	0 	0 	0 	0 	5 	0 	0 	1 	0 	9
+Beyon 	2 	2 	0 	0 	1 	0 	0 	0 	2 	0 	1 	1 	9
+Maroo 	0 	0 	1 	0 	1 	0 	0 	0 	0 	4 	0 	0 	6
+Demi% 	1 	1 	1 	0 	3 	0 	0 	1 	2 	0 	0 	0 	9
+Param 	1 	2 	1 	0 	0 	0 	1 	1 	0 	2 	0 	4 	12
+Got	21 	30 	21 	7 	17 	1 	15 	9 	10 	9 	4 	6 	150
+
+Error checking:  29.51841  s
+Train Error:  0.04
+Test Error:  0.586666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.725256  s
+Extract features:  4.451053  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.112372  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	90 	7 	0 	0 	1 	0 	2 	1 	0 	1 	0 	0 	102
+Justi 	0 	78 	1 	0 	0 	0 	0 	0 	0 	0 	2 	0 	81
+The%2 	1 	0 	62 	0 	1 	1 	0 	0 	1 	0 	2 	1 	69
+Rihan 	1 	2 	0 	42 	0 	0 	0 	0 	0 	0 	0 	0 	45
+Pink 	0 	0 	0 	0 	54 	0 	0 	0 	0 	1 	0 	0 	55
+Beatl 	0 	2 	0 	0 	2 	44 	1 	1 	0 	0 	0 	0 	50
+Taylo 	1 	1 	0 	0 	0 	0 	60 	0 	0 	0 	0 	0 	62
+Maria 	0 	1 	0 	0 	0 	0 	0 	50 	0 	0 	0 	0 	51
+Beyon 	0 	3 	0 	0 	0 	0 	1 	0 	42 	0 	0 	0 	46
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	44 	0 	0 	44
+Demi% 	1 	0 	0 	0 	1 	0 	0 	0 	0 	1 	51 	0 	54
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	40 	41
+Got	94 	95 	63 	42 	59 	45 	64 	52 	43 	47 	55 	41 	700
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	12 	5 	0 	0 	0 	0 	1 	1 	1 	0 	1 	0 	21
+Justi 	3 	7 	0 	3 	0 	0 	1 	1 	1 	0 	1 	0 	17
+The%2 	0 	2 	6 	1 	0 	0 	4 	0 	0 	1 	0 	1 	15
+Rihan 	0 	3 	5 	2 	2 	0 	0 	0 	2 	0 	1 	1 	16
+Pink 	1 	1 	1 	1 	3 	0 	1 	1 	0 	0 	1 	0 	10
+Beatl 	0 	6 	1 	0 	1 	1 	0 	0 	0 	1 	0 	0 	10
+Taylo 	0 	0 	0 	0 	0 	0 	4 	0 	0 	0 	1 	0 	5
+Maria 	0 	1 	0 	1 	1 	0 	0 	3 	0 	0 	2 	1 	9
+Beyon 	1 	2 	2 	0 	2 	0 	0 	1 	2 	1 	1 	0 	12
+Maroo 	1 	4 	0 	0 	2 	0 	1 	1 	0 	4 	0 	0 	13
+Demi% 	2 	3 	0 	0 	0 	0 	1 	0 	0 	0 	2 	1 	9
+Param 	0 	1 	1 	1 	2 	0 	3 	0 	0 	2 	0 	3 	13
+Got	20 	35 	16 	9 	13 	1 	16 	8 	6 	9 	10 	7 	150
+
+Error checking:  33.420501  s
+Train Error:  0.0614285714286
+Test Error:  0.673333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.232536  s
+Extract features:  4.992474  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.386115  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	107 	6 	0 	2 	1 	0 	0 	2 	0 	1 	1 	1 	121
+Justi 	3 	84 	2 	0 	0 	0 	0 	0 	0 	0 	3 	0 	92
+The%2 	1 	1 	73 	0 	1 	1 	2 	1 	1 	2 	0 	0 	83
+Rihan 	0 	0 	0 	59 	0 	0 	0 	0 	0 	2 	1 	0 	62
+Pink 	0 	0 	0 	0 	52 	0 	0 	0 	1 	1 	0 	0 	54
+Beatl 	0 	1 	0 	0 	0 	49 	0 	1 	0 	0 	1 	2 	54
+Taylo 	1 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	0 	56
+Maria 	0 	0 	1 	0 	0 	0 	0 	53 	0 	0 	1 	0 	55
+Beyon 	0 	1 	1 	0 	0 	0 	1 	0 	46 	0 	1 	0 	50
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	60 	0 	0 	60
+Demi% 	2 	0 	0 	0 	0 	0 	0 	0 	0 	1 	57 	0 	60
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	53
+Got	114 	94 	77 	61 	54 	50 	58 	57 	48 	67 	65 	55 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	5 	0 	0 	0 	0 	1 	1 	1 	1 	1 	2 	21
+Justi 	0 	8 	4 	0 	0 	0 	2 	0 	0 	0 	2 	1 	17
+The%2 	0 	0 	5 	0 	1 	0 	1 	0 	1 	2 	0 	1 	11
+Rihan 	1 	3 	1 	0 	0 	0 	3 	0 	1 	2 	0 	0 	11
+Pink 	0 	1 	0 	1 	8 	0 	2 	0 	2 	0 	0 	0 	14
+Beatl 	0 	1 	3 	0 	1 	2 	1 	2 	0 	3 	0 	0 	13
+Taylo 	0 	1 	2 	0 	1 	0 	5 	0 	0 	2 	1 	2 	14
+Maria 	1 	0 	0 	2 	0 	0 	2 	5 	0 	2 	2 	0 	14
+Beyon 	0 	4 	0 	2 	1 	0 	1 	1 	5 	0 	1 	0 	15
+Maroo 	0 	1 	1 	0 	0 	2 	0 	0 	0 	1 	1 	0 	6
+Demi% 	0 	0 	1 	0 	0 	0 	0 	0 	1 	1 	1 	0 	4
+Param 	0 	0 	1 	0 	1 	0 	1 	0 	0 	2 	2 	3 	10
+Got	11 	24 	18 	5 	13 	4 	19 	9 	11 	16 	11 	9 	150
+
+Error checking:  37.747119  s
+Train Error:  0.06625
+Test Error:  0.653333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.152903  s
+Extract features:  1.334724  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.562962  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	16 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	16
+Justi 	0 	13 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	13
+The%2 	0 	0 	9 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9
+Rihan 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Pink 	0 	0 	0 	0 	4 	0 	0 	0 	0 	0 	0 	0 	4
+Beatl 	0 	0 	0 	0 	0 	13 	0 	0 	0 	0 	0 	0 	13
+Taylo 	0 	0 	0 	0 	0 	0 	6 	0 	0 	0 	0 	0 	6
+Maria 	0 	0 	0 	0 	0 	0 	0 	5 	0 	0 	0 	0 	5
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	4 	0 	0 	0 	5
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9 	0 	0 	9
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	5 	0 	5
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	7 	7
+Got	16 	13 	10 	8 	4 	13 	6 	5 	4 	9 	5 	7 	100
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	8 	1 	1 	0 	0 	0 	0 	0 	0 	0 	0 	16
+Justi 	4 	11 	1 	1 	0 	0 	0 	0 	2 	2 	0 	0 	21
+The%2 	9 	5 	1 	2 	0 	0 	0 	0 	0 	0 	0 	0 	17
+Rihan 	9 	3 	1 	0 	0 	1 	0 	0 	0 	0 	0 	0 	14
+Pink 	4 	5 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10
+Beatl 	3 	6 	0 	0 	0 	0 	1 	1 	0 	1 	0 	0 	12
+Taylo 	3 	3 	1 	0 	0 	0 	0 	0 	0 	1 	0 	0 	8
+Maria 	2 	4 	1 	0 	0 	2 	1 	0 	0 	1 	0 	0 	11
+Beyon 	5 	4 	0 	2 	0 	0 	0 	0 	0 	1 	0 	0 	12
+Maroo 	2 	6 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	9
+Demi% 	3 	5 	0 	1 	1 	0 	0 	0 	0 	0 	0 	0 	10
+Param 	1 	3 	0 	0 	0 	0 	1 	0 	0 	2 	0 	3 	10
+Got	51 	63 	7 	7 	1 	3 	3 	1 	2 	9 	0 	3 	150
+
+Error checking:  9.996475  s
+Train Error:  0.01
+Test Error:  0.853333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.184141  s
+Extract features:  1.862489  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.849208  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	33 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	33
+Justi 	0 	20 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	21
+The%2 	0 	0 	24 	0 	0 	0 	0 	0 	0 	0 	0 	0 	24
+Rihan 	0 	0 	0 	13 	0 	0 	0 	0 	0 	0 	0 	0 	13
+Pink 	0 	0 	0 	0 	10 	0 	0 	0 	0 	0 	0 	0 	10
+Beatl 	0 	1 	0 	0 	0 	11 	0 	1 	0 	0 	0 	0 	13
+Taylo 	0 	0 	0 	0 	0 	0 	15 	0 	0 	0 	0 	0 	15
+Maria 	0 	0 	0 	0 	0 	0 	0 	18 	0 	0 	0 	0 	18
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	11 	0 	0 	0 	11
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	12 	0 	0 	12
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	16 	0 	16
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	14 	14
+Got	33 	21 	24 	13 	10 	11 	15 	20 	11 	12 	16 	14 	200
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	5 	1 	0 	0 	0 	1 	1 	0 	0 	0 	0 	15
+Justi 	3 	10 	2 	0 	0 	0 	0 	1 	0 	0 	0 	1 	17
+The%2 	5 	0 	5 	0 	0 	0 	2 	1 	0 	1 	1 	1 	16
+Rihan 	2 	4 	3 	0 	0 	0 	0 	0 	1 	0 	2 	1 	13
+Pink 	5 	1 	1 	0 	0 	0 	0 	1 	0 	0 	1 	0 	9
+Beatl 	1 	3 	1 	1 	0 	1 	0 	2 	1 	0 	0 	0 	10
+Taylo 	3 	4 	2 	0 	1 	0 	2 	0 	0 	0 	0 	0 	12
+Maria 	1 	2 	2 	0 	0 	0 	1 	4 	0 	0 	1 	0 	11
+Beyon 	3 	5 	5 	0 	0 	0 	0 	1 	0 	0 	0 	0 	14
+Maroo 	1 	5 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	7
+Demi% 	3 	0 	3 	0 	0 	2 	0 	2 	1 	0 	0 	1 	12
+Param 	7 	0 	2 	0 	0 	0 	1 	1 	1 	0 	0 	2 	14
+Got	41 	39 	28 	1 	1 	3 	7 	14 	4 	1 	5 	6 	150
+
+Error checking:  13.922112  s
+Train Error:  0.015
+Test Error:  0.793333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.204248  s
+Extract features:  2.375445  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.119575  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	48 	1 	1 	1 	0 	0 	0 	0 	0 	1 	0 	0 	52
+Justi 	1 	33 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	35
+The%2 	0 	0 	37 	0 	0 	0 	1 	0 	0 	0 	0 	0 	38
+Rihan 	0 	0 	0 	19 	0 	0 	0 	0 	0 	0 	0 	0 	19
+Pink 	0 	0 	0 	0 	20 	0 	0 	0 	0 	0 	0 	0 	20
+Beatl 	1 	3 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	12
+Taylo 	0 	0 	0 	0 	0 	0 	21 	0 	0 	0 	0 	0 	21
+Maria 	0 	0 	0 	0 	0 	0 	0 	21 	0 	0 	0 	0 	21
+Beyon 	0 	0 	0 	0 	0 	0 	1 	0 	17 	0 	0 	0 	18
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	26 	0 	0 	26
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	21 	0 	21
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	17 	17
+Got	50 	37 	38 	20 	20 	8 	23 	21 	17 	27 	22 	17 	300
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	12 	5 	1 	0 	0 	0 	0 	1 	1 	2 	0 	0 	22
+Justi 	3 	8 	3 	0 	1 	0 	1 	1 	0 	2 	0 	0 	19
+The%2 	1 	2 	7 	0 	0 	0 	1 	0 	1 	1 	0 	0 	13
+Rihan 	3 	6 	2 	0 	0 	0 	0 	0 	0 	2 	0 	0 	13
+Pink 	2 	3 	1 	0 	2 	0 	0 	0 	0 	0 	0 	0 	8
+Beatl 	2 	4 	2 	1 	0 	0 	0 	0 	1 	3 	0 	0 	13
+Taylo 	3 	1 	4 	0 	0 	0 	5 	0 	0 	0 	0 	0 	13
+Maria 	3 	2 	3 	0 	0 	0 	0 	3 	0 	1 	0 	0 	12
+Beyon 	1 	1 	5 	0 	0 	0 	0 	1 	1 	0 	0 	0 	9
+Maroo 	0 	5 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	7
+Demi% 	1 	1 	5 	0 	1 	0 	0 	0 	0 	0 	2 	0 	10
+Param 	1 	3 	4 	0 	0 	0 	0 	0 	0 	3 	0 	0 	11
+Got	32 	41 	39 	1 	4 	0 	7 	6 	4 	14 	2 	0 	150
+
+Error checking:  17.885972  s
+Train Error:  0.04
+Test Error:  0.733333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.310804  s
+Extract features:  2.91657  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.390366  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	64 	1 	1 	0 	0 	0 	0 	2 	0 	0 	0 	0 	68
+Justi 	0 	39 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	40
+The%2 	0 	0 	33 	0 	1 	0 	0 	0 	1 	0 	0 	0 	35
+Rihan 	0 	0 	0 	29 	0 	0 	0 	0 	0 	0 	0 	0 	29
+Pink 	0 	0 	0 	0 	31 	0 	0 	0 	0 	0 	0 	0 	31
+Beatl 	0 	0 	0 	0 	1 	20 	1 	0 	1 	1 	0 	0 	24
+Taylo 	0 	0 	0 	0 	0 	0 	31 	0 	0 	1 	0 	0 	32
+Maria 	0 	0 	0 	0 	0 	0 	0 	27 	0 	0 	0 	0 	27
+Beyon 	1 	0 	0 	0 	0 	0 	1 	0 	30 	0 	0 	0 	32
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	31 	0 	0 	31
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	28 	0 	28
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	23 	23
+Got	65 	40 	35 	29 	33 	20 	33 	29 	32 	33 	28 	23 	400
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	5 	0 	2 	1 	0 	0 	0 	0 	0 	1 	0 	22
+Justi 	7 	11 	0 	0 	0 	0 	1 	0 	2 	2 	0 	0 	23
+The%2 	1 	3 	3 	1 	1 	0 	1 	0 	2 	1 	1 	0 	14
+Rihan 	2 	0 	0 	2 	3 	0 	0 	0 	2 	0 	0 	0 	9
+Pink 	4 	2 	1 	1 	0 	0 	0 	0 	0 	1 	1 	0 	10
+Beatl 	2 	0 	3 	1 	0 	1 	0 	1 	0 	1 	0 	0 	9
+Taylo 	1 	1 	1 	0 	0 	0 	6 	1 	0 	0 	0 	0 	10
+Maria 	4 	0 	1 	0 	0 	0 	1 	4 	0 	0 	0 	0 	10
+Beyon 	0 	2 	1 	3 	0 	0 	0 	0 	5 	2 	1 	0 	14
+Maroo 	2 	0 	1 	0 	0 	0 	0 	0 	0 	2 	0 	0 	5
+Demi% 	3 	1 	0 	0 	0 	0 	0 	0 	2 	2 	3 	0 	11
+Param 	2 	1 	0 	0 	3 	0 	2 	1 	1 	2 	1 	0 	13
+Got	41 	26 	11 	10 	8 	1 	11 	7 	14 	13 	8 	0 	150
+
+Error checking:  21.521574  s
+Train Error:  0.035
+Test Error:  0.666666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.389986  s
+Extract features:  3.559856  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.689144  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	63 	1 	1 	1 	0 	0 	0 	0 	0 	0 	0 	0 	66
+Justi 	0 	64 	0 	0 	0 	0 	0 	0 	1 	0 	1 	1 	67
+The%2 	0 	2 	46 	0 	0 	0 	1 	0 	1 	0 	0 	0 	50
+Rihan 	0 	0 	0 	39 	0 	0 	0 	0 	0 	0 	0 	0 	39
+Pink 	0 	0 	0 	0 	35 	0 	0 	0 	0 	0 	0 	0 	35
+Beatl 	0 	3 	1 	0 	0 	28 	0 	2 	0 	0 	0 	0 	34
+Taylo 	0 	1 	0 	0 	0 	0 	32 	0 	0 	0 	0 	0 	33
+Maria 	0 	0 	0 	0 	0 	0 	0 	43 	0 	0 	0 	0 	43
+Beyon 	0 	1 	0 	0 	0 	0 	0 	0 	38 	0 	0 	0 	39
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	32 	0 	0 	33
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	28 	0 	28
+Param 	0 	1 	0 	0 	0 	0 	0 	1 	0 	0 	0 	31 	33
+Got	63 	73 	49 	40 	35 	28 	33 	46 	40 	32 	29 	32 	500
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	10 	3 	1 	1 	0 	0 	1 	1 	2 	0 	1 	0 	20
+Justi 	2 	4 	1 	2 	0 	0 	0 	1 	0 	0 	0 	1 	11
+The%2 	2 	4 	3 	1 	3 	0 	2 	0 	0 	1 	0 	1 	17
+Rihan 	2 	5 	0 	3 	0 	0 	1 	0 	2 	0 	0 	0 	13
+Pink 	2 	2 	3 	1 	2 	0 	1 	1 	0 	0 	1 	0 	13
+Beatl 	2 	1 	0 	3 	1 	2 	1 	1 	2 	0 	0 	0 	13
+Taylo 	0 	3 	2 	1 	0 	0 	5 	0 	0 	0 	2 	0 	13
+Maria 	0 	2 	2 	2 	0 	0 	0 	6 	0 	0 	0 	0 	12
+Beyon 	0 	3 	1 	1 	0 	0 	0 	0 	2 	0 	0 	0 	7
+Maroo 	0 	8 	0 	1 	0 	0 	1 	0 	0 	3 	0 	2 	15
+Demi% 	0 	1 	1 	0 	0 	0 	2 	1 	0 	0 	0 	0 	5
+Param 	1 	0 	1 	1 	1 	0 	0 	0 	0 	1 	0 	6 	11
+Got	21 	36 	15 	17 	7 	2 	14 	11 	8 	5 	4 	10 	150
+
+Error checking:  26.44358  s
+Train Error:  0.042
+Test Error:  0.693333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.495703  s
+Extract features:  4.056906  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.940406  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	96 	0 	0 	0 	0 	0 	0 	2 	0 	0 	0 	0 	98
+Justi 	1 	59 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	61
+The%2 	0 	1 	59 	0 	1 	0 	1 	0 	1 	1 	0 	0 	64
+Rihan 	0 	0 	1 	39 	0 	0 	0 	0 	0 	0 	0 	0 	40
+Pink 	1 	0 	0 	0 	40 	0 	0 	0 	0 	0 	0 	0 	41
+Beatl 	0 	2 	0 	0 	0 	35 	0 	0 	1 	1 	0 	0 	39
+Taylo 	0 	1 	0 	0 	0 	0 	45 	0 	0 	1 	0 	0 	47
+Maria 	0 	0 	0 	0 	0 	0 	0 	41 	0 	0 	0 	0 	41
+Beyon 	1 	0 	0 	0 	0 	0 	0 	0 	47 	0 	0 	0 	48
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	40 	0 	0 	40
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	39 	0 	39
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	42 	42
+Got	99 	63 	60 	39 	41 	35 	46 	43 	49 	43 	40 	42 	600
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	1 	0 	0 	0 	0 	0 	2 	1 	2 	0 	1 	16
+Justi 	6 	11 	1 	2 	3 	0 	1 	1 	1 	1 	0 	1 	28
+The%2 	1 	0 	6 	0 	1 	0 	1 	0 	0 	0 	1 	0 	10
+Rihan 	4 	5 	1 	4 	0 	0 	1 	0 	1 	0 	1 	0 	17
+Pink 	2 	0 	3 	1 	3 	0 	0 	0 	1 	1 	0 	0 	11
+Beatl 	1 	2 	4 	0 	1 	1 	2 	1 	0 	1 	0 	1 	14
+Taylo 	1 	0 	4 	0 	1 	0 	3 	0 	0 	0 	0 	0 	9
+Maria 	0 	0 	0 	1 	0 	0 	3 	2 	1 	1 	2 	0 	10
+Beyon 	0 	2 	2 	2 	0 	0 	1 	0 	0 	0 	0 	0 	7
+Maroo 	2 	0 	0 	0 	1 	0 	0 	0 	2 	5 	0 	1 	11
+Demi% 	1 	0 	1 	0 	1 	0 	2 	0 	1 	0 	2 	1 	9
+Param 	0 	2 	2 	0 	0 	0 	1 	0 	1 	0 	0 	2 	8
+Got	27 	23 	24 	10 	11 	1 	15 	6 	9 	11 	6 	7 	150
+
+Error checking:  29.754749  s
+Train Error:  0.03
+Test Error:  0.68  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.722499  s
+Extract features:  4.530656  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.140614  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	91 	3 	0 	1 	1 	0 	0 	1 	0 	1 	1 	0 	99
+Justi 	2 	75 	0 	0 	0 	0 	0 	1 	1 	0 	1 	2 	82
+The%2 	0 	1 	64 	1 	0 	0 	0 	0 	1 	0 	0 	1 	68
+Rihan 	0 	2 	0 	57 	0 	0 	1 	0 	0 	1 	0 	0 	61
+Pink 	0 	0 	0 	0 	49 	0 	0 	0 	0 	0 	0 	0 	49
+Beatl 	0 	1 	0 	0 	0 	43 	1 	2 	1 	0 	0 	1 	49
+Taylo 	1 	1 	0 	0 	0 	0 	50 	0 	0 	0 	0 	0 	52
+Maria 	0 	1 	0 	1 	0 	0 	0 	49 	0 	0 	0 	0 	51
+Beyon 	0 	2 	1 	0 	1 	0 	0 	0 	42 	0 	0 	0 	46
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	43 	0 	0 	43
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	51
+Param 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	48 	49
+Got	95 	86 	65 	60 	51 	43 	53 	53 	45 	45 	52 	52 	700
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	4 	0 	0 	1 	0 	1 	2 	0 	0 	0 	1 	22
+Justi 	4 	8 	3 	1 	0 	0 	0 	0 	2 	0 	0 	0 	18
+The%2 	0 	1 	6 	1 	2 	1 	1 	0 	1 	1 	1 	2 	17
+Rihan 	1 	2 	0 	3 	1 	0 	0 	0 	1 	0 	0 	1 	9
+Pink 	2 	1 	2 	0 	3 	0 	1 	0 	2 	0 	1 	0 	12
+Beatl 	2 	1 	1 	1 	0 	1 	1 	1 	0 	0 	1 	0 	9
+Taylo 	0 	1 	2 	0 	0 	0 	5 	0 	0 	0 	2 	1 	11
+Maria 	0 	1 	1 	0 	1 	1 	1 	5 	0 	0 	1 	0 	11
+Beyon 	1 	1 	3 	2 	1 	0 	1 	1 	3 	0 	1 	0 	14
+Maroo 	0 	2 	0 	1 	1 	2 	0 	0 	1 	6 	0 	1 	14
+Demi% 	1 	1 	0 	1 	0 	0 	0 	0 	0 	0 	2 	1 	6
+Param 	1 	0 	0 	0 	0 	0 	1 	1 	0 	1 	1 	2 	7
+Got	25 	23 	18 	10 	10 	5 	12 	10 	10 	8 	10 	9 	150
+
+Error checking:  33.656161  s
+Train Error:  0.0557142857143
+Test Error:  0.62  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.484566  s
+Extract features:  5.022174  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.400491  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	110 	5 	0 	2 	1 	0 	1 	2 	0 	1 	0 	0 	122
+Justi 	2 	83 	1 	0 	0 	0 	0 	1 	0 	0 	2 	1 	90
+The%2 	0 	1 	74 	1 	0 	0 	1 	1 	2 	1 	0 	0 	81
+Rihan 	0 	2 	0 	64 	0 	0 	0 	0 	0 	0 	0 	0 	66
+Pink 	0 	0 	0 	0 	56 	0 	0 	0 	0 	2 	0 	0 	58
+Beatl 	1 	2 	0 	0 	1 	44 	1 	1 	1 	1 	0 	0 	52
+Taylo 	1 	1 	0 	0 	0 	0 	63 	0 	0 	0 	0 	0 	65
+Maria 	0 	1 	0 	0 	0 	0 	0 	55 	0 	0 	0 	0 	56
+Beyon 	0 	1 	1 	0 	0 	0 	1 	0 	49 	0 	1 	0 	53
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	52
+Demi% 	3 	0 	0 	0 	1 	0 	0 	0 	0 	0 	47 	0 	51
+Param 	0 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	53 	54
+Got	117 	96 	76 	67 	59 	44 	68 	60 	52 	57 	50 	54 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	5 	0 	0 	1 	0 	0 	2 	1 	0 	0 	2 	19
+Justi 	3 	7 	4 	2 	0 	0 	2 	0 	1 	0 	0 	0 	19
+The%2 	1 	1 	4 	2 	0 	0 	2 	0 	0 	0 	1 	1 	12
+Rihan 	0 	0 	1 	3 	1 	0 	0 	0 	3 	0 	0 	0 	8
+Pink 	3 	1 	1 	0 	3 	0 	1 	0 	1 	1 	0 	0 	11
+Beatl 	1 	1 	5 	2 	0 	4 	0 	1 	0 	3 	0 	0 	17
+Taylo 	0 	0 	1 	0 	0 	0 	3 	0 	0 	1 	0 	0 	5
+Maria 	0 	0 	1 	1 	0 	0 	1 	4 	0 	1 	3 	0 	11
+Beyon 	0 	4 	0 	0 	0 	0 	1 	2 	4 	2 	1 	0 	14
+Maroo 	0 	4 	2 	0 	0 	1 	0 	0 	0 	3 	0 	3 	13
+Demi% 	0 	0 	0 	1 	0 	0 	0 	2 	1 	0 	5 	2 	11
+Param 	0 	0 	1 	0 	0 	0 	1 	1 	0 	2 	0 	5 	10
+Got	16 	23 	20 	11 	5 	5 	11 	12 	11 	13 	10 	13 	150
+
+Error checking:  37.572519  s
+Train Error:  0.0625
+Test Error:  0.646666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.14614  s
+Extract features:  1.322949  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.557741  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	14 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	14
+Justi 	0 	11 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	11
+The%2 	0 	0 	2 	0 	0 	0 	0 	0 	1 	0 	0 	0 	3
+Rihan 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Pink 	0 	0 	0 	0 	6 	0 	0 	0 	0 	0 	0 	0 	6
+Beatl 	0 	0 	0 	0 	0 	5 	0 	0 	0 	0 	0 	0 	5
+Taylo 	0 	0 	0 	0 	0 	0 	8 	0 	0 	0 	0 	0 	8
+Maria 	0 	0 	0 	0 	0 	0 	0 	12 	0 	0 	0 	0 	12
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	8 	0 	0 	0 	8
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	7 	0 	0 	7
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9 	0 	9
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9 	9
+Got	14 	11 	2 	8 	6 	5 	8 	12 	9 	7 	9 	9 	100
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	4 	11 	0 	1 	1 	0 	0 	4 	3 	1 	1 	0 	26
+Justi 	1 	5 	1 	2 	0 	0 	0 	3 	3 	0 	0 	0 	15
+The%2 	3 	3 	0 	4 	0 	0 	0 	1 	0 	0 	2 	2 	15
+Rihan 	3 	5 	0 	0 	0 	0 	1 	2 	2 	0 	0 	1 	14
+Pink 	2 	2 	0 	0 	1 	0 	0 	3 	0 	0 	0 	1 	9
+Beatl 	2 	5 	0 	3 	0 	1 	0 	1 	0 	1 	0 	1 	14
+Taylo 	1 	5 	0 	0 	0 	0 	0 	2 	2 	0 	1 	0 	11
+Maria 	1 	1 	0 	1 	0 	0 	0 	5 	1 	0 	0 	0 	9
+Beyon 	4 	2 	0 	0 	0 	0 	0 	2 	1 	0 	0 	0 	9
+Maroo 	1 	6 	0 	2 	0 	0 	0 	2 	0 	0 	0 	1 	12
+Demi% 	0 	1 	0 	1 	1 	0 	0 	3 	1 	0 	0 	0 	7
+Param 	2 	4 	0 	0 	0 	0 	1 	1 	0 	0 	1 	0 	9
+Got	24 	50 	1 	14 	3 	1 	2 	29 	13 	2 	5 	6 	150
+
+Error checking:  9.543894  s
+Train Error:  0.01
+Test Error:  0.886666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.166412  s
+Extract features:  1.8847  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.79433  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	26 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	28
+Justi 	0 	30 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	30
+The%2 	0 	0 	19 	0 	0 	0 	0 	0 	0 	0 	0 	0 	19
+Rihan 	0 	0 	0 	18 	0 	0 	0 	0 	0 	0 	0 	0 	18
+Pink 	0 	0 	0 	0 	11 	0 	0 	0 	0 	0 	0 	0 	11
+Beatl 	0 	1 	0 	0 	0 	12 	0 	0 	0 	0 	0 	0 	13
+Taylo 	0 	1 	0 	0 	0 	0 	15 	0 	0 	0 	0 	0 	16
+Maria 	0 	0 	0 	0 	0 	0 	0 	15 	0 	0 	0 	0 	15
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	15 	0 	0 	0 	15
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	14 	0 	0 	14
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	9 	0 	9
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	12 	12
+Got	26 	34 	19 	18 	11 	12 	15 	15 	15 	14 	9 	12 	200
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	7 	16 	0 	1 	0 	0 	0 	1 	0 	0 	0 	0 	25
+Justi 	0 	16 	0 	0 	1 	0 	1 	0 	0 	0 	0 	0 	18
+The%2 	1 	5 	3 	2 	0 	0 	1 	1 	1 	0 	0 	0 	14
+Rihan 	1 	7 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	8
+Pink 	1 	2 	2 	0 	0 	0 	2 	0 	1 	0 	0 	0 	8
+Beatl 	1 	2 	0 	1 	2 	0 	2 	1 	0 	0 	0 	0 	9
+Taylo 	0 	3 	1 	0 	0 	0 	4 	0 	0 	0 	1 	0 	9
+Maria 	0 	2 	1 	0 	0 	0 	1 	5 	1 	0 	0 	0 	10
+Beyon 	2 	8 	2 	2 	0 	0 	0 	1 	0 	0 	0 	0 	15
+Maroo 	2 	5 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	8
+Demi% 	3 	5 	0 	0 	0 	0 	0 	1 	1 	0 	0 	0 	10
+Param 	3 	8 	1 	0 	0 	0 	2 	1 	1 	0 	0 	0 	16
+Got	21 	79 	10 	6 	3 	0 	13 	11 	5 	1 	1 	0 	150
+
+Error checking:  14.229154  s
+Train Error:  0.02
+Test Error:  0.76  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.228854  s
+Extract features:  2.438637  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.075787  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	49 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49
+Justi 	0 	33 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	34
+The%2 	0 	0 	23 	0 	0 	0 	1 	0 	0 	0 	0 	0 	24
+Rihan 	0 	0 	0 	25 	0 	0 	0 	0 	0 	0 	0 	0 	25
+Pink 	0 	0 	0 	0 	29 	0 	0 	0 	0 	0 	0 	0 	29
+Beatl 	0 	3 	0 	0 	0 	21 	0 	0 	0 	0 	0 	0 	24
+Taylo 	0 	0 	0 	0 	0 	0 	20 	0 	0 	0 	0 	0 	20
+Maria 	0 	0 	0 	0 	0 	0 	0 	18 	0 	0 	0 	0 	18
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	19 	0 	0 	0 	19
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	16 	0 	0 	16
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	23 	0 	23
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	19 	19
+Got	49 	36 	23 	25 	29 	21 	21 	18 	19 	16 	24 	19 	300
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	14 	5 	1 	1 	1 	0 	0 	3 	1 	0 	0 	2 	28
+Justi 	9 	7 	0 	0 	1 	0 	0 	0 	0 	0 	0 	0 	17
+The%2 	2 	3 	3 	0 	3 	0 	0 	1 	1 	0 	2 	1 	16
+Rihan 	5 	3 	0 	0 	0 	0 	0 	0 	2 	0 	1 	0 	11
+Pink 	2 	2 	0 	0 	2 	0 	0 	1 	0 	0 	0 	0 	7
+Beatl 	1 	2 	0 	1 	1 	0 	0 	0 	0 	0 	0 	0 	5
+Taylo 	2 	4 	1 	0 	4 	0 	2 	0 	0 	1 	1 	0 	15
+Maria 	3 	0 	0 	0 	0 	0 	0 	3 	3 	0 	1 	0 	10
+Beyon 	2 	6 	0 	1 	2 	0 	0 	1 	1 	0 	2 	1 	16
+Maroo 	2 	3 	0 	0 	4 	0 	0 	0 	0 	0 	0 	0 	9
+Demi% 	1 	0 	0 	0 	1 	0 	1 	1 	0 	0 	1 	0 	5
+Param 	1 	0 	0 	0 	5 	1 	1 	0 	0 	1 	2 	0 	11
+Got	44 	35 	5 	3 	24 	1 	4 	10 	8 	2 	10 	4 	150
+
+Error checking:  18.378902  s
+Train Error:  0.0166666666667
+Test Error:  0.78  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.272316  s
+Extract features:  2.917345  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.378862  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	54 	1 	0 	0 	0 	0 	0 	0 	0 	1 	0 	0 	56
+Justi 	0 	37 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	38
+The%2 	0 	1 	33 	0 	1 	0 	0 	0 	1 	0 	1 	0 	37
+Rihan 	0 	0 	0 	36 	0 	0 	0 	0 	0 	0 	0 	0 	36
+Pink 	0 	0 	0 	0 	29 	0 	0 	0 	0 	0 	0 	0 	29
+Beatl 	0 	0 	0 	0 	0 	29 	0 	1 	0 	0 	0 	0 	30
+Taylo 	0 	0 	0 	0 	0 	0 	30 	0 	0 	0 	0 	0 	30
+Maria 	0 	0 	0 	1 	0 	0 	0 	30 	0 	0 	0 	0 	31
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	25 	0 	0 	0 	25
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	33 	0 	0 	33
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	31 	0 	31
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	23 	24
+Got	54 	40 	33 	37 	30 	29 	30 	32 	26 	34 	32 	23 	400
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	3 	0 	1 	1 	0 	1 	1 	0 	2 	1 	1 	22
+Justi 	3 	9 	3 	1 	1 	0 	0 	4 	1 	2 	1 	0 	25
+The%2 	1 	2 	3 	3 	0 	0 	1 	0 	0 	3 	2 	0 	15
+Rihan 	2 	5 	1 	4 	0 	0 	0 	0 	0 	1 	1 	0 	14
+Pink 	0 	4 	0 	1 	0 	0 	0 	1 	0 	1 	1 	0 	8
+Beatl 	0 	1 	1 	2 	0 	2 	2 	1 	0 	1 	0 	0 	10
+Taylo 	0 	1 	1 	0 	0 	0 	3 	0 	0 	1 	0 	0 	6
+Maria 	4 	1 	0 	2 	0 	0 	0 	6 	0 	0 	1 	0 	14
+Beyon 	3 	2 	0 	1 	0 	0 	2 	0 	1 	0 	0 	0 	9
+Maroo 	0 	1 	0 	1 	0 	0 	0 	1 	0 	5 	0 	0 	8
+Demi% 	2 	4 	0 	0 	1 	0 	1 	0 	0 	1 	2 	0 	11
+Param 	0 	0 	0 	1 	0 	0 	1 	1 	0 	3 	0 	2 	8
+Got	26 	33 	9 	17 	3 	2 	11 	15 	2 	20 	9 	3 	150
+
+Error checking:  22.215318  s
+Train Error:  0.025
+Test Error:  0.68  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.37647  s
+Extract features:  3.482465  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.62931  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	63 	2 	0 	1 	0 	0 	1 	0 	0 	1 	0 	0 	68
+Justi 	0 	50 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	51
+The%2 	0 	1 	50 	0 	1 	1 	0 	0 	1 	2 	0 	0 	56
+Rihan 	0 	2 	0 	28 	0 	0 	0 	0 	0 	0 	0 	0 	30
+Pink 	0 	0 	0 	0 	37 	0 	0 	0 	0 	0 	0 	0 	37
+Beatl 	0 	0 	0 	0 	0 	36 	0 	0 	0 	0 	0 	0 	36
+Taylo 	0 	0 	0 	0 	0 	0 	37 	0 	0 	1 	0 	0 	38
+Maria 	0 	0 	0 	0 	0 	0 	0 	41 	0 	0 	0 	0 	41
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	37 	0 	0 	0 	38
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	39 	0 	0 	39
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	35 	0 	35
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	31 	31
+Got	63 	55 	51 	29 	38 	37 	38 	42 	38 	43 	35 	31 	500
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	4 	1 	2 	1 	0 	3 	2 	1 	0 	1 	0 	24
+Justi 	2 	11 	1 	1 	1 	0 	1 	0 	1 	0 	0 	0 	18
+The%2 	2 	4 	2 	0 	2 	0 	3 	1 	0 	0 	1 	0 	15
+Rihan 	0 	1 	1 	3 	2 	0 	1 	0 	4 	1 	0 	0 	13
+Pink 	0 	1 	1 	0 	4 	0 	0 	2 	1 	1 	0 	0 	10
+Beatl 	0 	1 	1 	0 	0 	4 	2 	0 	0 	1 	0 	0 	9
+Taylo 	0 	0 	3 	0 	0 	0 	3 	1 	1 	0 	0 	0 	8
+Maria 	2 	2 	0 	0 	1 	0 	0 	5 	0 	0 	1 	0 	11
+Beyon 	0 	2 	3 	0 	0 	0 	0 	1 	1 	0 	0 	0 	7
+Maroo 	0 	4 	0 	0 	2 	0 	0 	1 	0 	2 	0 	0 	9
+Demi% 	0 	3 	2 	0 	1 	0 	1 	1 	0 	0 	2 	0 	10
+Param 	1 	2 	4 	0 	0 	0 	1 	1 	0 	3 	1 	3 	16
+Got	16 	35 	19 	6 	14 	4 	15 	15 	9 	8 	6 	3 	150
+
+Error checking:  26.811802  s
+Train Error:  0.032
+Test Error:  0.673333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.510238  s
+Extract features:  4.046821  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.945474  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	92 	3 	0 	1 	0 	0 	0 	0 	0 	1 	0 	0 	97
+Justi 	2 	65 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	68
+The%2 	1 	0 	56 	0 	0 	1 	1 	0 	0 	0 	0 	0 	59
+Rihan 	0 	0 	0 	50 	0 	1 	0 	0 	0 	0 	0 	0 	51
+Pink 	0 	0 	0 	0 	43 	0 	0 	0 	0 	0 	0 	0 	43
+Beatl 	0 	3 	0 	0 	1 	36 	0 	0 	0 	0 	0 	0 	40
+Taylo 	1 	0 	0 	0 	0 	0 	42 	0 	0 	0 	0 	0 	43
+Maria 	1 	0 	0 	0 	0 	0 	0 	41 	0 	0 	0 	0 	42
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	35 	0 	0 	0 	36
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	39 	0 	0 	39
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	37 	0 	38
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	44 	44
+Got	98 	71 	57 	51 	44 	38 	43 	41 	35 	40 	38 	44 	600
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	9 	5 	0 	0 	1 	0 	0 	0 	0 	1 	1 	0 	17
+Justi 	2 	11 	2 	1 	0 	1 	3 	1 	2 	1 	0 	1 	25
+The%2 	0 	2 	6 	0 	0 	0 	1 	0 	1 	1 	0 	0 	11
+Rihan 	2 	3 	1 	4 	1 	0 	0 	0 	2 	0 	0 	0 	13
+Pink 	1 	1 	1 	1 	3 	0 	3 	1 	0 	1 	1 	1 	14
+Beatl 	0 	2 	0 	0 	0 	4 	0 	1 	0 	0 	0 	0 	7
+Taylo 	0 	2 	2 	0 	1 	0 	4 	0 	0 	0 	0 	0 	9
+Maria 	1 	0 	1 	4 	0 	0 	0 	4 	0 	0 	0 	2 	12
+Beyon 	1 	2 	2 	0 	0 	0 	2 	2 	1 	2 	0 	0 	12
+Maroo 	1 	2 	2 	3 	0 	0 	2 	0 	0 	3 	0 	2 	15
+Demi% 	2 	1 	3 	0 	1 	0 	0 	2 	0 	1 	0 	0 	10
+Param 	2 	0 	0 	0 	0 	0 	1 	0 	0 	0 	1 	1 	5
+Got	21 	31 	20 	13 	7 	5 	16 	11 	6 	10 	3 	7 	150
+
+Error checking:  30.243174  s
+Train Error:  0.0333333333333
+Test Error:  0.666666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.711243  s
+Extract features:  4.534354  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.171103  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	89 	6 	1 	2 	0 	0 	0 	1 	1 	1 	0 	0 	101
+Justi 	0 	72 	0 	0 	0 	0 	0 	1 	0 	0 	1 	1 	75
+The%2 	0 	1 	63 	0 	1 	1 	1 	0 	2 	2 	0 	0 	71
+Rihan 	0 	1 	1 	45 	0 	0 	0 	0 	0 	1 	0 	0 	48
+Pink 	0 	0 	0 	0 	43 	0 	0 	0 	1 	1 	0 	0 	45
+Beatl 	0 	0 	1 	0 	0 	46 	1 	0 	0 	2 	0 	0 	50
+Taylo 	0 	1 	0 	0 	0 	0 	52 	0 	0 	1 	0 	0 	54
+Maria 	0 	1 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	54
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	48 	0 	0 	0 	48
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	0 	52
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	51
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	51
+Got	90 	83 	66 	47 	44 	47 	54 	55 	52 	60 	51 	51 	700
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	3 	2 	1 	1 	1 	2 	0 	1 	0 	0 	1 	25
+Justi 	4 	8 	1 	1 	0 	1 	0 	1 	3 	1 	0 	0 	20
+The%2 	3 	4 	4 	1 	0 	0 	2 	0 	0 	1 	1 	1 	17
+Rihan 	2 	2 	1 	2 	1 	0 	1 	1 	1 	1 	0 	1 	13
+Pink 	0 	4 	1 	1 	4 	0 	1 	1 	1 	1 	0 	1 	15
+Beatl 	1 	3 	0 	1 	0 	1 	0 	3 	0 	0 	0 	0 	9
+Taylo 	0 	0 	1 	1 	0 	0 	5 	0 	0 	0 	1 	1 	9
+Maria 	1 	4 	0 	0 	0 	0 	0 	3 	1 	0 	0 	0 	9
+Beyon 	0 	1 	2 	0 	0 	0 	0 	1 	3 	0 	0 	0 	7
+Maroo 	1 	1 	3 	0 	0 	0 	0 	0 	0 	3 	1 	0 	9
+Demi% 	0 	1 	3 	0 	0 	0 	0 	1 	0 	1 	1 	2 	9
+Param 	1 	0 	1 	0 	0 	0 	1 	1 	0 	1 	0 	3 	8
+Got	26 	31 	19 	8 	6 	3 	12 	12 	10 	9 	4 	10 	150
+
+Error checking:  34.54476  s
+Train Error:  0.0528571428571
+Test Error:  0.666666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.483627  s
+Extract features:  5.067354  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.508272  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	113 	5 	1 	2 	1 	0 	0 	0 	0 	1 	0 	2 	125
+Justi 	4 	78 	2 	1 	0 	0 	0 	0 	0 	0 	1 	2 	88
+The%2 	1 	1 	73 	0 	1 	1 	2 	0 	2 	2 	0 	1 	84
+Rihan 	0 	0 	0 	61 	0 	0 	1 	0 	0 	3 	0 	0 	65
+Pink 	0 	0 	0 	0 	53 	0 	0 	0 	0 	1 	0 	0 	54
+Beatl 	0 	2 	0 	0 	0 	53 	0 	1 	0 	1 	0 	1 	58
+Taylo 	1 	1 	0 	0 	0 	0 	58 	0 	0 	1 	0 	0 	61
+Maria 	2 	0 	0 	0 	0 	0 	0 	47 	0 	0 	0 	0 	49
+Beyon 	0 	2 	1 	0 	0 	0 	1 	0 	46 	0 	1 	0 	51
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	56 	0 	0 	56
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	49 	0 	50
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	59 	59
+Got	122 	89 	77 	64 	55 	54 	62 	48 	48 	65 	51 	65 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	6 	2 	0 	0 	1 	0 	2 	1 	1 	0 	2 	1 	16
+Justi 	1 	9 	5 	2 	0 	0 	0 	1 	1 	1 	1 	0 	21
+The%2 	0 	1 	1 	1 	3 	0 	3 	0 	0 	1 	0 	0 	10
+Rihan 	0 	3 	0 	1 	1 	0 	1 	1 	0 	0 	1 	0 	8
+Pink 	1 	2 	2 	0 	4 	1 	1 	0 	2 	0 	1 	0 	14
+Beatl 	0 	2 	1 	1 	1 	0 	2 	2 	1 	0 	0 	1 	11
+Taylo 	0 	0 	0 	0 	1 	2 	6 	0 	0 	0 	0 	0 	9
+Maria 	5 	4 	0 	2 	1 	0 	2 	3 	0 	0 	1 	0 	18
+Beyon 	2 	4 	3 	4 	0 	0 	0 	0 	1 	1 	0 	0 	15
+Maroo 	0 	3 	2 	0 	0 	0 	1 	0 	0 	3 	0 	0 	9
+Demi% 	0 	1 	3 	2 	0 	0 	0 	0 	0 	1 	3 	3 	13
+Param 	0 	2 	1 	0 	0 	0 	1 	0 	0 	0 	0 	2 	6
+Got	15 	33 	18 	13 	12 	3 	19 	8 	6 	7 	9 	7 	150
+
+Error checking:  38.532233  s
+Train Error:  0.0675
+Test Error:  0.74  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.160041  s
+Extract features:  1.333128  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.544359  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	14 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	14
+Justi 	0 	8 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	8
+The%2 	0 	0 	13 	0 	0 	0 	0 	0 	0 	0 	0 	0 	13
+Rihan 	0 	0 	0 	7 	0 	0 	0 	0 	0 	0 	0 	0 	7
+Pink 	0 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	0 	8
+Beatl 	0 	0 	0 	0 	0 	8 	0 	0 	0 	0 	0 	0 	8
+Taylo 	0 	0 	0 	0 	0 	0 	9 	0 	0 	0 	0 	0 	9
+Maria 	0 	0 	0 	0 	0 	0 	0 	4 	0 	0 	0 	0 	4
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	8 	0 	0 	0 	8
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10 	0 	0 	10
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	5 	0 	5
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6 	6
+Got	14 	8 	13 	7 	8 	8 	9 	4 	8 	10 	5 	6 	100
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	2 	1 	0 	0 	0 	0 	1 	0 	0 	1 	0 	13
+Justi 	10 	3 	1 	2 	0 	0 	1 	0 	1 	0 	0 	0 	18
+The%2 	5 	0 	9 	0 	3 	0 	1 	0 	0 	5 	0 	0 	23
+Rihan 	5 	1 	1 	1 	2 	0 	0 	0 	0 	2 	0 	0 	12
+Pink 	5 	0 	1 	1 	2 	0 	0 	0 	0 	1 	0 	0 	10
+Beatl 	2 	0 	2 	0 	1 	2 	0 	0 	0 	1 	0 	0 	8
+Taylo 	4 	1 	4 	0 	1 	0 	0 	0 	0 	1 	0 	0 	11
+Maria 	5 	3 	2 	0 	2 	0 	0 	0 	1 	0 	0 	0 	13
+Beyon 	6 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	0 	7
+Maroo 	5 	0 	2 	1 	1 	0 	0 	0 	1 	2 	1 	0 	13
+Demi% 	5 	0 	3 	0 	1 	0 	1 	0 	0 	1 	0 	0 	11
+Param 	3 	0 	2 	2 	1 	0 	0 	0 	0 	3 	0 	0 	11
+Got	63 	10 	28 	7 	14 	2 	4 	1 	3 	16 	2 	0 	150
+
+Error checking:  9.985493  s
+Train Error:  0.0
+Test Error:  0.82  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.171817  s
+Extract features:  1.876385  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  2.862504  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	35 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	35
+Justi 	1 	22 	0 	0 	0 	0 	0 	1 	0 	0 	0 	0 	24
+The%2 	0 	0 	14 	0 	0 	0 	0 	0 	0 	0 	0 	0 	14
+Rihan 	0 	0 	0 	14 	0 	0 	0 	0 	0 	0 	0 	0 	14
+Pink 	0 	0 	0 	0 	12 	0 	0 	0 	0 	0 	0 	0 	12
+Beatl 	0 	1 	0 	0 	0 	9 	0 	0 	0 	0 	0 	0 	10
+Taylo 	0 	0 	0 	0 	0 	0 	16 	0 	0 	0 	0 	0 	16
+Maria 	1 	0 	0 	0 	0 	0 	0 	10 	0 	0 	0 	0 	11
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	9 	0 	0 	0 	9
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	19 	0 	0 	19
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	22 	0 	22
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	13 	14
+Got	37 	24 	14 	14 	12 	9 	16 	11 	9 	19 	22 	13 	200
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	11 	8 	1 	0 	0 	0 	0 	1 	0 	0 	1 	0 	22
+Justi 	7 	8 	0 	0 	0 	0 	0 	0 	0 	2 	1 	0 	18
+The%2 	6 	4 	1 	0 	0 	0 	1 	0 	1 	2 	2 	1 	18
+Rihan 	2 	3 	1 	1 	0 	0 	0 	0 	0 	1 	0 	0 	8
+Pink 	3 	8 	0 	0 	1 	0 	1 	0 	0 	2 	1 	0 	16
+Beatl 	4 	3 	0 	1 	1 	0 	1 	0 	0 	2 	2 	0 	14
+Taylo 	1 	4 	1 	0 	0 	0 	5 	1 	0 	1 	2 	0 	15
+Maria 	5 	5 	1 	1 	1 	0 	0 	0 	0 	1 	2 	0 	16
+Beyon 	0 	5 	0 	0 	0 	0 	0 	0 	1 	1 	3 	0 	10
+Maroo 	0 	4 	0 	0 	0 	0 	1 	0 	0 	0 	1 	0 	6
+Demi% 	0 	1 	0 	0 	0 	0 	0 	0 	0 	1 	1 	0 	3
+Param 	0 	0 	0 	0 	0 	0 	1 	0 	0 	1 	2 	0 	4
+Got	39 	53 	5 	3 	3 	0 	10 	2 	2 	14 	18 	1 	150
+
+Error checking:  13.878489  s
+Train Error:  0.025
+Test Error:  0.806666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.223  s
+Extract features:  2.431896  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.093911  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	41 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	42
+Justi 	0 	36 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	36
+The%2 	0 	0 	23 	0 	0 	1 	0 	0 	0 	0 	0 	0 	24
+Rihan 	1 	0 	0 	21 	0 	0 	0 	0 	0 	0 	0 	0 	22
+Pink 	0 	0 	0 	0 	24 	0 	0 	0 	0 	0 	0 	0 	24
+Beatl 	0 	1 	0 	0 	0 	24 	0 	0 	0 	0 	0 	0 	25
+Taylo 	0 	0 	0 	0 	0 	0 	24 	0 	0 	0 	0 	0 	24
+Maria 	0 	0 	0 	0 	0 	0 	0 	17 	0 	0 	0 	0 	17
+Beyon 	0 	0 	0 	0 	0 	0 	0 	0 	22 	0 	0 	0 	22
+Maroo 	0 	0 	1 	0 	0 	0 	0 	0 	0 	20 	0 	0 	21
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	18 	0 	19
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	24 	24
+Got	43 	38 	24 	21 	24 	25 	24 	17 	22 	20 	18 	24 	300
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	7 	1 	0 	0 	0 	0 	2 	0 	1 	0 	0 	19
+Justi 	3 	7 	1 	3 	0 	0 	2 	0 	4 	0 	1 	0 	21
+The%2 	1 	2 	1 	0 	1 	0 	3 	0 	0 	2 	0 	1 	11
+Rihan 	2 	4 	0 	1 	0 	1 	0 	1 	0 	5 	0 	1 	15
+Pink 	2 	4 	0 	0 	3 	0 	1 	1 	0 	2 	1 	0 	14
+Beatl 	1 	2 	0 	0 	1 	0 	1 	0 	0 	1 	0 	0 	6
+Taylo 	1 	2 	1 	0 	2 	0 	7 	0 	0 	0 	0 	0 	13
+Maria 	7 	2 	1 	1 	1 	0 	2 	1 	2 	1 	0 	0 	18
+Beyon 	2 	0 	0 	0 	1 	0 	0 	0 	3 	1 	0 	0 	7
+Maroo 	1 	1 	1 	0 	0 	0 	1 	0 	1 	3 	0 	0 	8
+Demi% 	2 	1 	1 	0 	0 	0 	0 	1 	0 	2 	2 	0 	9
+Param 	0 	4 	0 	0 	0 	0 	2 	0 	0 	1 	1 	1 	9
+Got	30 	36 	7 	5 	9 	1 	19 	6 	10 	19 	5 	3 	150
+
+Error checking:  18.401461  s
+Train Error:  0.02
+Test Error:  0.753333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.262661  s
+Extract features:  2.942544  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.401625  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	44 	2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	46
+Justi 	0 	53 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	54
+The%2 	0 	0 	33 	0 	0 	0 	0 	0 	0 	0 	0 	0 	33
+Rihan 	0 	0 	0 	32 	0 	0 	0 	0 	0 	0 	0 	0 	32
+Pink 	0 	0 	0 	0 	35 	0 	0 	0 	0 	0 	0 	0 	35
+Beatl 	0 	4 	0 	0 	0 	25 	0 	0 	0 	0 	0 	0 	29
+Taylo 	0 	0 	0 	0 	0 	0 	30 	0 	0 	0 	0 	0 	30
+Maria 	1 	0 	0 	0 	0 	0 	0 	32 	0 	0 	0 	0 	33
+Beyon 	0 	1 	1 	0 	0 	0 	1 	0 	29 	0 	0 	0 	32
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	22 	0 	0 	22
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	27 	0 	27
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	26 	27
+Got	45 	61 	35 	32 	35 	25 	31 	32 	29 	22 	27 	26 	400
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	8 	12 	0 	0 	1 	0 	3 	2 	2 	0 	1 	0 	29
+Justi 	0 	9 	0 	1 	0 	0 	0 	0 	2 	0 	1 	0 	13
+The%2 	2 	3 	3 	1 	1 	0 	1 	0 	2 	0 	0 	2 	15
+Rihan 	1 	6 	0 	3 	1 	0 	1 	1 	2 	0 	0 	0 	15
+Pink 	1 	1 	3 	0 	4 	0 	1 	0 	0 	0 	1 	2 	13
+Beatl 	0 	5 	1 	1 	2 	0 	1 	1 	0 	1 	0 	0 	12
+Taylo 	0 	1 	0 	0 	1 	0 	5 	1 	0 	0 	1 	1 	10
+Maria 	3 	4 	0 	0 	0 	0 	0 	2 	1 	0 	0 	0 	10
+Beyon 	0 	1 	1 	1 	3 	0 	1 	1 	1 	0 	1 	0 	10
+Maroo 	0 	7 	0 	0 	0 	0 	2 	0 	0 	3 	1 	0 	13
+Demi% 	0 	0 	1 	0 	0 	0 	1 	1 	1 	0 	0 	1 	5
+Param 	0 	2 	0 	1 	1 	0 	0 	1 	0 	0 	0 	0 	5
+Got	15 	51 	9 	8 	14 	0 	16 	10 	11 	4 	6 	6 	150
+
+Error checking:  22.486091  s
+Train Error:  0.03
+Test Error:  0.746666666667  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.366946  s
+Extract features:  3.42131  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.667762  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	60 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	60
+Justi 	0 	60 	0 	0 	0 	0 	0 	0 	0 	0 	1 	0 	61
+The%2 	0 	1 	43 	0 	0 	0 	0 	0 	1 	0 	0 	0 	45
+Rihan 	1 	0 	0 	44 	0 	0 	0 	0 	0 	0 	0 	0 	45
+Pink 	0 	0 	0 	0 	42 	0 	0 	0 	0 	0 	0 	0 	42
+Beatl 	0 	3 	0 	0 	0 	38 	0 	1 	0 	0 	0 	0 	42
+Taylo 	0 	1 	0 	0 	0 	0 	32 	0 	0 	0 	0 	0 	33
+Maria 	0 	0 	0 	0 	0 	0 	0 	41 	0 	0 	0 	0 	41
+Beyon 	0 	0 	1 	0 	0 	0 	0 	0 	32 	0 	0 	0 	33
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	34 	0 	0 	34
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	29 	0 	29
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	35 	35
+Got	61 	65 	44 	44 	42 	38 	32 	42 	33 	34 	30 	35 	500
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	18 	4 	2 	2 	2 	0 	1 	2 	0 	0 	0 	0 	31
+Justi 	2 	8 	0 	1 	1 	0 	0 	1 	0 	0 	0 	0 	13
+The%2 	0 	1 	5 	0 	0 	0 	1 	0 	0 	2 	1 	0 	10
+Rihan 	1 	1 	1 	2 	0 	0 	0 	1 	0 	1 	1 	0 	8
+Pink 	0 	1 	1 	0 	6 	0 	0 	0 	2 	0 	0 	0 	10
+Beatl 	1 	2 	1 	2 	1 	2 	0 	0 	0 	0 	0 	0 	9
+Taylo 	0 	0 	1 	0 	1 	0 	6 	0 	0 	0 	0 	1 	9
+Maria 	3 	2 	0 	1 	0 	0 	0 	5 	0 	1 	0 	0 	12
+Beyon 	3 	7 	0 	1 	0 	1 	0 	3 	2 	0 	0 	1 	18
+Maroo 	0 	2 	0 	2 	2 	0 	1 	0 	0 	2 	0 	1 	10
+Demi% 	2 	1 	2 	1 	1 	0 	0 	2 	1 	2 	1 	0 	13
+Param 	0 	0 	0 	0 	3 	0 	0 	0 	0 	1 	2 	1 	7
+Got	30 	29 	13 	12 	17 	3 	9 	14 	5 	9 	5 	4 	150
+
+Error checking:  26.126558  s
+Train Error:  0.02
+Test Error:  0.613333333333  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.503277  s
+Extract features:  4.015355  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  3.874444  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	84 	2 	0 	0 	0 	0 	0 	0 	0 	1 	1 	0 	88
+Justi 	0 	61 	1 	0 	0 	0 	0 	1 	0 	0 	0 	0 	63
+The%2 	1 	1 	50 	0 	1 	0 	0 	0 	0 	1 	0 	0 	54
+Rihan 	0 	0 	0 	45 	0 	0 	0 	0 	0 	0 	0 	0 	45
+Pink 	0 	0 	0 	0 	40 	0 	0 	0 	0 	0 	0 	0 	40
+Beatl 	0 	2 	0 	0 	0 	48 	1 	1 	0 	0 	1 	0 	53
+Taylo 	1 	0 	0 	0 	0 	0 	45 	0 	0 	0 	0 	0 	46
+Maria 	0 	0 	0 	0 	0 	0 	0 	46 	0 	0 	0 	0 	46
+Beyon 	0 	0 	0 	0 	0 	0 	1 	0 	37 	0 	0 	0 	38
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	40 	0 	0 	40
+Demi% 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	43 	0 	43
+Param 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	44 	44
+Got	86 	66 	51 	45 	41 	48 	47 	48 	37 	42 	45 	44 	600
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	15 	4 	2 	0 	0 	1 	2 	2 	2 	0 	0 	1 	29
+Justi 	3 	14 	0 	0 	0 	0 	1 	1 	0 	1 	0 	0 	20
+The%2 	0 	1 	6 	0 	1 	1 	4 	0 	1 	1 	0 	2 	17
+Rihan 	3 	6 	2 	2 	1 	1 	0 	2 	1 	0 	1 	0 	19
+Pink 	1 	1 	1 	3 	2 	0 	2 	1 	0 	1 	2 	0 	14
+Beatl 	0 	1 	1 	1 	0 	1 	1 	1 	1 	0 	0 	0 	7
+Taylo 	0 	2 	1 	0 	0 	0 	3 	0 	1 	0 	0 	0 	7
+Maria 	1 	1 	0 	1 	0 	0 	1 	3 	0 	1 	0 	0 	8
+Beyon 	0 	1 	1 	3 	0 	0 	1 	1 	1 	0 	0 	0 	8
+Maroo 	0 	1 	0 	0 	1 	0 	0 	0 	0 	2 	0 	0 	4
+Demi% 	0 	1 	0 	1 	0 	0 	0 	0 	0 	2 	3 	0 	7
+Param 	0 	1 	0 	0 	1 	0 	3 	0 	0 	0 	0 	5 	10
+Got	23 	34 	14 	11 	6 	4 	18 	11 	7 	8 	6 	8 	150
+
+Error checking:  29.690362  s
+Train Error:  0.0283333333333
+Test Error:  0.62  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  0.741456  s
+Extract features:  4.547636  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.207542  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	100 	4 	1 	2 	0 	0 	0 	1 	0 	1 	1 	2 	112
+Justi 	2 	66 	1 	0 	0 	0 	0 	0 	0 	0 	1 	0 	70
+The%2 	0 	1 	59 	0 	1 	0 	1 	1 	1 	1 	0 	1 	66
+Rihan 	0 	2 	0 	48 	0 	0 	0 	0 	0 	1 	0 	0 	51
+Pink 	0 	0 	0 	0 	50 	0 	0 	0 	0 	1 	0 	0 	51
+Beatl 	0 	1 	0 	0 	0 	48 	1 	1 	0 	0 	0 	0 	51
+Taylo 	1 	1 	0 	0 	0 	0 	45 	0 	0 	1 	1 	0 	49
+Maria 	0 	0 	0 	0 	0 	0 	0 	53 	0 	0 	0 	0 	53
+Beyon 	0 	1 	0 	0 	0 	0 	0 	0 	45 	0 	0 	0 	46
+Maroo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	50 	0 	0 	50
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	52 	0 	53
+Param 	0 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	47 	48
+Got	104 	77 	61 	50 	51 	48 	47 	56 	46 	55 	55 	50 	700
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	13 	2 	1 	1 	1 	0 	0 	0 	0 	3 	1 	0 	22
+Justi 	3 	13 	2 	2 	0 	0 	0 	1 	0 	0 	0 	2 	23
+The%2 	2 	2 	6 	0 	0 	1 	0 	0 	1 	1 	2 	2 	17
+Rihan 	0 	0 	3 	1 	0 	1 	1 	1 	2 	1 	0 	0 	10
+Pink 	1 	2 	1 	0 	4 	0 	0 	1 	1 	1 	0 	0 	11
+Beatl 	0 	1 	2 	1 	2 	1 	0 	2 	0 	1 	0 	0 	10
+Taylo 	0 	3 	3 	0 	0 	0 	3 	0 	0 	0 	1 	0 	10
+Maria 	2 	0 	0 	0 	0 	0 	1 	4 	0 	1 	1 	0 	9
+Beyon 	2 	2 	0 	2 	1 	0 	1 	0 	1 	1 	2 	0 	12
+Maroo 	0 	1 	2 	0 	1 	0 	1 	0 	0 	3 	0 	1 	9
+Demi% 	1 	0 	0 	0 	2 	0 	0 	0 	0 	1 	2 	2 	8
+Param 	0 	1 	0 	0 	0 	0 	1 	0 	0 	4 	0 	3 	9
+Got	24 	27 	20 	7 	11 	3 	8 	9 	5 	17 	9 	10 	150
+
+Error checking:  34.339636  s
+Train Error:  0.0528571428571
+Test Error:  0.64  with 12 labels
+Chris 144
+Justi 111
+The%2 95
+Rihan 75
+Pink 70
+Beatl 70
+Taylo 70
+Maria 69
+Beyon 67
+Maroo 66
+Demi% 65
+Param 65
+Load examples:  1.341611  s
+Extract features:  5.008908  s
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+Train Classifier:  4.400131  s
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	113 	7 	0 	1 	1 	0 	1 	2 	0 	0 	0 	1 	126
+Justi 	3 	80 	3 	0 	0 	0 	0 	0 	0 	0 	1 	1 	88
+The%2 	1 	2 	65 	0 	1 	1 	0 	1 	3 	3 	0 	1 	78
+Rihan 	0 	0 	0 	63 	0 	0 	0 	0 	0 	1 	0 	0 	64
+Pink 	0 	1 	0 	0 	50 	0 	0 	0 	1 	1 	0 	0 	53
+Beatl 	0 	2 	0 	0 	1 	53 	1 	1 	0 	0 	0 	0 	58
+Taylo 	1 	1 	0 	0 	0 	0 	57 	0 	0 	0 	0 	0 	59
+Maria 	0 	0 	0 	0 	0 	0 	0 	61 	0 	0 	0 	0 	61
+Beyon 	0 	1 	0 	0 	0 	0 	1 	1 	56 	0 	0 	0 	59
+Maroo 	0 	0 	0 	0 	1 	0 	0 	0 	0 	50 	0 	0 	51
+Demi% 	1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	51 	0 	52
+Param 	0 	1 	0 	0 	0 	0 	1 	0 	0 	0 	0 	49 	51
+Got	119 	95 	68 	64 	54 	54 	61 	66 	60 	55 	52 	52 	800
+
+	Chris 	Justi 	The%2 	Rihan 	Pink 	Beatl 	Taylo 	Maria 	Beyon 	Maroo 	Demi% 	Param 	Wanted
+Chris 	5 	6 	1 	0 	0 	0 	0 	2 	0 	1 	0 	0 	15
+Justi 	4 	12 	0 	1 	1 	0 	0 	1 	0 	0 	1 	1 	21
+The%2 	1 	1 	8 	1 	0 	1 	3 	0 	0 	0 	0 	0 	15
+Rihan 	0 	1 	1 	5 	0 	0 	0 	0 	3 	0 	0 	0 	10
+Pink 	0 	3 	1 	3 	5 	0 	0 	0 	2 	0 	2 	0 	16
+Beatl 	3 	0 	1 	0 	0 	6 	1 	0 	1 	0 	0 	0 	12
+Taylo 	1 	1 	1 	0 	1 	0 	4 	0 	0 	2 	0 	0 	10
+Maria 	3 	0 	0 	1 	0 	0 	0 	4 	0 	0 	0 	0 	8
+Beyon 	1 	1 	0 	1 	0 	0 	0 	0 	4 	0 	0 	0 	7
+Maroo 	2 	1 	1 	0 	1 	1 	2 	0 	1 	4 	1 	1 	15
+Demi% 	0 	1 	0 	1 	2 	0 	0 	2 	0 	1 	1 	1 	9
+Param 	1 	1 	0 	1 	1 	0 	4 	1 	0 	0 	1 	2 	12
+Got	21 	28 	14 	14 	11 	8 	14 	10 	11 	8 	6 	5 	150
+
+Error checking:  38.654805  s
+Train Error:  0.065
+Test Error:  0.6  with 12 labels
