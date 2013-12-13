@@ -89,27 +89,44 @@ def featureSelection(trainData,labels,numFeatures):
         allFeatures.update(featureSet)
     
     # Create a matrix with he relevant labels
-    
- 
-    # Loop through all of the features and calculate the information gain for each 
-    for feature in allFeatures: 
-        informationGains.append(informationGain(trainData,allFeatures,feature, labels))
-        featureNames.append(feature) 
-    informationGains = np.array(informationGains)
-    sortedargs = np.argsort(informationGains)
-    featureNames = [featureNames[i] for i in sortedargs]
-    print informationGains
-    #informationGains.reverse()
-    #featureNames.reverse()
-    # Add the top numFeatures to the counter.
-    # if requesting too many features change number of requested features.
-    if(numFeatures>len(featureNames)):
-        numFeatures = len(featureNames)
-    for i in range(0,numFeatures):
-        featureLibraryInfo.append(informationGains[i])
-        featureLibrary.append(featureNames[i])
-    # print featureLibraryInfo
+    allFeaturePairList = list(allFeatures.items());
+    allFeatureKeyList = [pair[0] for pair in allFeaturePairList];
+    index = 0;
+    data_features_matrix = np.zeros((len(trainData),len(allFeatures)));
+    for (features,label) in trainData: 
+        # Loop through each feature and populate matrix
+        for feature in features:
+            data_features_matrix[index][allFeatureKeyList.index(feature)] = allFeatures[feature]
+        index=index+1
+     
+    ## Loop through all of the features and calculate the information gain for each 
+    #for feature in allFeatures: 
+        #informationGains.append(informationGain(trainData,allFeatures,feature, labels))
+        #featureNames.append(feature) 
+    #informationGains = np.array(informationGains)
+    #sortedargs = np.argsort(informationGains)
+    #featureNames = [featureNames[i] for i in sortedargs]
+    #print informationGains
+    ##informationGains.reverse()
+    ##featureNames.reverse()
+    ## Add the top numFeatures to the counter.
+    ## if requesting too many features change number of requested features.
+    #if(numFeatures>len(featureNames)):
+        #numFeatures = len(featureNames)
+    #for i in range(0,numFeatures):
+        #featureLibraryInfo.append(informationGains[i])
+        #featureLibrary.append(featureNames[i])
+    ## print featureLibraryInfo
 
     # Run PCA to reduce feature size.
+    print(data_features_matrix)
     
-    return featureLibrary
+    reduced_features = mdp.pca(transpose(data_features_matrix),output_dim = 2, svd = True)
+    u1 = reduced_features[:,1]
+    order = np.argsort(u1)[::-1]
+    order = order[1:numFeatures]
+    selected_features = [allFeatureKeyList[index] for index in order]
+    print(selected_features)
+    
+    # Transform 
+    return selected_features   
