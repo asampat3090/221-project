@@ -58,7 +58,7 @@ class MultiClassClassifier(object):
         '''
         return max([(self.labels[i], sparseVectorDotProduct(self.weights[i],featureVector)) for i in range(len(self.labels))], key = lambda x: x[1])[0]
     
-    def getErrorRate(self, labels, data):
+    def getErrorRate(self, data):
         """
         Classify each feature vector given and compare result to label. Return the error rate (out of 1)
         @param a list of (feature vector, label) tuples
@@ -66,28 +66,28 @@ class MultiClassClassifier(object):
 
         @return float: error rate [0-1]
         """
-        errors = [[0 for i in range(len(labels))] for i in range(len(labels))]
+        errors = [[0 for i in range(len(self.labels))] for i in range(len(self.labels))]
         numErrors = 0
         for (featureVector, label) in data:
             prediction = self.classify(featureVector)
-            errors[labels.index(label)][labels.index(prediction)] += 1
+            errors[self.labels.index(label)][self.labels.index(prediction)] += 1
             if prediction != label:
                 numErrors += 1
                 
         #print confusion matrix
         print "\t",
-        for label in labels: 
+        for label in self.labels: 
             print label, "\t",
         print "Wanted"
-        for i, label in enumerate(labels):
+        for i, label in enumerate(self.labels):
             print label, "\t",
-            for j,x in enumerate(labels):
+            for j,x in enumerate(self.labels):
                 print errors[i][j], "\t",
             print sum(errors[i])
         print "Got\t",
-        for j, label in enumerate(labels):
-            print sum([errors[i][j] for i in range(len(labels))]), "\t",
-        print sum([sum(errors[i]) for i in range(len(labels))])
+        for j, label in enumerate(self.labels):
+            print sum([errors[i][j] for i in range(len(self.labels))]), "\t",
+        print sum([sum(errors[i]) for i in range(len(self.labels))])
         print ""
                 
         return 1.0*numErrors/len(data)    
