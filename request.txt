@@ -1,16 +1,12 @@
 maxSongs 6
 minSongs 4
-#genre only hiphop min 0 max 5 10
-#genre only rock
-#genre not pop
-#genre rock min 0 max 5 20
-#keywords a the
-#keyword love 3
-artist only ImogenHea 10
-artist only Jay-Z 4
 
-genre hiphop 3
-genre pop 3
+genre not country
+genre only hiphop max 5 weight 3
+genre only rock min 2 weight 4
 
-keywords love heart lover boy girl 
+artist not OneDirection
+
+keywords dance party food love
+
 

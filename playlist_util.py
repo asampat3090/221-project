@@ -1,4 +1,22 @@
-import re, string
+"""
+This file contains the following methods:
+
+parseSongFile(file) - takes in a song file, returns a song object
+printPlayList(assignment, songLibrary, request) - takes in an asignment from
+     the CSP and prints the playlist, including the reasons why the songs were
+     chosen given the request.
+
+Class: Song
+Contains the important song features: title, artist, genre, and keywords (unigrams from lyrics)
+
+Class: Request
+Init - parses a request file into an Request object.
+isRequestValid - looks at a request and considers all the reasons why it
+    may not be consistent - for example, wanting at least 10 songs but only wanting
+    a max of 2 songs from one artist and nothing else. 
+"""
+
+import re, string, urllib
 from collections import Counter
 
 def parseSongFile(file):
@@ -12,7 +30,8 @@ def parseSongFile(file):
 
     #artist
     artist = file.readline().split('\n')[0]
-    artist = re.sub('%20', '', artist)
+    artist = urllib.unquote(artist).decode()
+    artist = re.sub(' ', '', artist)
     
     #genre
     genre = file.readline().split('\n')[0]
@@ -44,13 +63,15 @@ def printPlayList(optimalAssignment, songLibrary, request):
     requestedKeywords = set([keyword for (keyword, weight) in request.keywords])
 
     for i, song in enumerate(chosenSongs):
-        print repr(i) + ". " + songLibrary[song].artist + " - " + songLibrary[song].title
+        print repr(i+1) + ". " + songLibrary[song].artist + " - " + songLibrary[song].title
         if printGenre: print "Genre:", songLibrary[song].genre
         if printKeywords: 
             print "Keywords:",
             for keyword in requestedKeywords.intersection(songLibrary[song].keywords):
                 print keyword,
             print "\n"
+
+
         
 #Just an object to hold a song's properties and print them nicely
 class Song(object):
@@ -70,6 +91,8 @@ class Song(object):
     def __str__(self):
         return self.artist + " - " + self.title + " - " + self.genre
         
+
+
 
 #An object for parsing and holding the user's request 
 class Request():
@@ -145,7 +168,7 @@ class Request():
                 if self.minSongs > self.maxSongs: self.minSongs = self.maxSongs
                 continue
 
-            m = re.match('genre ((only|not) )?(\S+)( min (\S+))?( max (\S+))?( .+)?', line)
+            m = re.match('genre ((only|not) )?(\S+)( min (\S+))?( max (\S+))?( weight (.+))?', line)
             if m:
                 #Handle only and not case
                 if m.group(1) == 'not ': 
@@ -160,12 +183,12 @@ class Request():
                 weight = 1
                 if m.group(5): minSongs = int(m.group(5))
                 if m.group(7): maxSongs = int(m.group(7))
-                if m.group(8): weight = int(m.group(8))
+                if m.group(9): weight = int(m.group(9))
                 if minSongs or (maxSongs != float('+inf')) or (weight != 1):
                     self.genres.append((m.group(3), minSongs, maxSongs, weight))
                 continue
             
-            m = re.match('artist ((only|not) )?(\S+)( min (\S+))?( max (\S+))?( .+)?', line)
+            m = re.match('artist ((only|not) )?(\S+)( min (\S+))?( max (\S+))?( weight (.+))?', line)
             if m:
                 #Handle only and not case
                 if m.group(1) == 'not ': 
@@ -180,7 +203,7 @@ class Request():
                 weight = 1
                 if m.group(5): minSongs = int(m.group(5))
                 if m.group(7): maxSongs = int(m.group(7))
-                if m.group(8): weight = int(m.group(8))
+                if m.group(9): weight = int(m.group(9))
                 if minSongs or (maxSongs != float('+inf')) or (weight != 1):
                     self.artists.append((m.group(3), minSongs, maxSongs, weight))
                 continue            
@@ -268,7 +291,7 @@ class Request():
                 print "Genre: ", genre, "has weight", weight, "which is less than 1"
                 return False
 
-        #Make sure no genre is in both nonGenre and with nonzero min in genre:
+        #Make sure no genre is in both notGenre and with nonzero min in genre:
         for (genre, minSongs, maxSongs, weight) in self.genres:
             if minSongs > 0 and genre in self.notGenres:
                 print "Conflict with genre:", genre, "with nonzero min and in self.notGenre"

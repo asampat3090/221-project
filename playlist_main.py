@@ -3,6 +3,14 @@ import sys, time, re
 from playlist_util import *
 from playlist_csp import *
 
+"""
+This is the main function. Parameters:
+numSongsInLibrary - integer, usually 20. Reason: The CSP takes a long
+                 time to solve with more than 20 nodes. Uses clever tricks
+                 to make sure only relavent songs get put into the CSP in the
+                 first place.
+requestPath - usually just "request.txt", the file name of the request.
+"""
 def make_playlist():
     lastTime = time.clock()
     
@@ -17,45 +25,32 @@ def make_playlist():
         requestPath = 'request.txt'
     
     #Read in all the songs we have a make lists of artists, genres, keywords:
-    allSongs = []
-    
-    #os.chdir("lyrics/artist/")             ##Commented this stuff out because it was taking 8 seconds and not useful.
-    #files = glob.glob("*.txt")
-        
-    #for i in range(len(files)-1):
-        #allSongs.append(parseSongFile(open(files[i], 'r')))
-    
-    #thisTime = time.clock()
-    #print "Read in songs from artist: ", thisTime - lastTime, ' s'
-    #lastTime = thisTime         
-    
-    #os.chdir("..")
-    #os.chdir("..")
     os.chdir("lyrics/genre/")
     files = glob.glob("*.txt")
-            
+    
+    allSongs = []        
     for i in range(len(files)-1):    
-        allSongs.append(parseSongFile(open(files[i], 'r')))    
+        allSongs.append(parseSongFile(open(files[i], 'r')))
+    random.shuffle(allSongs)
     
     thisTime = time.clock()
     print "Read in songs from genre: ", thisTime - lastTime, ' s'
     lastTime = thisTime     
 
+    #Make lists of genres, artists, and keywords for checking requests for validity
     allGenres = sorted(set([song.genre for song in allSongs]))
     allArtists = sorted(set([song.artist for song in allSongs]))
     allKeywords = set()
     for song in allSongs:
         allKeywords.update(song.keywords)
     
-    #Go back to home directory for finding 'request.txt'    
-    os.chdir("..")
-    os.chdir("..")
-
     thisTime = time.clock()
     print "Assemble genre, artist, keyword sets: ", thisTime - lastTime, ' s'
     lastTime = thisTime     
         
     #Parse prefs file and check for obvious problems
+    os.chdir("..")
+    os.chdir("..")    
     request = Request(requestPath)
     if not request.isRequestValid(allGenres, allArtists): return
     
@@ -80,10 +75,10 @@ def make_playlist():
         
         #check keywords:
         if request.keywords:
-            if len(nextSong.keywords.intersection(request.keywords)) < 1: 
+            if len(nextSong.keywords.intersection([keyword for (keyword, weight) in request.keywords])) < 1: 
                 secondChoiceSongLibrary.append(nextSong)
                 continue
-        print nextSong    
+
         songLibrary.append(nextSong)
     
         if len(songLibrary) == numSongsInLib: break
@@ -99,14 +94,12 @@ def make_playlist():
     if len(songLibrary) != numSongsInLib:
         print "Couldn't find as many songs as requested"
         print "Have:", len(songLibrary), "Wanted:", numSongsInLib
-    
-    #print "Song Library:"
-    #for song in songLibrary: print song
-    
+      
     thisTime = time.clock()
     print "Assemble song library:", thisTime - lastTime, ' s'
     lastTime = thisTime        
     
+    #Turn the request into a CSP
     csp = createPlaylistCSP(request, songLibrary)
     
     thisTime = time.clock()
