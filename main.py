@@ -18,6 +18,7 @@ B:                            the regularization parameter, if set to something 
 numFeatures:           how many features do we want to use? - if 0 then just take all.
 'nb' or 'gd':              Naive Bayes or Gradient Descents
 'log', 'hinge', 'perceptron'   which loss function to use with gradient descent.
+'information_gain', 'pca' which feature selection mechanism to use.
 
 """
 
@@ -28,7 +29,7 @@ def main():
     #Arguments are: numTrain, numTest, trainingIter, alpha, regularization constant,
     #artist or genre, unigram/bigram/trigram/fourgram, number of features, nb or gd
     #log hinge or perceptron
-    if len(sys.argv) == 12:
+    if len(sys.argv) == 13:
         numLabels = int(sys.argv[1])
         numTrainSongs = int(sys.argv[2])
         numTestSongs = int(sys.argv[3])
@@ -42,10 +43,11 @@ def main():
         if sys.argv[11] == 'perceptron': lossFunc = perceptronH
         elif sys.argv[11] == 'hinge': lossFunc = hingeH
         else: lossFunc = logisticH
+        featureSelectionMechanism = sys.argv[12]
         
     else:
         print "Main function takes 10 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre uni/bi/tri/fourgram numFeatures (nb or gd) (perceptron hinge or log)"
-        print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' 0 gd logistic   (alpha = 90/100 = .9)"
+        print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' 0 gd logistic pca  (alpha = 90/100 = .9)"
         numLabels = 0 #no preference
         numTrainSongs = 20
         numTestSongs = 20
@@ -57,6 +59,7 @@ def main():
         numFeatures = 0
         useNB = False
         lossFunc = logisticH
+        featureSelectionMechanism = 'pca'
     
     #Repeat inputs:
     if useNB: print "Naive Bayes,", numLabels, "labels,", numTrainSongs, "training songs,", numTestSongs, "testing songs,",
@@ -117,7 +120,7 @@ def main():
     
     #FEATURE SELECTION - only for gradient descent
     if useNB: bestFeatures = nb.loadDict()
-    elif numFeatures != 0: bestFeatures = featureSelection(trainFeaturesAndLabels, labels, numFeatures) 
+    elif numFeatures != 0: bestFeatures = featureSelection(trainFeaturesAndLabels, labels, featureSelectionMechanism,numFeatures) 
     
     if bestFeatures:
         #Reduce features in train and test sets to only those in bestFeatures
