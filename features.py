@@ -130,23 +130,20 @@ def extractFourgramFeatures(x):
             fourgrams.update([wordList[-2]+" "+wordList[-1]])
 
     return fourgrams
-
-            
-            
-            
-def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, testSongs, gram):
+  
+def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, gram):
     """
     Get a dictionary of features that appear in [minNumberOfSongs, maxNumberOfSongs]
     @param int min number of songs
     @param int max number of songs
     @param list of song objects training songs
-    @param list of song objects testing songs
     @param string unigram, bigram, trigram, or fourgram
     """
 
-    print "Total songs = ", len(trainSongs) + len(testSongs)
+    print "Total songs = ", len(trainSongs)
     vocab = Counter()
-       
+
+
     for song in trainSongs:
         if gram == 'unigram':
             thisSong = list(extractUnigramFeatures(song[0]))
@@ -154,9 +151,10 @@ def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, testSongs, gram):
             thisSong = list(extractBigramFeatures(song[0]))
         elif gram == 'trigram':
             thisSong = list(extractTrigramFeatures(song[0]))
-        elif gram == 'Fourgram':
+        elif gram == 'fourgram':
             thisSong = list(extractFourgramFeatures(song[0]))        
         vocab.update(thisSong)     
+
     for song in testSongs:
         if gram == 'unigram':
             thisSong = list(extractUnigramFeatures(song[0]))
@@ -168,7 +166,10 @@ def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, testSongs, gram):
             thisSong = list(extractFourgramFeatures(song[0]))        
         vocab.update(thisSong)             
               
+
+        
+
     #Grab words that show up in at least 2 songs, but not more than 1948 songs (half)
     words = [word for word in vocab if minNumberOfSongs <= vocab[word] <= maxNumberOfSongs]
-    print "number of words = ", len(words)
+    print "number of words was ", len(vocab), "and is now", len(words)
     return words
