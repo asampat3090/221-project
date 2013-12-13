@@ -129,9 +129,13 @@ def main():
     print "Extract features: ", thisTime - lastTime, ' s'
     lastTime = thisTime
     
+    bestFeatures = None
+    
     #FEATURE SELECTION - only for gradient descent
-    if useNB: bestFeatures = nb.loadDict()
-    elif numFeatures != 0: bestFeatures = featureSelection(trainFeaturesAndLabels, labels, featureSelectionMechanism,numFeatures) 
+    if numFeatures!=0:
+        bestFeatures = featureSelection(trainFeaturesAndLabels, labels, featureSelectionMechanism,numFeatures)
+    #if useNB: bestFeatures = nb.loadDict()
+    #elif numFeatures != 0: bestFeatures = featureSelection(trainFeaturesAndLabels, labels, featureSelectionMechanism,numFeatures) 
     
     if bestFeatures:
         #Reduce features in train and test sets to only those in bestFeatures

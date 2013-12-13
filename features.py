@@ -147,7 +147,7 @@ def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, testSongs, gram):
     print "Total songs = ", len(trainSongs) + len(testSongs)
     vocab = Counter()
        
-    for song in trainSongs.extend(testSongs):
+    for song in trainSongs:
         if gram == 'unigram':
             thisSong = list(extractUnigramFeatures(song[0]))
         elif gram == 'bigram':
@@ -157,6 +157,16 @@ def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, testSongs, gram):
         elif gram == 'Fourgram':
             thisSong = list(extractFourgramFeatures(song[0]))        
         vocab.update(thisSong)     
+    for song in testSongs:
+        if gram == 'unigram':
+            thisSong = list(extractUnigramFeatures(song[0]))
+        elif gram == 'bigram':
+            thisSong = list(extractBigramFeatures(song[0]))
+        elif gram == 'trigram':
+            thisSong = list(extractTrigramFeatures(song[0]))
+        elif gram == 'Fourgram':
+            thisSong = list(extractFourgramFeatures(song[0]))        
+        vocab.update(thisSong)             
               
     #Grab words that show up in at least 2 songs, but not more than 1948 songs (half)
     words = [word for word in vocab if minNumberOfSongs <= vocab[word] <= maxNumberOfSongs]
