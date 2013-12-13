@@ -18,6 +18,9 @@ B:                            the regularization parameter, if set to something 
 numFeatures:           how many features do we want to use? - if 0 then just take all.
 'nb' or 'gd':              Naive Bayes or Gradient Descents
 'log', 'hinge', 'perceptron'   which loss function to use with gradient descent.
+'information_gain', 'pca' which feature selection mechanism to use.
+minNumSongs           The minimum number of songs a feature must show up in to be used
+maxNumSongs           The maximum number of songs a feature must show up in to be used
 
 """
 
@@ -28,7 +31,7 @@ def main():
     #Arguments are: numTrain, numTest, trainingIter, alpha, regularization constant,
     #artist or genre, unigram/bigram/trigram/fourgram, number of features, nb or gd
     #log hinge or perceptron
-    if len(sys.argv) == 12:
+    if len(sys.argv) == 15:
         numLabels = int(sys.argv[1])
         numTrainSongs = int(sys.argv[2])
         numTestSongs = int(sys.argv[3])
@@ -42,10 +45,15 @@ def main():
         if sys.argv[11] == 'perceptron': lossFunc = perceptronH
         elif sys.argv[11] == 'hinge': lossFunc = hingeH
         else: lossFunc = logisticH
+        featureSelectionMechanism = sys.argv[12]
+        minNumSongs = int(sys.argv[13])
+        maxNumSongs = int(sys.argv[14])
         
     else:
-        print "Main function takes 10 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters, alpha, B, artist/genre uni/bi/tri/fourgram numFeatures (nb or gd) (perceptron hinge or log)"
-        print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' 0 gd logistic   (alpha = 90/100 = .9)"
+        print "Main function takes 14 arguments: numLabels, numTrainSongs, numTestSongs, trainingIters,\
+alpha, B, artist/genre uni/bi/tri/fourgram, numFeatures ,(nb or gd), (perceptron hinge or log), featureSelection, \
+maxNumSongs"
+        print "Using defaults instead: 0 20 20 10 90 0 'genre' 'bigram' 0 gd logistic pca 0 10000"
         numLabels = 0 #no preference
         numTrainSongs = 20
         numTestSongs = 20
@@ -57,6 +65,9 @@ def main():
         numFeatures = 0
         useNB = False
         lossFunc = logisticH
+        featureSelectionMechanism = 'pca'
+        minNumSongs = 0
+        maxNumSongs = 10000
     
     #Repeat inputs:
     print "Number of labels, train, and test songs:", numLabels, numTrainSongs, numTestSongs
@@ -65,6 +76,7 @@ def main():
     else: print "Classify genre"
     
     print "Feature extractor", featureExtractor
+    print "Feature selector", featureSelectionMechanism
     
     if not useNB:
         print "Gradient Descent"
@@ -87,9 +99,6 @@ def main():
     thisTime = time.clock()
     print "Load examples: ", thisTime - lastTime, ' s'
     lastTime = thisTime
-    
-    #Get some labels
-    words = getDict(0, 100000, trainSongs, testSongs, 'unigram')
         
     #FEATURE EXTRACTION
     #Classifying by artist:
@@ -126,10 +135,11 @@ def main():
     print "Extract features: ", thisTime - lastTime, ' s'
     lastTime = thisTime
     
-    #FEATURE SELECTION - only for gradient descent
+    #FEATURE SELECTION - FIX THIS!
     #if useNB: bestFeatures = nb.loadDict()
     #elif numFeatures != 0: bestFeatures = featureSelection(trainFeaturesAndLabels, labels, numFeatures) 
-    bestFeatures = words
+    words = getDict(minNumSongs, maxNumSongs, trainSongs, featureExtractor)    
+    bestFeatures = words  #hardcoded for my use. fix this.
     
     if bestFeatures:
         #Reduce features in train and test sets to only those in bestFeatures

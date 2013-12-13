@@ -1,6 +1,7 @@
 import math
 from collections import Counter
 import random
+import numpy as np
 
 def trainMultiClassClassifier(trainingData, labels, hypothesisFunc, trainingIters, alpha, B):
     '''
@@ -102,7 +103,7 @@ def perceptronH(weightVector, featureVector, y):
     
     @return int: the hypothesis, 1 or 0
     '''    
-    return 1.0 if dot(weightVector, featureVector) >= 0 else 0
+    return 1.0 if sparseVectorDotProduct(weightVector, featureVector) >= 0 else 0
 
 def hingeH(weightVector, featureVector, y):
     '''
@@ -116,9 +117,9 @@ def hingeH(weightVector, featureVector, y):
     @return int: the hypothesis, 1 or 0
     '''    
     if y:
-        return 1.0 if dot(weightVector,featureVector) >= 1 else 0
+        return 1.0 if sparseVectorDotProduct(weightVector,featureVector) >= 1 else 0
     else:
-        return 0 if dot(weightVector, featureVector) <= -1 else 1.0
+        return 0 if sparseVectorDotProduct(weightVector, featureVector) <= -1 else 1.0
 
 def logisticH(weightVector, featureVector, y):
     '''
