@@ -8,6 +8,7 @@ from loadExamples import *
 from collections import Counter
 from array import array
 import numpy as np
+import pca_module
 
 # Calculate information gain for a given feature 
 def informationGain(trainData,allFeatures,feature,labels):
@@ -105,4 +106,8 @@ def featureSelection(trainData,labels,numFeatures):
         featureLibraryInfo.append(informationGains[i])
         featureLibrary.append(featureNames[i])
     #print featureLibraryInfo
+
+    # Run PCA to reduce feature size.
+    
+    
     return featureLibrary
