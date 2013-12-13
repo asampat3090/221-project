@@ -2,13 +2,11 @@ import random
 from loadExamples import *
 import time
 import string
-
+from collections import Counter
 
 """
 This class deals with parsing the lyric files and extracting the features.
 """
-from collections import Counter
-
 def extractUnigramFeatures(x):
     #Clean up the string x
     x = ''.join(char for char in x if char not in set(string.punctuation))
@@ -136,4 +134,31 @@ def extractFourgramFeatures(x):
             
             
             
-    
+def getDict(minNumberOfSongs, maxNumberOfSongs, trainSongs, testSongs, gram):
+    """
+    Get a dictionary of features that appear in [minNumberOfSongs, maxNumberOfSongs]
+    @param int min number of songs
+    @param int max number of songs
+    @param list of song objects training songs
+    @param list of song objects testing songs
+    @param string unigram, bigram, trigram, or fourgram
+    """
+
+    print "Total songs = ", len(trainSongs) + len(testSongs)
+    vocab = Counter()
+       
+    for song in trainSongs.extend(testSongs):
+        if gram == 'unigram':
+            thisSong = list(extractUnigramFeatures(song[0]))
+        elif gram == 'bigram':
+            thisSong = list(extractBigramFeatures(song[0]))
+        elif gram == 'trigram':
+            thisSong = list(extractTrigramFeatures(song[0]))
+        elif gram == 'Fourgram':
+            thisSong = list(extractFourgramFeatures(song[0]))        
+        vocab.update(thisSong)     
+              
+    #Grab words that show up in at least 2 songs, but not more than 1948 songs (half)
+    words = [word for word in vocab if minNumberOfSongs <= vocab[word] <= maxNumberOfSongs]
+    print "number of words = ", len(words)
+    return words
