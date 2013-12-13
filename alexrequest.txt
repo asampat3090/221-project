@@ -1,0 +1,6 @@
+minSongs 5
+maxSongs 5
+genre only hiphop min 0 max 10
+genre only electronic min 0 max 10
+keywords erase me
+

@@ -1,0 +1,12 @@
+maxSongs 6
+minSongs 4
+
+genre not country
+genre only hiphop max 5 weight 3
+genre only rock min 2 weight 4
+
+artist not OneDirection
+
+keywords dance party food love
+
+
